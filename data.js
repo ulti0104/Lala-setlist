@@ -78,5 +78,157 @@ const liveData = [
     setlistEncore: [
       
     ]
+  },
+  {
+    id: "2026-03-20-osaka",
+    date: "2026-03-20",
+    title: "ZERO NEN CIRCUIT2026",
+    venue: "KING COBRA",
+    city: "大阪",
+    note: "",
+    setlistMain: [
+"メンヘラブストーリー",
+"本当に無駄な恋",
+"泣いてばっかだったな",
+"英雄になりたい",
+"Jealousy"
+    ],
+    setlistEncore: [
+      
+    ]
+  },
+  {
+    id: "2026-02-22-okayama",
+    date: "2026-02-22",
+    title: "machioto2026",
+    venue: "岡山MO:GLA",
+    city: "岡山",
+    note: "",
+    setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"泣いてばっかだったな",
+"英雄になりたい",
+"本当に無駄な恋"
+    ],
+    setlistEncore: [
+      
+    ]
+  },
+    {
+    id: "2026-02-21-osaka",
+    date: "2026-02-21",
+    title: "MiMiNOKO ROCK FES JAPAN in OSAKA 2026",
+    venue: "心斎橋 DROP",
+    city: "大阪",
+    note: "",
+    setlistMain: [
+"Jealousy",
+"浮気相手さんへ",
+"嘘、やっぱ好きです。",
+"泣いてばっかだったな",
+"満点人生",
+"本当に無駄な恋"
+    ],
+    setlistEncore: [
+      
+    ]
+    },
+    {
+    id: "2026-01-31-aichi",
+    date: "2026-01-31",
+    title: "でらロックフェスティバル 2026-愛知編-",
+    venue: "SPADE BOX",
+    city: "愛知",
+    note: "",
+    setlistMain: [
+"生きてるだけでいい",
+"泣いてばっかだったな",
+"英雄になりたい",
+"Jealousy",
+"本当に無駄な恋"
+    ],
+    setlistEncore: [
+      
+    ]
+  },
+   {
+    id: "2026-01-30-aichi",
+    date: "2026-01-30",
+    title: "でらロックフェスティバル2026 前夜祭",
+    venue: "Live House R.A.D",
+    city: "愛知",
+    note: "",
+    setlistMain: [
+"君と同じになりたくて  SPver",
+"泣いてばっかだったな  SPver",
+"浮気相手さんへ",
+"英雄になりたい",
+"Jealousy",
+"ほろ酔い",
+"夜明けまで"
+    ],
+    setlistEncore: [
+"本当に無駄な恋"
+    ]
+  },
+    {
+    id: "2026-01-18-tokyo",
+    date: "2026-01-18",
+    title: "でらロックフェスティバル2026 -東京編-",
+    venue: "下北沢 MOSAiC",
+    city: "東京",
+    note: "",
+    setlistMain: [
+"死にものぐるいで恋をしていた",
+"泣いてばっかだったな",
+"生きてるだけでいい",
+"英雄になりたい",
+"Jealousy",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+    {
+    id: "2026-01-11-osaka",
+    date: "2026-01-11",
+    title: "でらロックフェスティバル2026 -大阪編-",
+    venue: "Club Joule",
+    city: "大阪",
+    note: "",
+    setlistMain: [
+"本当に無駄な恋",
+"泣いてばっかだったな",
+"Jealousy",
+"浮気相手さんへ",
+"メンヘラブストーリー",
+"夜明けまで"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+    {
+    id: "2026-01-07-tokyo",
+    date: "2026-01-07",
+    title: "Noisy!!",
+    venue: "代官山SPACE ODD",
+    city: "東京",
+    note: "",
+    setlistMain: [
+"死にものぐるいで恋をしていた",
+"泣いてばっかだったな",
+"浮気相手さんへ",
+"君と同じになりたくて",
+"マフラー",
+"Jealousy",
+"本当に無駄な恋"
+    ],
+    setlistEncore: [
+
+    ]
   }
+  
 ];
