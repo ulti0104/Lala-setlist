@@ -34,7 +34,7 @@
           type="text"
           id="searchInput"
           class="search-input"
-          placeholder="ライブ名・会場・都市名・ツアー名で検索"
+          placeholder="ライブ名・会場・都市名で検索"
         />
       </div>
 
@@ -97,9 +97,7 @@
           live.date,
           live.title,
           live.venue,
-          live.city,
-          live.artist,
-          live.tour
+          live.city
         ].join(" "));
 
         // 曲検索対象（本編 + アンコール）
@@ -143,7 +141,7 @@
           <div class="live-date">${live.date}</div>
           <h3 class="live-name">${live.title}</h3>
           <p class="live-place">${live.venue}</p>
-          <p class="live-meta">${live.artist} / ${live.city}</p>
+          <p class="live-meta">${live.city}</p>
           ${
             isSongMatched
               ? `<p class="song-hit-badge">この公演に曲名が含まれています</p>`
