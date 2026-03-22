@@ -1,7 +1,7 @@
 const liveData = [
   {
     id: "2026-03-02-tokyo",
-    date: "2026.03.02",
+    date: "2026-03-02",
     title: "FULL OF CHARM!!! 東京公演",
     venue: "渋谷音楽堂",
     city: "東京",
@@ -44,7 +44,7 @@ const liveData = [
   },
   {
     id: "2026-03-18-tokyo",
-    date: "2026.03.18",
+    date: "2026-03-18",
     title: "証明-Vol.4-",
     venue: "渋谷 CHELSEA HOTEL",
     city: "東京",
@@ -63,7 +63,7 @@ const liveData = [
   },
   {
     id: "2026-03-14-tokyo",
-    date: "2026.03.14",
+    date: "2026-03-14",
     title: "見放題東京2026",
     venue: "新宿Marble",
     city: "東京",
