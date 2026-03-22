@@ -1,0 +1,466 @@
+みみ
+ulti.14
+オンライン状態を隠す
+
+みみ — 2026/03/04 20:04
+import express from "express";
+import { Client, GatewayIntentBits } from "discord.js";
+
+const app = express();
+const PORT = process.env.PORT || 10000;
+
+テキスト.txt
+1 KB
+みみ — 2026/03/04 20:27
+import express from "express";
+import { Client, GatewayIntentBits } from "discord.js";
+
+const app = express();
+
+app.get("/", (_, res) => res.send("OK"));
+
+app.listen(process.env.PORT, () => {
+  console.log("🌐 Web server started");
+});
+
+console.log("Node:", process.version);
+console.log("TOKEN:", process.env.DISCORD_TOKEN ? "OK" : "NG");
+
+const client = new Client({
+  intents: [GatewayIntentBits.Guilds]
+});
+
+client.once("ready", () => {
+  console.log("✅ READY発火");
+});
+
+client.login(process.env.DISCORD_TOKEN)
+  .then(() => console.log("🔑 login成功"))
+  .catch(err => console.error("🔑 login失敗:", err));
+みみ — 2026/03/04 20:36
+Node.js v20.20.0
+==> Exited with status 1
+==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+==> Running 'node index.js'
+file:///opt/render/project/src/index.js:1
+みみ — 20:27
+
+SyntaxError: Invalid or unexpected token
+    at compileSourceTextModule (node:internal/modules/esm/utils:346:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:146:18)
+    at #translate (node:internal/modules/esm/loader:497:12)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:544:27)
+    at async ModuleJob._link (node:internal/modules/esm/module_job:148:19)
+Node.js v20.20.0
+Render
+Troubleshooting Your Deploy
+Diagnose and resolve common issues when deploying to Render.
+==> Deploying...
+==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+==> Running 'node index.js'
+Node: v20.20.0
+TOKEN: OK
+🌐 Web server started
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+==> 
+==> Available at your primary URL https://lala-bot-qaol.onrender.com/
+==> 
+==> ///////////////////////////////////////////////////////////
+みみ — 2026/03/04 20:53
+==> Running 'node index.js'
+Node: v20.20.0
+TOKEN: OK
+🌐 Web server started
+✅ Bot Online: Lala#2733
+(node:67) DeprecationWarning: The ready event has been renamed to clientReady to distinguish it from the gateway READY event and will only emit under that name in v15. Please use clientReady instead.
+(Use node --trace-deprecation ... to show where the warning was created)
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+みみ — 2026/03/04 21:02
+import express from "express";
+import { Client, GatewayIntentBits } from "discord.js";
+import axios from "axios";
+import * as cheerio from "cheerio";
+import cron from "node-cron";
+import fs from "fs";
+
+テキスト.txt
+5 KB
+==> Running 'node index.js'
+Node: v20.20.0
+TOKEN: OK
+🌐 Web server started
+🔑 login成功
+✅ Bot Online: Lala#2733
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+==> 
+==> Available at your primary URL https://lala-bot-k8cz.onrender.com/
+==> 
+==> ///////////////////////////////////////////////////////////
+🔍 更新チェック開始
+🔍 更新チェック
+🔍 更新チェック終了
+み — 2026/03/05 14:38
+画像
+画像
+みみ — 1:09
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>セトリまとめ</title>
+
+index.txt
+6 KB
+const liveData = [
+  {
+    id: "2026-03-20-tokyo",
+    date: "2026.03.20",
+    title: "○○ TOUR 2026 東京公演",
+    venue: "Zepp Shinjuku",
+
+data.txt
+2 KB
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ライブ詳細 | セトリまとめ</title>
+
+live.txt
+5 KB
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+style.txt
+5 KB
+﻿
+み
+ulti.14.sub
+ 
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  background: #f7f8fc;
+  color: #1f2937;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+}
+
+.wrap {
+  width: min(100% - 32px, 980px);
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #fff;
+  padding: 40px 0 32px;
+  box-shadow: 0 4px 18px rgba(79, 70, 229, 0.25);
+}
+
+.site-subtitle {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  opacity: 0.9;
+}
+
+.site-title {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.2;
+}
+
+.site-desc {
+  margin: 12px 0 0;
+  font-size: 0.98rem;
+  opacity: 0.95;
+}
+
+/* ===== Main ===== */
+main {
+  padding: 24px 0 48px;
+}
+
+.notice-box {
+  background: #fff8e1;
+  border: 1px solid #f5d77a;
+  color: #6b4f00;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.notice-box p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.section-block {
+  margin-top: 8px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 1.35rem;
+  color: #111827;
+}
+
+.count-text {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* ===== Search ===== */
+.search-box {
+  margin-bottom: 18px;
+}
+
+.search-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 1rem;
+  background: #fff;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
+}
+
+/* ===== Live List ===== */
+.live-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.live-card {
+  display: block;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  border: 1px solid #eceff5;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.live-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  border-color: #d9dcff;
+}
+
+.live-date {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4338ca;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.live-name {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.5;
+  color: #111827;
+}
+
+.live-place {
+  margin: 8px 0 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.live-meta {
+  margin: 4px 0 0;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.live-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.empty-text {
+  margin: 18px 0 0;
+  color: #6b7280;
+}
+
+/* ===== Detail Page ===== */
+.detail-main {
+  padding: 24px 0 48px;
+}
+
+.detail-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  border: 1px solid #eceff5;
+}
+
+.detail-meta {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.detail-title {
+  margin: 0 0 12px;
+  font-size: clamp(1.5rem, 5vw, 2.1rem);
+  line-height: 1.35;
+  color: #111827;
+}
+
+.detail-section-title {
+  margin: 24px 0 12px;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.setlist-box {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 18px 18px 18px 24px;
+}
+
+.setlist {
+  margin: 0;
+  padding-left: 1.4em;
+}
+
+.setlist li {
+  margin: 6px 0;
+}
+
+.memo-box {
+  margin-top: 18px;
+  background: #faf5ff;
+  border: 1px solid #ead8ff;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.memo-box p {
+  margin: 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  padding: 20px 0 28px;
+  color: #6b7280;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ===== PC ===== */
+@media (min-width: 768px) {
+  .live-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail-card {
+    padding: 28px;
+  }
+}
+
+/* ===== Extra Search UI ===== */
+.search-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #374151;
+}
+
+.filter-actions {
+  margin-bottom: 18px;
+}
+
+.clear-button {
+  appearance: none;
+  border: none;
+  background: #ede9fe;
+  color: #5b21b6;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 0.92rem;
+}
+
+.clear-button:hover {
+  opacity: 0.9;
+}
+
+.song-hit-badge {
+  margin: 10px 0 0;
+  display: inline-block;
+  background: #ecfeff;
+  color: #0f766e;
+  border: 1px solid #a5f3fc;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+style.txt
+5 KB

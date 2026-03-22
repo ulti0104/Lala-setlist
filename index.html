@@ -1,0 +1,324 @@
+みみ
+ulti.14
+オンライン状態を隠す
+
+みみ — 2026/03/04 20:04
+import express from "express";
+import { Client, GatewayIntentBits } from "discord.js";
+
+const app = express();
+const PORT = process.env.PORT || 10000;
+
+テキスト.txt
+1 KB
+みみ — 2026/03/04 20:27
+import express from "express";
+import { Client, GatewayIntentBits } from "discord.js";
+
+const app = express();
+
+app.get("/", (_, res) => res.send("OK"));
+
+app.listen(process.env.PORT, () => {
+  console.log("🌐 Web server started");
+});
+
+console.log("Node:", process.version);
+console.log("TOKEN:", process.env.DISCORD_TOKEN ? "OK" : "NG");
+
+const client = new Client({
+  intents: [GatewayIntentBits.Guilds]
+});
+
+client.once("ready", () => {
+  console.log("✅ READY発火");
+});
+
+client.login(process.env.DISCORD_TOKEN)
+  .then(() => console.log("🔑 login成功"))
+  .catch(err => console.error("🔑 login失敗:", err));
+みみ — 2026/03/04 20:36
+Node.js v20.20.0
+==> Exited with status 1
+==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+==> Running 'node index.js'
+file:///opt/render/project/src/index.js:1
+みみ — 20:27
+
+SyntaxError: Invalid or unexpected token
+    at compileSourceTextModule (node:internal/modules/esm/utils:346:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:146:18)
+    at #translate (node:internal/modules/esm/loader:497:12)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:544:27)
+    at async ModuleJob._link (node:internal/modules/esm/module_job:148:19)
+Node.js v20.20.0
+Render
+Troubleshooting Your Deploy
+Diagnose and resolve common issues when deploying to Render.
+==> Deploying...
+==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+==> Running 'node index.js'
+Node: v20.20.0
+TOKEN: OK
+🌐 Web server started
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+==> 
+==> Available at your primary URL https://lala-bot-qaol.onrender.com/
+==> 
+==> ///////////////////////////////////////////////////////////
+みみ — 2026/03/04 20:53
+==> Running 'node index.js'
+Node: v20.20.0
+TOKEN: OK
+🌐 Web server started
+✅ Bot Online: Lala#2733
+(node:67) DeprecationWarning: The ready event has been renamed to clientReady to distinguish it from the gateway READY event and will only emit under that name in v15. Please use clientReady instead.
+(Use node --trace-deprecation ... to show where the warning was created)
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+みみ — 2026/03/04 21:02
+import express from "express";
+import { Client, GatewayIntentBits } from "discord.js";
+import axios from "axios";
+import * as cheerio from "cheerio";
+import cron from "node-cron";
+import fs from "fs";
+
+テキスト.txt
+5 KB
+==> Running 'node index.js'
+Node: v20.20.0
+TOKEN: OK
+🌐 Web server started
+🔑 login成功
+✅ Bot Online: Lala#2733
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+==> 
+==> Available at your primary URL https://lala-bot-k8cz.onrender.com/
+==> 
+==> ///////////////////////////////////////////////////////////
+🔍 更新チェック開始
+🔍 更新チェック
+🔍 更新チェック終了
+み — 2026/03/05 14:38
+画像
+画像
+みみ — 1:09
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>セトリまとめ</title>
+
+index.txt
+6 KB
+const liveData = [
+  {
+    id: "2026-03-20-tokyo",
+    date: "2026.03.20",
+    title: "○○ TOUR 2026 東京公演",
+    venue: "Zepp Shinjuku",
+
+data.txt
+2 KB
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ライブ詳細 | セトリまとめ</title>
+
+live.txt
+5 KB
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+style.txt
+5 KB
+﻿
+み
+ulti.14.sub
+ 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>セトリまとめ</title>
+  <meta name="description" content="ライブのセットリストをまとめたページです。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="site-subtitle">SETLIST ARCHIVE</p>
+      <h1 class="site-title">セトリまとめ</h1>
+      <p class="site-desc">ライブごとのセットリストを一覧でまとめています</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="notice-box">
+      <p>※ ネタバレを含みます。閲覧の際はご注意ください。</p>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <h2 class="section-title">ライブ一覧</h2>
+        <p class="count-text" id="liveCount">0件</p>
+      </div>
+
+      <!-- ライブ情報検索 -->
+      <div class="search-box">
+        <label class="search-label" for="searchInput">ライブ検索</label>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="ライブ名・会場・都市名・ツアー名で検索"
+        />
+      </div>
+
+      <!-- 曲名検索 -->
+      <div class="search-box">
+        <label class="search-label" for="songSearchInput">曲名検索</label>
+        <input
+          type="text"
+          id="songSearchInput"
+          class="search-input"
+          placeholder="曲名を入れると、その曲が含まれる公演だけ表示"
+        />
+      </div>
+
+      <div class="filter-actions">
+        <button id="clearButton" class="clear-button" type="button">検索をクリア</button>
+      </div>
+
+      <div class="live-grid" id="liveList"></div>
+
+      <p class="empty-text" id="emptyText" style="display: none;">
+        該当するライブがありません。
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 セトリまとめ</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    const liveList = document.getElementById("liveList");
+    const liveCount = document.getElementById("liveCount");
+    const searchInput = document.getElementById("searchInput");
+    const songSearchInput = document.getElementById("songSearchInput");
+    const emptyText = document.getElementById("emptyText");
+    const clearButton = document.getElementById("clearButton");
+
+    // 新しい順
+    const sortedLives = [...liveData].reverse();
+
+    function normalizeText(text) {
+      return (text || "")
+        .toString()
+        .toLowerCase()
+        .replace(/\s+/g, "")
+        .replace(/[　]/g, "");
+    }
+
+    function renderLives() {
+      const liveKeyword = normalizeText(searchInput.value);
+      const songKeyword = normalizeText(songSearchInput.value);
+
+      const filtered = sortedLives.filter(live => {
+        // ライブ情報検索対象
+        const liveTarget = normalizeText([
+          live.date,
+          live.title,
+          live.venue,
+          live.city,
+          live.artist,
+          live.tour
+        ].join(" "));
+
+        // 曲検索対象（本編 + アンコール）
+        const songs = [
+          ...(live.setlistMain || []),
+          ...(live.setlistEncore || [])
+        ];
+        const songTarget = normalizeText(songs.join(" "));
+
+        const matchLive = !liveKeyword || liveTarget.includes(liveKeyword);
+        const matchSong = !songKeyword || songTarget.includes(songKeyword);
+
+        return matchLive && matchSong;
+      });
+
+      liveList.innerHTML = "";
+
+      if (filtered.length === 0) {
+        emptyText.style.display = "block";
+      } else {
+        emptyText.style.display = "none";
+      }
+
+      liveCount.textContent = `${filtered.length}件`;
+
+      filtered.forEach(live => {
+        const songs = [
+          ...(live.setlistMain || []),
+          ...(live.setlistEncore || [])
+        ];
+
+        const isSongMatched = songKeyword && songs.some(song =>
+          normalizeText(song).includes(songKeyword)
+        );
+
+        const card = document.createElement("a");
+        card.className = "live-card";
+        card.href = `live.html?id=${encodeURIComponent(live.id)}`;
+
+        card.innerHTML = `
+          <div class="live-date">${live.date}</div>
+          <h3 class="live-name">${live.title}</h3>
+          <p class="live-place">${live.venue}</p>
+          <p class="live-meta">${live.artist} / ${live.city}</p>
+          ${
+            isSongMatched
+              ? `<p class="song-hit-badge">この公演に曲名が含まれています</p>`
+              : ""
+          }
+          <span class="live-link">セトリを見る →</span>
+        `;
+
+        liveList.appendChild(card);
+      });
+    }
+
+    searchInput.addEventListener("input", renderLives);
+    songSearchInput.addEventListener("input", renderLives);
+
+    clearButton.addEventListener("click", () => {
+      searchInput.value = "";
+      songSearchInput.value = "";
+      renderLives();
+    });
+
+    renderLives();
+  </script>
+</body>
+</html>
+index.txt
+6 KB

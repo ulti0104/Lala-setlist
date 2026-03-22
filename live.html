@@ -1,0 +1,277 @@
+みみ
+ulti.14
+オンライン状態を隠す
+
+みみ — 2026/03/04 20:04
+import express from "express";
+import { Client, GatewayIntentBits } from "discord.js";
+
+const app = express();
+const PORT = process.env.PORT || 10000;
+
+テキスト.txt
+1 KB
+みみ — 2026/03/04 20:27
+import express from "express";
+import { Client, GatewayIntentBits } from "discord.js";
+
+const app = express();
+
+app.get("/", (_, res) => res.send("OK"));
+
+app.listen(process.env.PORT, () => {
+  console.log("🌐 Web server started");
+});
+
+console.log("Node:", process.version);
+console.log("TOKEN:", process.env.DISCORD_TOKEN ? "OK" : "NG");
+
+const client = new Client({
+  intents: [GatewayIntentBits.Guilds]
+});
+
+client.once("ready", () => {
+  console.log("✅ READY発火");
+});
+
+client.login(process.env.DISCORD_TOKEN)
+  .then(() => console.log("🔑 login成功"))
+  .catch(err => console.error("🔑 login失敗:", err));
+みみ — 2026/03/04 20:36
+Node.js v20.20.0
+==> Exited with status 1
+==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+==> Running 'node index.js'
+file:///opt/render/project/src/index.js:1
+みみ — 20:27
+
+SyntaxError: Invalid or unexpected token
+    at compileSourceTextModule (node:internal/modules/esm/utils:346:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:146:18)
+    at #translate (node:internal/modules/esm/loader:497:12)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:544:27)
+    at async ModuleJob._link (node:internal/modules/esm/module_job:148:19)
+Node.js v20.20.0
+Render
+Troubleshooting Your Deploy
+Diagnose and resolve common issues when deploying to Render.
+==> Deploying...
+==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+==> Running 'node index.js'
+Node: v20.20.0
+TOKEN: OK
+🌐 Web server started
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+==> 
+==> Available at your primary URL https://lala-bot-qaol.onrender.com/
+==> 
+==> ///////////////////////////////////////////////////////////
+みみ — 2026/03/04 20:53
+==> Running 'node index.js'
+Node: v20.20.0
+TOKEN: OK
+🌐 Web server started
+✅ Bot Online: Lala#2733
+(node:67) DeprecationWarning: The ready event has been renamed to clientReady to distinguish it from the gateway READY event and will only emit under that name in v15. Please use clientReady instead.
+(Use node --trace-deprecation ... to show where the warning was created)
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+みみ — 2026/03/04 21:02
+import express from "express";
+import { Client, GatewayIntentBits } from "discord.js";
+import axios from "axios";
+import * as cheerio from "cheerio";
+import cron from "node-cron";
+import fs from "fs";
+
+テキスト.txt
+5 KB
+==> Running 'node index.js'
+Node: v20.20.0
+TOKEN: OK
+🌐 Web server started
+🔑 login成功
+✅ Bot Online: Lala#2733
+==> Your service is live 🎉
+==> 
+==> ///////////////////////////////////////////////////////////
+==> 
+==> Available at your primary URL https://lala-bot-k8cz.onrender.com/
+==> 
+==> ///////////////////////////////////////////////////////////
+🔍 更新チェック開始
+🔍 更新チェック
+🔍 更新チェック終了
+み — 2026/03/05 14:38
+画像
+画像
+みみ — 1:09
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>セトリまとめ</title>
+
+index.txt
+6 KB
+const liveData = [
+  {
+    id: "2026-03-20-tokyo",
+    date: "2026.03.20",
+    title: "○○ TOUR 2026 東京公演",
+    venue: "Zepp Shinjuku",
+
+data.txt
+2 KB
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ライブ詳細 | セトリまとめ</title>
+
+live.txt
+5 KB
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+style.txt
+5 KB
+﻿
+み
+ulti.14.sub
+ 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ライブ詳細 | セトリまとめ</title>
+  <meta name="description" content="ライブのセットリスト詳細ページです。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="site-subtitle">LIVE SETLIST</p>
+      <h1 class="site-title" id="pageTitle">ライブ詳細</h1>
+      <p class="site-desc" id="pageVenue">会場情報</p>
+    </div>
+  </header>
+
+  <main class="wrap detail-main">
+    <article class="detail-card" id="detailCard" style="display: none;">
+      <h2 class="detail-title">セットリスト</h2>
+
+      <div class="detail-meta">
+        <div><strong>日付：</strong><span id="metaDate"></span></div>
+        <div><strong>会場：</strong><span id="metaVenue"></span></div>
+        <div><strong>都市：</strong><span id="metaCity"></span></div>
+        <div><strong>アーティスト：</strong><span id="metaArtist"></span></div>
+        <div><strong>ツアー：</strong><span id="metaTour"></span></div>
+      </div>
+
+      <section>
+        <h3 class="detail-section-title">本編</h3>
+        <div class="setlist-box">
+          <ol class="setlist" id="mainSetlist"></ol>
+        </div>
+      </section>
+
+      <section id="encoreSection" style="display: none;">
+        <h3 class="detail-section-title">アンコール</h3>
+        <div class="setlist-box">
+          <ol class="setlist" id="encoreSetlist"></ol>
+        </div>
+      </section>
+
+      <section class="memo-box" id="memoSection" style="display: none;">
+        <h3 class="detail-section-title" style="margin-top: 0;">メモ</h3>
+        <p id="memoText"></p>
+      </section>
+
+      <a class="back-link" href="index.html">← 一覧に戻る</a>
+    </article>
+
+    <article class="detail-card" id="notFoundCard" style="display: none;">
+      <h2 class="detail-title">ライブが見つかりません</h2>
+      <p>指定されたライブ情報が存在しないか、URLが正しくありません。</p>
+      <a class="back-link" href="index.html">← 一覧に戻る</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 セトリまとめ</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const liveId = params.get("id");
+
+    const detailCard = document.getElementById("detailCard");
+    const notFoundCard = document.getElementById("notFoundCard");
+
+    const live = liveData.find(item => item.id === liveId);
+
+    if (!live) {
+      document.getElementById("pageTitle").textContent = "ライブが見つかりません";
+      document.getElementById("pageVenue").textContent = "";
+      notFoundCard.style.display = "block";
+    } else {
+      document.title = `${live.title} | セトリまとめ`;
+
+      document.getElementById("pageTitle").textContent = live.title;
+      document.getElementById("pageVenue").textContent = live.venue;
+
+      document.getElementById("metaDate").textContent = live.date;
+      document.getElementById("metaVenue").textContent = live.venue;
+      document.getElementById("metaCity").textContent = live.city;
+      document.getElementById("metaArtist").textContent = live.artist;
+      document.getElementById("metaTour").textContent = live.tour;
+
+      const mainSetlist = document.getElementById("mainSetlist");
+      live.setlistMain.forEach(song => {
+        const li = document.createElement("li");
+        li.textContent = song;
+        mainSetlist.appendChild(li);
+      });
+
+      const encoreSection = document.getElementById("encoreSection");
+      const encoreSetlist = document.getElementById("encoreSetlist");
+
+      if (live.setlistEncore && live.setlistEncore.length > 0) {
+        encoreSection.style.display = "block";
+
+        live.setlistEncore.forEach(song => {
+          const li = document.createElement("li");
+          li.textContent = song;
+          encoreSetlist.appendChild(li);
+        });
+      }
+
+      const memoSection = document.getElementById("memoSection");
+      const memoText = document.getElementById("memoText");
+
+      if (live.note && live.note.trim() !== "") {
+        memoSection.style.display = "block";
+        memoText.textContent = live.note;
+      }
+
+      detailCard.style.display = "block";
+    }
+  </script>
+</body>
+</html>
+live.txt
+5 KB
