@@ -50,6 +50,7 @@ const liveData = [
     venue: "渋谷 CHELSEA HOTEL",
     city: "東京",
     note: "",
+    image: "images/20260318.jpg",
     setlistMain: [
       "崖っぷちガール",
       "浮気相手さんへ",
@@ -69,6 +70,7 @@ const liveData = [
     venue: "新宿Marble",
     city: "東京",
     note: "",
+    image: "images/20260314.jpg",
     setlistMain: [
       "死にものぐるいで恋をしていた",
       "Jealousy",
@@ -87,6 +89,7 @@ const liveData = [
     venue: "KING COBRA",
     city: "大阪",
     note: "",
+    image: "images/20260320.jpg",
     setlistMain: [
 "メンヘラブストーリー",
 "本当に無駄な恋",
@@ -105,6 +108,7 @@ const liveData = [
     venue: "岡山MO:GLA",
     city: "岡山",
     note: "",
+    image: "images/20260222.jpg",
     setlistMain: [
 "死にものぐるいで恋をしていた",
 "Jealousy",
@@ -123,6 +127,7 @@ const liveData = [
     venue: "心斎橋 DROP",
     city: "大阪",
     note: "",
+    image: "images/20260221.jpg",
     setlistMain: [
 "Jealousy",
 "浮気相手さんへ",
@@ -142,6 +147,7 @@ const liveData = [
     venue: "SPADE BOX",
     city: "愛知",
     note: "",
+    image: "images/20260131.jpg",
     setlistMain: [
 "生きてるだけでいい",
 "泣いてばっかだったな",
@@ -160,6 +166,7 @@ const liveData = [
     venue: "Live House R.A.D",
     city: "愛知",
     note: "",
+    image: "images/20260130.jpg",
     setlistMain: [
 "君と同じになりたくて  SPver",
 "泣いてばっかだったな  SPver",
@@ -180,6 +187,7 @@ const liveData = [
     venue: "下北沢 MOSAiC",
     city: "東京",
     note: "",
+    image: "images/20260118.jpg",
     setlistMain: [
 "死にものぐるいで恋をしていた",
 "泣いてばっかだったな",
@@ -199,6 +207,7 @@ const liveData = [
     venue: "Club Joule",
     city: "大阪",
     note: "",
+    image: "images/20260111.jpg",
     setlistMain: [
 "本当に無駄な恋",
 "泣いてばっかだったな",
@@ -218,6 +227,7 @@ const liveData = [
     venue: "代官山SPACE ODD",
     city: "東京",
     note: "",
+    image: "images/20260107.jpg",
     setlistMain: [
 "死にものぐるいで恋をしていた",
 "泣いてばっかだったな",
@@ -238,7 +248,7 @@ const liveData = [
     venue: "京都市体育館",
     city: "京都",
     note: "",
-　image: "",
+　  image: "images/20260103.jpg",
     setlistMain: [
 "Jealousy"
     ],
@@ -253,7 +263,7 @@ const liveData = [
     venue: "下北沢MOSAiC",
     city: "東京",
     note: "",
-　image: "",
+　  image: "images/20251230.jpg",
     setlistMain: [
 "Jealousy",
 "泣いてばっかだったな",
@@ -272,7 +282,7 @@ const liveData = [
     venue: "Live House R.A.D",
     city: "愛知",
     note: "",
-　image: "",
+　　image: "images/20251217.jpg",
     setlistMain: [
 "マフラー",
 "Jealousy",
@@ -293,7 +303,7 @@ const liveData = [
     venue: "広島 ALMIGHTY",
     city: "広島",
     note: "",
-　image: "",
+　  image: "images/20251212.jpg",
     setlistMain: [
 "Jealousy",
 "泣いてばっかだったな",
@@ -314,7 +324,7 @@ const liveData = [
     venue: "福岡 Queblick",
     city: "福岡",
     note: "",
-　image: "",
+　  image: "images/20251211.jpg",
     setlistMain: [
 "Jealousy",
 "メンヘラブストーリー",
@@ -336,7 +346,7 @@ const liveData = [
     venue: "Spotify O-Crest",
     city: "東京",
     note: "",
-　image: "",
+    image: "images/20251208.jpg",
     setlistMain: [
 "マフラー",
 "泣いてばっかだったな",
@@ -355,7 +365,7 @@ const liveData = [
     venue: "成城大学",
     city: "大阪",
     note: "",
-　image: "",
+    image: "images/20251103.jpg",
     setlistMain: [
 "Jealousy",
 "泣いてばっかだったな",
@@ -372,7 +382,7 @@ const liveData = [
     venue: "下北沢ReG",
     city: "東京",
     note: "",
-　image: "",
+    image: "images/20251102.jpg",
     setlistMain: [
 "ほろ酔い",
 "Jealousy",
@@ -391,7 +401,7 @@ const liveData = [
     venue: "代官山SPACE ODD",
     city: "東京",
     note: "",
-　image: "",
+    image: "images/20251026.jpg",
     setlistMain: [
 "Jealousy",
 "メンヘラブストーリー",
@@ -411,7 +421,7 @@ const liveData = [
     venue: "下北沢MOSAiC",
     city: "東京",
     note: "",
-　image: "",
+    image: "images/20251024.jpg",
     setlistMain: [
 "ほろ酔い",
 "Jealousy",
@@ -431,7 +441,7 @@ const liveData = [
     venue: "CLUB UPSET",
     city: "愛知",
     note: "",
-　image: "",
+    image: "images/20251016.jpg",
     setlistMain: [
 "Jealousy",
 "メンヘラブストーリー",
@@ -451,7 +461,7 @@ const liveData = [
     venue: "三木楽器 アメリカ村店",
     city: "大阪",
     note: "",
-　image: "",
+    image: "images/202510121.jpg",
     setlistMain: [
 "君を泣かせたい",
 "泣いてばっかだったな",
@@ -471,7 +481,7 @@ const liveData = [
     venue: "FANJ twice",
     city: "大阪",
     note: "",
-　image: "",
+    image: "images/202510122.jpg",
     setlistMain: [
 "死にものぐるいで恋をしていた",
 "Jealousy",
@@ -492,7 +502,7 @@ const liveData = [
     venue: "アメリカ村 DROP",
     city: "大阪",
     note: "",
-　image: "",
+    image: "images/202510123.jpg",
     setlistMain: [
 "愛ゆえに",
 "崖っぷちガール",
@@ -512,7 +522,7 @@ const liveData = [
     venue: "新栄 SPADE BOX",
     city: "愛知",
     note: "",
-　image: "",
+    image: "images/20251011.jpg",
     setlistMain: [
 "メンヘラブストーリー",
 "Jealousy",
@@ -534,7 +544,7 @@ const liveData = [
     venue: "渋谷 CHELSEA HOTEL",
     city: "東京",
     note: "",
-　image: "",
+    image: "images/20251006.jpg",
     setlistMain: [
 "愛ゆえに",
 "泣いてばっかだったな",
@@ -554,7 +564,7 @@ const liveData = [
     venue: "下北沢MOSAiC",
     city: "東京",
     note: "",
-　image: "",
+    image: "images/20250923.jpg",
     setlistMain: [
 "メンヘラブストーリー",
 "愛ゆえに",
@@ -574,7 +584,7 @@ const liveData = [
     venue: "北堀江club vijon",
     city: "大阪",
     note: "",
-　image: "",
+    image: "images/20250916.jpg",
     setlistMain: [
 "愛ゆえに",
 "泣いてばっかだったな",
@@ -595,7 +605,7 @@ const liveData = [
     venue: "Live House R.A.D",
     city: "愛知",
     note: "",
-　image: "",
+    image: "images/20250914.jpg",
     setlistMain: [
 "Jealousy",
 "崖っぷちガール",
