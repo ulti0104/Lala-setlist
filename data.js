@@ -2,7 +2,7 @@ const liveData = [
   {
     id: "2026-03-02-tokyo",
     date: "2026-03-02",
-    title: "FULL OF CHARM!!! 東京公演",
+    title: "Lala ONEMAN LIVE TOUR 2026 FULL OF CHARM!!! 東京公演",
     venue: "渋谷音楽堂",
     city: "東京",
     note: "ツアーファイナル",
@@ -613,6 +613,27 @@ const liveData = [
 "嘘、やっぱ好きです。",
 "泣いてばっかだったな",
 "夜明けまで"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-06-19-osaka",
+    date: "2025-06-19",
+    title: "Neo Japanesque　メジャー1st Album『響鳴-KYOMEI-』リリースツアー-Resonance-",
+    venue: "Music Club JANUS",
+    city: "大阪",
+    note: "",
+　image: "",
+    setlistMain: [
+"もし君の恋人になれたら",
+"泣いてばっかだったな",
+"はたち。",
+"「あたしだけ。」",
+"死にものぐるいで恋をしていた",
+"月が綺麗に見えるのは",
+"Monster"
     ],
     setlistEncore: [
 
