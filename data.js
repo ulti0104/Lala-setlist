@@ -591,7 +591,7 @@ const liveData = [
     {
     id: "2025-09-14-aichi",
     date: "2025-09-14",
-    title: "至福ぽんちょ主催-至福のひととき",
+    title: "至福ぽんちょ自主企画「⾄福のひととき」 vol.1",
     venue: "Live House R.A.D",
     city: "愛知",
     note: "",
