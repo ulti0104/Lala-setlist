@@ -526,6 +526,87 @@ const liveData = [
     setlistEncore: [
 
     ]
+  },
+  {
+    id: "2025-10-06-tokyo",
+    date: "2025-10-06",
+    title: "証明-Vol.1-",
+    venue: "渋谷 CHELSEA HOTEL",
+    city: "東京",
+    note: "",
+　image: "",
+    setlistMain: [
+"愛ゆえに",
+"泣いてばっかだったな",
+"嘘、やっぱ好きです。",
+"本当に無駄な恋",
+"死にものぐるいで恋をしていた",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+    {
+    id: "2025-09-23-tokyo",
+    date: "2025-09-23",
+    title: "TOKYO CALLING 2025",
+    venue: "下北沢MOSAiC",
+    city: "東京",
+    note: "",
+　image: "",
+    setlistMain: [
+"メンヘラブストーリー",
+"愛ゆえに",
+"嘘、やっぱ好きです。",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-09-16-osaka",
+    date: "2025-09-16",
+    title: "FOREVER YOUNG vol.17",
+    venue: "北堀江club vijon",
+    city: "大阪",
+    note: "",
+　image: "",
+    setlistMain: [
+"愛ゆえに",
+"泣いてばっかだったな",
+"嘘、やっぱ好きです。",
+"崖っぷちガール",
+"死にものぐるいで恋をしていた",
+"メンヘラブストーリー",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+    {
+    id: "2025-09-14-aichi",
+    date: "2025-09-14",
+    title: "至福ぽんちょ主催-至福のひととき",
+    venue: "Live House R.A.D",
+    city: "愛知",
+    note: "",
+　image: "",
+    setlistMain: [
+"Jealousy",
+"崖っぷちガール",
+"死にものぐるいで恋をしていた",
+"嘘、やっぱ好きです。",
+"泣いてばっかだったな",
+"夜明けまで"
+    ],
+    setlistEncore: [
+
+    ]
   }
   
 ];
