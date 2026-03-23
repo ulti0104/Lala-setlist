@@ -230,6 +230,159 @@ const liveData = [
     setlistEncore: [
 
     ]
+  },
+  {
+    id: "2026-01-03-kyoto",
+    date: "2026-01-03",
+    title: "B.LEAGUE 京都ハンナリーズ HOME GAME OA",
+    venue: "京都市体育館",
+    city: "京都",
+    note: "",
+　image: "",
+    setlistMain: [
+"Jealousy"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-12-30-tokyo",
+    date: "2025-12-30",
+    title: "COUNTDOWN MOSAiC 2025→2026",
+    venue: "下北沢MOSAiC",
+    city: "東京",
+    note: "",
+　image: "",
+    setlistMain: [
+"Jealousy",
+"泣いてばっかだったな",
+"浮気相手さんへ",
+"メンヘラブストーリー",
+"夜明けまで"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-12-17-aichi",
+    date: "2025-12-17",
+    title: "栄大乱闘2025",
+    venue: "Live House R.A.D",
+    city: "愛知",
+    note: "",
+　image: "",
+    setlistMain: [
+"マフラー",
+"Jealousy",
+"泣いてばっかだったな",
+"君と同じになりたくて",
+"メンヘラブストーリー",
+"本当に無駄な恋",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-12-12-hiroshima",
+    date: "2025-12-12",
+    title: "Chimothy→ pre.『たのちもしーツアー』〜ワクワク対バン編〜",
+    venue: "広島 ALMIGHTY",
+    city: "広島",
+    note: "",
+　image: "",
+    setlistMain: [
+"Jealousy",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた",
+"君と同じになりたくて",
+"マフラー",
+"本当に無駄な恋",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-12-11-fukuoka",
+    date: "2025-12-11",
+    title: "らそんぶる1st LIVE TOUR 2025『月夜の下、私たちは離ればなれにならないツアー』",
+    venue: "福岡 Queblick",
+    city: "福岡",
+    note: "",
+　image: "",
+    setlistMain: [
+"Jealousy",
+"メンヘラブストーリー",
+"泣いてばっかだったな",
+"別れのキスで",
+"君と同じになりたくて",
+"死にものぐるいで恋をしていた",
+"本当に無駄な恋",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-12-08-tokyo",
+    date: "2025-12-08",
+    title: "シベリアンハスキー東名阪ツアー　アイラブユー！",
+    venue: "Spotify O-Crest",
+    city: "東京",
+    note: "",
+　image: "",
+    setlistMain: [
+"マフラー",
+"泣いてばっかだったな",
+"君と同じになりたくて",
+"Jealousy",
+"本当に無駄な恋"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-11-03-osaka",
+    date: "2025-11-03",
+    title: "成城大学   柳祭 2025",
+    venue: "成城大学",
+    city: "大阪",
+    note: "",
+　image: "",
+    setlistMain: [
+"Jealousy",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-11-02-tokyo",
+    date: "2025-11-02",
+    title: "KNOCKOUT FES 2025",
+    venue: "下北沢ReG",
+    city: "東京",
+    note: "",
+　image: "",
+    setlistMain: [
+"ほろ酔い",
+"Jealousy",
+"本当に無駄な恋",
+"Monster",
+"夜明けまで"
+    ],
+    setlistEncore: [
+
+    ]
   }
   
 ];
