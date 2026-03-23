@@ -6,6 +6,7 @@ const liveData = [
     venue: "渋谷音楽堂",
     city: "東京",
     note: "ツアーファイナル",
+    image: "images/20260302.jpg"
     setlistMain: [
       "本当に無駄な恋",
       "ただの口約束",
