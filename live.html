@@ -20,6 +20,10 @@
     <article class="detail-card" id="detailCard" style="display: none;">
       <h2 class="detail-title">セットリスト</h2>
 
+      <div class="detail-image-wrap" id="detailImageWrap" style="display: none;">
+        <img id="detailImage" class="detail-image" src="" alt="ライブ画像" />
+      </div>
+
       <div class="detail-meta">
         <div><strong>日付：</strong><span id="metaDate"></span></div>
         <div><strong>会場：</strong><span id="metaVenue"></span></div>
@@ -84,6 +88,16 @@
       document.getElementById("metaDate").textContent = live.date;
       document.getElementById("metaVenue").textContent = live.venue;
       document.getElementById("metaCity").textContent = live.city;
+
+      // 画像表示（image があれば表示、なければ非表示）
+      const detailImageWrap = document.getElementById("detailImageWrap");
+      const detailImage = document.getElementById("detailImage");
+
+      if (live.image && live.image.trim() !== "") {
+        detailImage.src = live.image;
+        detailImage.alt = `${live.title} のライブ画像`;
+        detailImageWrap.style.display = "block";
+      }
 
       const mainSetlist = document.getElementById("mainSetlist");
       live.setlistMain.forEach(song => {
