@@ -383,6 +383,149 @@ const liveData = [
     setlistEncore: [
 
     ]
+  },
+  {
+    id: "2025-10-26-tokyo",
+    date: "2025-10-26",
+    title: "609号室 presentsロクフェス",
+    venue: "代官山SPACE ODD",
+    city: "東京",
+    note: "",
+　image: "",
+    setlistMain: [
+"Jealousy",
+"メンヘラブストーリー",
+"死にものぐるいで恋をしていた",
+"泣いてばっかだったな",
+"本当に無駄な恋",
+"夜明けまで"
+    ],
+    setlistEncore: [
+"ほろ酔い"
+    ]
+  },
+  {
+    id: "2025-10-24-tokyo",
+    date: "2025-10-24",
+    title: "YURERUKO「hinataぼっこ」レコ発LIVE -音に恋して揺れろ-",
+    venue: "下北沢MOSAiC",
+    city: "東京",
+    note: "",
+　image: "",
+    setlistMain: [
+"ほろ酔い",
+"Jealousy",
+"死にものぐるいで恋をしていた",
+"泣いてばっかだったな",
+"本当に無駄な恋",
+"夜明けまで"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-10-16-aichi",
+    date: "2025-10-16",
+    title: "ROCK the ROCK!!",
+    venue: "CLUB UPSET",
+    city: "愛知",
+    note: "",
+　image: "",
+    setlistMain: [
+"Jealousy",
+"メンヘラブストーリー",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた",
+"本当に無駄な恋",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+"崖っぷちガール"
+    ]
+  },
+  {
+    id: "2025-10-12-osaka1",
+    date: "2025-10-12",
+    title: "ayaho 弾き語り",
+    venue: "三木楽器 アメリカ村店",
+    city: "大阪",
+    note: "",
+　image: "",
+    setlistMain: [
+"君を泣かせたい",
+"泣いてばっかだったな",
+"今更、何様?",
+"本当に無駄な恋",
+"はたち",
+"嘘、やっぱ好きです。"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-10-12-osaka2",
+    date: "2025-10-12",
+    title: "MINAMI WHEEL 2025",
+    venue: "FANJ twice",
+    city: "大阪",
+    note: "",
+　image: "",
+    setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"泣いてばっかだったな",
+"メンへラブストーリー",
+"本当に無駄な恋",
+"Mellow",
+"夜明けまで"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-10-12-osaka3",
+    date: "2025-10-12",
+    title: "DROP Presents MIONICHT DROOINHEEL -MINAMI WHEEL AFTER EDITION-〜黒鹿祭〜",
+    venue: "アメリカ村 DROP",
+    city: "大阪",
+    note: "",
+　image: "",
+    setlistMain: [
+"愛ゆえに",
+"崖っぷちガール",
+"別れのキスで",
+"泣いてばっかだったな",
+"本当に無駄な恋",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-10-11-aichi",
+    date: "2025-10-11",
+    title: "縁演炎-enn-",
+    venue: "新栄 SPADE BOX",
+    city: "愛知",
+    note: "",
+　image: "",
+    setlistMain: [
+"メンヘラブストーリー",
+"Jealousy",
+"嘘、やっぱ好きです。",
+"本当に無駄な恋",
+"別れのキスで",
+"泣いてばっかだったな",
+"愛ゆえに",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
   }
   
 ];
