@@ -800,8 +800,7 @@ const liveData = [
 "死にものぐるいで恋をしていた",
 "NEVER MIND!!!",
 "メンヘラブストーリー",
-"Find me Find you",
-"満点人生"
+"Find me Find you"
     ],
     setlistEncore: [
 "GAMING",
@@ -842,8 +841,7 @@ const liveData = [
 "死にものぐるいで恋をしていた",
 "NEVER MIND!!!",
 "メンヘラブストーリー",
-"Find me Find you",
-"満点人生"
+"Find me Find you"
     ],
     setlistEncore: [
 "GAMING",
@@ -884,8 +882,7 @@ const liveData = [
 "死にものぐるいで恋をしていた",
 "NEVER MIND!!!",
 "メンヘラブストーリー",
-"Find me Find you",
-"満点人生"
+"Find me Find you"
     ],
     setlistEncore: [
 "GAMING",
@@ -926,8 +923,7 @@ const liveData = [
 "死にものぐるいで恋をしていた",
 "NEVER MIND!!!",
 "メンヘラブストーリー",
-"Find me Find you",
-"満点人生"
+"Find me Find you"
     ],
     setlistEncore: [
 "GAMING",
