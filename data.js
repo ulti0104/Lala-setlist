@@ -642,7 +642,7 @@ const liveData = [
   {
     id: "2025-09-02-kyoto",
     date: "2025-09-02",
-    title: "IrisaVior 2nd EP 「アイビー」Release Tour "遠く想い果てる" DAY①",
+    title: "IrisaVior 2nd EP 「アイビー」Release Tour 遠く想い果てる DAY①",
     venue: "京都MUSE",
     city: "京都",
     note: "",
