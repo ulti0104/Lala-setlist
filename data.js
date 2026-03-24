@@ -1097,6 +1097,44 @@ const liveData = [
 "GAMING",
 "charm"
     ]
+  },
+  {
+    id: "2025-06-21-osaka1",
+    date: "2025-06-21",
+    title: "SAKURA BUD LIVE ayaho（from.Lala）弾き語り1部",
+    venue: "ヨドコウ桜スタジアム",
+    city: "大阪",
+    note: "",
+　image: "images/20250621.jpg",
+    setlistMain: [
+"Jealousy",
+"崖っぷちガール",
+"泣いてばっかだったな",
+"はたち。",
+"死にものぐるいで恋をしていた"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-06-21-osaka2",
+    date: "2025-06-21",
+    title: "SAKURA BUD LIVE ayaho（from.Lala）弾き語り2部",
+    venue: "ヨドコウ桜スタジアム",
+    city: "大阪",
+    note: "",
+　image: "images/20250621.jpg",
+    setlistMain: [
+"君を泣かせたい",
+"今更、何様？",
+"22歳",
+"泣いてばっかだったな",
+"崖っぷちガール"
+    ],
+    setlistEncore: [
+
+    ]
   }
 
   
