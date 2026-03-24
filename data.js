@@ -718,8 +718,7 @@ const liveData = [
 "死にものぐるいで恋をしていた",
 "NEVER MIND!!!",
 "メンヘラブストーリー",
-"Find me Find you",
-"満点人生"
+"Find me Find you"
     ],
     setlistEncore: [
 "GAMING",
@@ -760,8 +759,7 @@ const liveData = [
 "死にものぐるいで恋をしていた",
 "NEVER MIND!!!",
 "メンヘラブストーリー",
-"Find me Find you",
-"満点人生"
+"Find me Find you"
     ],
     setlistEncore: [
 "GAMING",
@@ -816,7 +814,7 @@ const liveData = [
     title: "Lala ONEMAN LIVE TOUR 2026 FULL OF CHARM!!! 香川公演",
     venue: "高松TOONICE",
     city: "香川",
-    note: "MC-香川と言うか高松と言うか/n迷ってか！か！ま！つ！",
+    note: "MC-香川と高松迷って か！か！ま！つ！",
 　image: "images/charmtour.jpg",
     setlistMain: [
 "本当に無駄な恋",
@@ -970,10 +968,10 @@ const liveData = [
 "死にものぐるいで恋をしていた",
 "NEVER MIND!!!",
 "メンヘラブストーリー",
-"Find me Find you",
-"満点人生"
+"Find me Find you"
     ],
     setlistEncore: [
+"満点人生",
 "GAMING",
 "charm"
     ]
@@ -1012,10 +1010,10 @@ const liveData = [
 "死にものぐるいで恋をしていた",
 "NEVER MIND!!!",
 "メンヘラブストーリー",
-"Find me Find you",
-"満点人生"
+"Find me Find you"
     ],
     setlistEncore: [
+"満点人生",
 "GAMING",
 "charm"
     ]
@@ -1054,10 +1052,10 @@ const liveData = [
 "死にものぐるいで恋をしていた",
 "NEVER MIND!!!",
 "メンヘラブストーリー",
-"Find me Find you",
-"満点人生"
+"Find me Find you"
     ],
     setlistEncore: [
+"満点人生",
 "GAMING",
 "charm"
     ]
@@ -1096,10 +1094,10 @@ const liveData = [
 "死にものぐるいで恋をしていた",
 "NEVER MIND!!!",
 "メンヘラブストーリー",
-"Find me Find you",
-"満点人生"
+"Find me Find you"
     ],
     setlistEncore: [
+"満点人生",
 "GAMING",
 "charm"
     ]
