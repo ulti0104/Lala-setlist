@@ -5,7 +5,7 @@ const liveData = [
     title: "Lala ONEMAN LIVE TOUR 2026 FULL OF CHARM!!! 東京公演",
     venue: "渋谷音楽堂",
     city: "東京",
-    note: "大阪公演以降 同セトリ　ツアーファイナルのみ、ほろ酔い/夜明けまで追加",
+    note: "大阪公演以降 同セトリ　\nツアーファイナルのみ、ほろ酔い/夜明けまで追加",
     image: "images/20260302.jpg",
     setlistMain: [
       "本当に無駄な恋",
