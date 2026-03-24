@@ -638,6 +638,28 @@ const liveData = [
     setlistEncore: [
 
     ]
+  },
+  {
+    id: "2025-09-02-kyoto",
+    date: "2025-09-02",
+    title: "IrisaVior 2nd EP 「アイビー」Release Tour "遠く想い果てる" DAY①",
+    venue: "京都MUSE",
+    city: "京都",
+    note: "",
+　image: "",
+    setlistMain: [
+"もし君の恋人になれたら",
+"サーチライト",
+"嘘、やっぱ好きです。",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた",
+"崖っぷちガール",
+"Jealousy",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
   }
   
 ];
