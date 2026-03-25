@@ -85,9 +85,10 @@
         />
       </div>
 
-      <div class="filter-actions">
-        <button id="clearButton" class="clear-button" type="button">検索をクリア</button>
-      </div>
+<div class="filter-actions">
+  <button id="clearButton" class="clear-button" type="button">検索をクリア</button>
+  <button id="onemanButton" class="oneman-button" type="button">ワンマンのみ</button>
+</div>
 
       <div class="live-grid" id="liveList"></div>
 
@@ -111,6 +112,7 @@
     const songSearchInput = document.getElementById("songSearchInput");
     const emptyText = document.getElementById("emptyText");
     const clearButton = document.getElementById("clearButton");
+　　const onemanButton = document.getElementById("onemanButton");
 
     // 新しい順
     const sortedLives = [...liveData].sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -198,6 +200,11 @@
       songSearchInput.value = "";
       renderLives();
     });
+
+    onemanButton.addEventListener("click", () => {
+  searchInput.value = "Lala ONEMAN";
+  renderLives();
+});
 
     renderLives();
   </script>
