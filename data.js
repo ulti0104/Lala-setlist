@@ -827,7 +827,8 @@ const liveData = [
     ],
     setlistEncore: [
 "GAMING",
-"charm"
+"charm",
+"夜明けまで"
     ]
   },
   {
