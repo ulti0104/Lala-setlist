@@ -225,7 +225,55 @@ main {
 }
 
 .setlist li {
-  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.song-name {
+  flex: 1;
+  min-width: 0;
+}
+
+.listen-btn {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.2;
+  border: none;
+  border-radius: 999px;
+  background: #fa233b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.listen-btn:hover {
+  opacity: 0.9;
+}
+
+.apple-player-section {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #f8f9fc;
+  border: 1px solid #e2e8f0;
+}
+
+.apple-player-title {
+  margin: 4px 0 12px;
+  font-size: 14px;
+  color: #555;
+  word-break: break-word;
+}
+
+.apple-player-frame {
+  width: 100%;
+  height: 175px;
+  border: 0;
+  border-radius: 12px;
+  background: #fff;
 }
 
 .memo-box {
