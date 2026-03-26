@@ -433,7 +433,7 @@ main {
 }
 
 /* ===== Apple Music Player ===== */
-/* Apple Music プレイヤー全体 /
+/* Apple Music プレイヤー全体 */
 .apple-player-section {
   margin-top: 1.5rem;
   padding: 1rem;
@@ -443,7 +443,7 @@ main {
   box-shadow: 0 10px 24px rgba(255, 120, 140, 0.08);
 }
 
-/ 曲名タイトル /
+/* 曲名タイトル */
 .apple-player-title {
   margin: 0 0 0.85rem;
   font-size: 0.95rem;
@@ -455,7 +455,7 @@ main {
   border: 1px solid rgba(255, 214, 220, 0.9);
 }
 
-/ iframe */
+/* iframe */
 .apple-player-frame {
   width: 100%;
   height: 175px;
