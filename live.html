@@ -132,15 +132,18 @@
       const li = document.createElement("li");
       li.className = "setlist-item";
 
-      const songText = document.createElement("span");
+      const songContent = document.createElement("div");
+      songContent.className = "song-content";
+
+      const songText = document.createElement("div");
       songText.className = "song-name";
       songText.textContent = song;
-      li.appendChild(songText);
+      songContent.appendChild(songText);
 
       // songLinks が存在し、かつ該当曲のURLがある場合のみボタン表示
       if (typeof songLinks !== "undefined" && songLinks[song]) {
         const button = document.createElement("button");
-        button.className = "listen-btn";
+        button.className = "listen-btn small-under";
         button.textContent = "聴く";
         button.type = "button";
         button.setAttribute("aria-label", `${song} をApple Musicで聴く`);
@@ -149,8 +152,10 @@
           showApplePlayer(song, songLinks[song]);
         });
 
-        li.appendChild(button);
+        songContent.appendChild(button);
       }
+
+      li.appendChild(songContent);
 
       return li;
     }
