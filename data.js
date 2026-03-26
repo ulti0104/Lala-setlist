@@ -12,7 +12,7 @@ const liveData = [
       "ただの口約束",
       "Jealousy",
       "浮気相手さんへ",
-      "嘘、やっぱ好きです",
+      "嘘、やっぱ好きです。",
       "泣いてばっかだったな",
       "君と同じになりたくて",
       "けいはんでんしゃ",
@@ -69,9 +69,7 @@ const liveData = [
       "泣いてばっかだったな",
       "本当に無駄な恋"
     ],
-    setlistEncore: [
-      
-    ]
+    setlistEncore: []
   },
   {
     id: "2026-03-20-osaka",
@@ -82,15 +80,13 @@ const liveData = [
     note: "",
     image: "images/20260320.jpg",
     setlistMain: [
-"メンヘラブストーリー",
-"本当に無駄な恋",
-"泣いてばっかだったな",
-"英雄になりたい",
-"Jealousy"
+      "メンヘラブストーリー",
+      "本当に無駄な恋",
+      "泣いてばっかだったな",
+      "英雄になりたい",
+      "Jealousy"
     ],
-    setlistEncore: [
-      
-    ]
+    setlistEncore: []
   },
   {
     id: "2026-02-22-okayama",
@@ -101,17 +97,15 @@ const liveData = [
     note: "",
     image: "images/20260222.jpg",
     setlistMain: [
-"死にものぐるいで恋をしていた",
-"Jealousy",
-"泣いてばっかだったな",
-"英雄になりたい",
-"本当に無駄な恋"
+      "死にものぐるいで恋をしていた",
+      "Jealousy",
+      "泣いてばっかだったな",
+      "英雄になりたい",
+      "本当に無駄な恋"
     ],
-    setlistEncore: [
-      
-    ]
+    setlistEncore: []
   },
-    {
+  {
     id: "2026-02-21-osaka",
     date: "2026-02-21",
     title: "MiMiNOKO ROCK FES JAPAN in OSAKA 2026",
@@ -120,18 +114,16 @@ const liveData = [
     note: "",
     image: "images/20260221.jpg",
     setlistMain: [
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです。",
-"泣いてばっかだったな",
-"満点人生",
-"本当に無駄な恋"
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "満点人生",
+      "本当に無駄な恋"
     ],
-    setlistEncore: [
-      
-    ]
-    },
-    {
+    setlistEncore: []
+  },
+  {
     id: "2026-01-31-aichi",
     date: "2026-01-31",
     title: "でらロックフェスティバル 2026-愛知編-",
@@ -140,17 +132,15 @@ const liveData = [
     note: "",
     image: "images/20260131.jpg",
     setlistMain: [
-"生きてるだけでいい",
-"泣いてばっかだったな",
-"英雄になりたい",
-"Jealousy",
-"本当に無駄な恋"
+      "生きてるだけでいい",
+      "泣いてばっかだったな",
+      "英雄になりたい",
+      "Jealousy",
+      "本当に無駄な恋"
     ],
-    setlistEncore: [
-      
-    ]
+    setlistEncore: []
   },
-   {
+  {
     id: "2026-01-30-aichi",
     date: "2026-01-30",
     title: "でらロックフェスティバル2026 前夜祭",
@@ -159,16 +149,16 @@ const liveData = [
     note: "",
     image: "images/20260130.jpg",
     setlistMain: [
-"君と同じになりたくて  SPver",
-"泣いてばっかだったな  SPver",
-"浮気相手さんへ",
-"英雄になりたい",
-"Jealousy",
-"ほろ酔い",
-"夜明けまで"
+      "君と同じになりたくて  SPver",
+      "泣いてばっかだったな  SPver",
+      "浮気相手さんへ",
+      "英雄になりたい",
+      "Jealousy",
+      "ほろ酔い",
+      "夜明けまで"
     ],
     setlistEncore: [
-"本当に無駄な恋"
+      "本当に無駄な恋"
     ]
   },
   {
@@ -178,23 +168,21 @@ const liveData = [
     venue: "大阪駅 うめきた広場水景前",
     city: "大阪",
     note: "",
-　image: "images/20260120.jpg",
+    image: "images/20260120.jpg",
     setlistMain: [
-"死にものぐるいで恋をしていた",
-"ただの口約束",
-"泣いてばっかだったな",
-"嘘、やっぱ好きです。",
-"キーホルダー",
-"別れのキスで",
-"Jealousy",
-"チャイムの音で（ayaho）",
-"本当に無駄な恋"
+      "死にものぐるいで恋をしていた",
+      "ただの口約束",
+      "泣いてばっかだったな",
+      "嘘、やっぱ好きです。",
+      "キーホルダー",
+      "別れのキスで",
+      "Jealousy",
+      "チャイムの音で（ayaho）",
+      "本当に無駄な恋"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
-    {
+  {
     id: "2026-01-18-tokyo",
     date: "2026-01-18",
     title: "でらロックフェスティバル2026 -東京編-",
@@ -203,18 +191,16 @@ const liveData = [
     note: "",
     image: "images/20260118.jpg",
     setlistMain: [
-"死にものぐるいで恋をしていた",
-"泣いてばっかだったな",
-"生きてるだけでいい",
-"英雄になりたい",
-"Jealousy",
-"ほろ酔い"
+      "死にものぐるいで恋をしていた",
+      "泣いてばっかだったな",
+      "生きてるだけでいい",
+      "英雄になりたい",
+      "Jealousy",
+      "ほろ酔い"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
-    {
+  {
     id: "2026-01-11-osaka",
     date: "2026-01-11",
     title: "でらロックフェスティバル2026 -大阪編-",
@@ -223,18 +209,16 @@ const liveData = [
     note: "",
     image: "images/20260111.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"泣いてばっかだったな",
-"Jealousy",
-"浮気相手さんへ",
-"メンヘラブストーリー",
-"夜明けまで"
+      "本当に無駄な恋",
+      "泣いてばっかだったな",
+      "Jealousy",
+      "浮気相手さんへ",
+      "メンヘラブストーリー",
+      "夜明けまで"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
-    {
+  {
     id: "2026-01-07-tokyo",
     date: "2026-01-07",
     title: "Noisy!!",
@@ -243,17 +227,15 @@ const liveData = [
     note: "",
     image: "images/20260107.jpg",
     setlistMain: [
-"死にものぐるいで恋をしていた",
-"泣いてばっかだったな",
-"浮気相手さんへ",
-"君と同じになりたくて",
-"マフラー",
-"Jealousy",
-"本当に無駄な恋"
+      "死にものぐるいで恋をしていた",
+      "泣いてばっかだったな",
+      "浮気相手さんへ",
+      "君と同じになりたくて",
+      "マフラー",
+      "Jealousy",
+      "本当に無駄な恋"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2026-01-03-kyoto",
@@ -262,13 +244,11 @@ const liveData = [
     venue: "京都市体育館",
     city: "京都",
     note: "",
-　  image: "images/20260103.jpg",
+    image: "images/20260103.jpg",
     setlistMain: [
-"Jealousy"
+      "Jealousy"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-12-30-tokyo",
@@ -277,17 +257,15 @@ const liveData = [
     venue: "下北沢MOSAiC",
     city: "東京",
     note: "",
-　  image: "images/20251230.jpg",
+    image: "images/20251230.jpg",
     setlistMain: [
-"Jealousy",
-"泣いてばっかだったな",
-"浮気相手さんへ",
-"メンヘラブストーリー",
-"夜明けまで"
+      "Jealousy",
+      "泣いてばっかだったな",
+      "浮気相手さんへ",
+      "メンヘラブストーリー",
+      "夜明けまで"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-12-17-aichi",
@@ -296,19 +274,17 @@ const liveData = [
     venue: "Live House R.A.D",
     city: "愛知",
     note: "",
-　　image: "images/20251217.jpg",
+    image: "images/20251217.jpg",
     setlistMain: [
-"マフラー",
-"Jealousy",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"メンヘラブストーリー",
-"本当に無駄な恋",
-"ほろ酔い"
+      "マフラー",
+      "Jealousy",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "メンヘラブストーリー",
+      "本当に無駄な恋",
+      "ほろ酔い"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-12-12-hiroshima",
@@ -317,19 +293,17 @@ const liveData = [
     venue: "広島 ALMIGHTY",
     city: "広島",
     note: "",
-　  image: "images/20251212.jpg",
+    image: "images/20251212.jpg",
     setlistMain: [
-"Jealousy",
-"泣いてばっかだったな",
-"死にものぐるいで恋をしていた",
-"君と同じになりたくて",
-"マフラー",
-"本当に無駄な恋",
-"ほろ酔い"
+      "Jealousy",
+      "泣いてばっかだったな",
+      "死にものぐるいで恋をしていた",
+      "君と同じになりたくて",
+      "マフラー",
+      "本当に無駄な恋",
+      "ほろ酔い"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-12-11-fukuoka",
@@ -338,20 +312,18 @@ const liveData = [
     venue: "福岡 Queblick",
     city: "福岡",
     note: "",
-　  image: "images/20251211.jpg",
+    image: "images/20251211.jpg",
     setlistMain: [
-"Jealousy",
-"メンヘラブストーリー",
-"泣いてばっかだったな",
-"別れのキスで",
-"君と同じになりたくて",
-"死にものぐるいで恋をしていた",
-"本当に無駄な恋",
-"ほろ酔い"
+      "Jealousy",
+      "メンヘラブストーリー",
+      "泣いてばっかだったな",
+      "別れのキスで",
+      "君と同じになりたくて",
+      "死にものぐるいで恋をしていた",
+      "本当に無駄な恋",
+      "ほろ酔い"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-12-08-tokyo",
@@ -362,15 +334,13 @@ const liveData = [
     note: "",
     image: "images/20251208.jpg",
     setlistMain: [
-"マフラー",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"Jealousy",
-"本当に無駄な恋"
+      "マフラー",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "Jealousy",
+      "本当に無駄な恋"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-11-03-osaka",
@@ -381,13 +351,11 @@ const liveData = [
     note: "",
     image: "images/20251103.jpg",
     setlistMain: [
-"Jealousy",
-"泣いてばっかだったな",
-"死にものぐるいで恋をしていた"
+      "Jealousy",
+      "泣いてばっかだったな",
+      "死にものぐるいで恋をしていた"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-11-02-tokyo",
@@ -398,15 +366,13 @@ const liveData = [
     note: "",
     image: "images/20251102.jpg",
     setlistMain: [
-"ほろ酔い",
-"Jealousy",
-"本当に無駄な恋",
-"Monster",
-"夜明けまで"
+      "ほろ酔い",
+      "Jealousy",
+      "本当に無駄な恋",
+      "Monster",
+      "夜明けまで"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-10-26-tokyo",
@@ -417,15 +383,15 @@ const liveData = [
     note: "",
     image: "images/20251026.jpg",
     setlistMain: [
-"Jealousy",
-"メンヘラブストーリー",
-"死にものぐるいで恋をしていた",
-"泣いてばっかだったな",
-"本当に無駄な恋",
-"夜明けまで"
+      "Jealousy",
+      "メンヘラブストーリー",
+      "死にものぐるいで恋をしていた",
+      "泣いてばっかだったな",
+      "本当に無駄な恋",
+      "夜明けまで"
     ],
     setlistEncore: [
-"ほろ酔い"
+      "ほろ酔い"
     ]
   },
   {
@@ -437,16 +403,14 @@ const liveData = [
     note: "",
     image: "images/20251024.jpg",
     setlistMain: [
-"ほろ酔い",
-"Jealousy",
-"死にものぐるいで恋をしていた",
-"泣いてばっかだったな",
-"本当に無駄な恋",
-"夜明けまで"
+      "ほろ酔い",
+      "Jealousy",
+      "死にものぐるいで恋をしていた",
+      "泣いてばっかだったな",
+      "本当に無駄な恋",
+      "夜明けまで"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-10-16-aichi",
@@ -457,15 +421,15 @@ const liveData = [
     note: "",
     image: "images/20251016.jpg",
     setlistMain: [
-"Jealousy",
-"メンヘラブストーリー",
-"泣いてばっかだったな",
-"死にものぐるいで恋をしていた",
-"本当に無駄な恋",
-"ほろ酔い"
+      "Jealousy",
+      "メンヘラブストーリー",
+      "泣いてばっかだったな",
+      "死にものぐるいで恋をしていた",
+      "本当に無駄な恋",
+      "ほろ酔い"
     ],
     setlistEncore: [
-"崖っぷちガール"
+      "崖っぷちガール"
     ]
   },
   {
@@ -477,16 +441,14 @@ const liveData = [
     note: "",
     image: "images/202510121.jpg",
     setlistMain: [
-"君を泣かせたい",
-"泣いてばっかだったな",
-"今更、何様?",
-"本当に無駄な恋",
-"はたち",
-"嘘、やっぱ好きです。"
+      "君を泣かせたい",
+      "泣いてばっかだったな",
+      "今更、何様？",
+      "本当に無駄な恋",
+      "はたち。",
+      "嘘、やっぱ好きです。"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-10-12-osaka2",
@@ -497,17 +459,15 @@ const liveData = [
     note: "",
     image: "images/202510122.jpg",
     setlistMain: [
-"死にものぐるいで恋をしていた",
-"Jealousy",
-"泣いてばっかだったな",
-"メンへラブストーリー",
-"本当に無駄な恋",
-"Mellow",
-"夜明けまで"
+      "死にものぐるいで恋をしていた",
+      "Jealousy",
+      "泣いてばっかだったな",
+      "メンヘラブストーリー",
+      "本当に無駄な恋",
+      "Mellow",
+      "夜明けまで"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-10-12-osaka3",
@@ -518,16 +478,14 @@ const liveData = [
     note: "",
     image: "images/202510123.jpg",
     setlistMain: [
-"愛ゆえに",
-"崖っぷちガール",
-"別れのキスで",
-"泣いてばっかだったな",
-"本当に無駄な恋",
-"ほろ酔い"
+      "愛ゆえに",
+      "崖っぷちガール",
+      "別れのキスで",
+      "泣いてばっかだったな",
+      "本当に無駄な恋",
+      "ほろ酔い"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-10-11-aichi",
@@ -538,18 +496,16 @@ const liveData = [
     note: "",
     image: "images/20251011.jpg",
     setlistMain: [
-"メンヘラブストーリー",
-"Jealousy",
-"嘘、やっぱ好きです。",
-"本当に無駄な恋",
-"別れのキスで",
-"泣いてばっかだったな",
-"愛ゆえに",
-"ほろ酔い"
+      "メンヘラブストーリー",
+      "Jealousy",
+      "嘘、やっぱ好きです。",
+      "本当に無駄な恋",
+      "別れのキスで",
+      "泣いてばっかだったな",
+      "愛ゆえに",
+      "ほろ酔い"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-10-06-tokyo",
@@ -560,18 +516,16 @@ const liveData = [
     note: "",
     image: "images/20251006.jpg",
     setlistMain: [
-"愛ゆえに",
-"泣いてばっかだったな",
-"嘘、やっぱ好きです。",
-"本当に無駄な恋",
-"死にものぐるいで恋をしていた",
-"ほろ酔い"
+      "愛ゆえに",
+      "泣いてばっかだったな",
+      "嘘、やっぱ好きです。",
+      "本当に無駄な恋",
+      "死にものぐるいで恋をしていた",
+      "ほろ酔い"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
-    {
+  {
     id: "2025-09-23-tokyo",
     date: "2025-09-23",
     title: "TOKYO CALLING 2025",
@@ -580,16 +534,14 @@ const liveData = [
     note: "",
     image: "images/20250923.jpg",
     setlistMain: [
-"メンヘラブストーリー",
-"愛ゆえに",
-"嘘、やっぱ好きです。",
-"泣いてばっかだったな",
-"死にものぐるいで恋をしていた",
-"ほろ酔い"
+      "メンヘラブストーリー",
+      "愛ゆえに",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "死にものぐるいで恋をしていた",
+      "ほろ酔い"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-09-16-osaka",
@@ -600,19 +552,17 @@ const liveData = [
     note: "",
     image: "images/20250916.jpg",
     setlistMain: [
-"愛ゆえに",
-"泣いてばっかだったな",
-"嘘、やっぱ好きです。",
-"崖っぷちガール",
-"死にものぐるいで恋をしていた",
-"メンヘラブストーリー",
-"ほろ酔い"
+      "愛ゆえに",
+      "泣いてばっかだったな",
+      "嘘、やっぱ好きです。",
+      "崖っぷちガール",
+      "死にものぐるいで恋をしていた",
+      "メンヘラブストーリー",
+      "ほろ酔い"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
-    {
+  {
     id: "2025-09-14-aichi",
     date: "2025-09-14",
     title: "至福ぽんちょ自主企画「⾄福のひととき」 vol.1",
@@ -621,16 +571,14 @@ const liveData = [
     note: "",
     image: "images/20250914.jpg",
     setlistMain: [
-"Jealousy",
-"崖っぷちガール",
-"死にものぐるいで恋をしていた",
-"嘘、やっぱ好きです。",
-"泣いてばっかだったな",
-"夜明けまで"
+      "Jealousy",
+      "崖っぷちガール",
+      "死にものぐるいで恋をしていた",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "夜明けまで"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-06-19-osaka",
@@ -639,19 +587,17 @@ const liveData = [
     venue: "Music Club JANUS",
     city: "大阪",
     note: "",
-　image: "",
+    image: "",
     setlistMain: [
-"もし君の恋人になれたら",
-"泣いてばっかだったな",
-"はたち。",
-"「あたしだけ。」",
-"死にものぐるいで恋をしていた",
-"月が綺麗に見えるのは",
-"Monster"
+      "もし君の恋人になれたら",
+      "泣いてばっかだったな",
+      "はたち。",
+      "「あたしだけ。」",
+      "死にものぐるいで恋をしていた",
+      "月が綺麗に見えるのは",
+      "Monster"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-09-02-kyoto",
@@ -660,20 +606,18 @@ const liveData = [
     venue: "京都MUSE",
     city: "京都",
     note: "",
-　image: "",
+    image: "",
     setlistMain: [
-"もし君の恋人になれたら",
-"サーチライト",
-"嘘、やっぱ好きです。",
-"泣いてばっかだったな",
-"死にものぐるいで恋をしていた",
-"崖っぷちガール",
-"Jealousy",
-"ほろ酔い"
+      "もし君の恋人になれたら",
+      "サーチライト",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "死にものぐるいで恋をしていた",
+      "崖っぷちガール",
+      "Jealousy",
+      "ほろ酔い"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2026-01-14-hokkaido",
@@ -682,28 +626,28 @@ const liveData = [
     venue: "札幌Crazy Monkey",
     city: "北海道",
     note: "",
-　image: "images/charmtour.jpg",
+    image: "images/charmtour.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"ただの口約束",
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"サーチライト",
-"キーホルダー",
-"生きてるだけでいい",
-"マフラー",
-"英雄になりたい",
-"死にものぐるいで恋をしていた",
-"NEVER MIND!!!",
-"メンヘラブストーリー",
-"Find me Find you"
+      "本当に無駄な恋",
+      "ただの口約束",
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "サーチライト",
+      "キーホルダー",
+      "生きてるだけでいい",
+      "マフラー",
+      "英雄になりたい",
+      "死にものぐるいで恋をしていた",
+      "NEVER MIND!!!",
+      "メンヘラブストーリー",
+      "Find me Find you"
     ],
     setlistEncore: [
-"GAMING",
-"charm"
+      "GAMING",
+      "charm"
     ]
   },
   {
@@ -713,28 +657,28 @@ const liveData = [
     venue: "西川口Hearts",
     city: "埼玉",
     note: "",
-　image: "images/charmtour.jpg",
+    image: "images/charmtour.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"ただの口約束",
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"サーチライト",
-"キーホルダー",
-"生きてるだけでいい",
-"マフラー",
-"英雄になりたい",
-"死にものぐるいで恋をしていた",
-"NEVER MIND!!!",
-"メンヘラブストーリー",
-"Find me Find you"
+      "本当に無駄な恋",
+      "ただの口約束",
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "サーチライト",
+      "キーホルダー",
+      "生きてるだけでいい",
+      "マフラー",
+      "英雄になりたい",
+      "死にものぐるいで恋をしていた",
+      "NEVER MIND!!!",
+      "メンヘラブストーリー",
+      "Find me Find you"
     ],
     setlistEncore: [
-"GAMING",
-"charm"
+      "GAMING",
+      "charm"
     ]
   },
   {
@@ -744,28 +688,28 @@ const liveData = [
     venue: "SIX ONE",
     city: "広島",
     note: "",
-　image: "images/charmtour.jpg",
+    image: "images/charmtour.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"ただの口約束",
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"サーチライト",
-"キーホルダー",
-"生きてるだけでいい",
-"マフラー",
-"英雄になりたい",
-"死にものぐるいで恋をしていた",
-"NEVER MIND!!!",
-"メンヘラブストーリー",
-"Find me Find you"
+      "本当に無駄な恋",
+      "ただの口約束",
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "サーチライト",
+      "キーホルダー",
+      "生きてるだけでいい",
+      "マフラー",
+      "英雄になりたい",
+      "死にものぐるいで恋をしていた",
+      "NEVER MIND!!!",
+      "メンヘラブストーリー",
+      "Find me Find you"
     ],
     setlistEncore: [
-"GAMING",
-"charm"
+      "GAMING",
+      "charm"
     ]
   },
   {
@@ -775,28 +719,28 @@ const liveData = [
     venue: "高松TOONICE",
     city: "香川",
     note: "MC-香川と高松迷って か！か！ま！つ！",
-　image: "images/charmtour.jpg",
+    image: "images/charmtour.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"ただの口約束",
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"サーチライト",
-"キーホルダー",
-"生きてるだけでいい",
-"マフラー",
-"英雄になりたい",
-"死にものぐるいで恋をしていた",
-"NEVER MIND!!!",
-"メンヘラブストーリー",
-"Find me Find you"
+      "本当に無駄な恋",
+      "ただの口約束",
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "サーチライト",
+      "キーホルダー",
+      "生きてるだけでいい",
+      "マフラー",
+      "英雄になりたい",
+      "死にものぐるいで恋をしていた",
+      "NEVER MIND!!!",
+      "メンヘラブストーリー",
+      "Find me Find you"
     ],
     setlistEncore: [
-"GAMING",
-"charm"
+      "GAMING",
+      "charm"
     ]
   },
   {
@@ -806,29 +750,29 @@ const liveData = [
     venue: "Live House 秘密",
     city: "福岡",
     note: "",
-　image: "images/charmtour.jpg",
+    image: "images/charmtour.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"ただの口約束",
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"サーチライト",
-"キーホルダー",
-"生きてるだけでいい",
-"マフラー",
-"英雄になりたい",
-"死にものぐるいで恋をしていた",
-"NEVER MIND!!!",
-"メンヘラブストーリー",
-"Find me Find you"
+      "本当に無駄な恋",
+      "ただの口約束",
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "サーチライト",
+      "キーホルダー",
+      "生きてるだけでいい",
+      "マフラー",
+      "英雄になりたい",
+      "死にものぐるいで恋をしていた",
+      "NEVER MIND!!!",
+      "メンヘラブストーリー",
+      "Find me Find you"
     ],
     setlistEncore: [
-"GAMING",
-"charm",
-"夜明けまで"
+      "GAMING",
+      "charm",
+      "夜明けまで"
     ]
   },
   {
@@ -838,28 +782,28 @@ const liveData = [
     venue: "Yogibo META VALLEY",
     city: "大阪",
     note: "",
-　image: "images/charmtour.jpg",
+    image: "images/charmtour.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"ただの口約束",
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"君がいなくなったくらいじゃ",
-"キーホルダー",
-"生きてるだけでいい",
-"マフラー",
-"英雄になりたい",
-"死にものぐるいで恋をしていた",
-"NEVER MIND!!!",
-"メンヘラブストーリー",
-"Find me Find you"
+      "本当に無駄な恋",
+      "ただの口約束",
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "君がいなくなったくらいじゃ",
+      "キーホルダー",
+      "生きてるだけでいい",
+      "マフラー",
+      "英雄になりたい",
+      "死にものぐるいで恋をしていた",
+      "NEVER MIND!!!",
+      "メンヘラブストーリー",
+      "Find me Find you"
     ],
     setlistEncore: [
-"GAMING",
-"charm"
+      "GAMING",
+      "charm"
     ]
   },
   {
@@ -869,29 +813,29 @@ const liveData = [
     venue: "横浜BAYSIS",
     city: "神奈川",
     note: "",
-　image: "images/charmtour.jpg",
+    image: "images/charmtour.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"ただの口約束",
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"君がいなくなったくらいじゃ",
-"キーホルダー",
-"生きてるだけでいい",
-"マフラー",
-"英雄になりたい",
-"死にものぐるいで恋をしていた",
-"NEVER MIND!!!",
-"メンヘラブストーリー",
-"Find me Find you"
+      "本当に無駄な恋",
+      "ただの口約束",
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "君がいなくなったくらいじゃ",
+      "キーホルダー",
+      "生きてるだけでいい",
+      "マフラー",
+      "英雄になりたい",
+      "死にものぐるいで恋をしていた",
+      "NEVER MIND!!!",
+      "メンヘラブストーリー",
+      "Find me Find you"
     ],
     setlistEncore: [
-"満点人生",
-"GAMING",
-"charm"
+      "満点人生",
+      "GAMING",
+      "charm"
     ]
   },
   {
@@ -901,29 +845,29 @@ const liveData = [
     venue: "仙台enn 3rd",
     city: "宮城",
     note: "牛タンMC大ウケ",
-　image: "images/charmtour.jpg",
+    image: "images/charmtour.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"ただの口約束",
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"君がいなくなったくらいじゃ",
-"キーホルダー",
-"生きてるだけでいい",
-"マフラー",
-"英雄になりたい",
-"死にものぐるいで恋をしていた",
-"NEVER MIND!!!",
-"メンヘラブストーリー",
-"Find me Find you"
+      "本当に無駄な恋",
+      "ただの口約束",
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "君がいなくなったくらいじゃ",
+      "キーホルダー",
+      "生きてるだけでいい",
+      "マフラー",
+      "英雄になりたい",
+      "死にものぐるいで恋をしていた",
+      "NEVER MIND!!!",
+      "メンヘラブストーリー",
+      "Find me Find you"
     ],
     setlistEncore: [
-"満点人生",
-"GAMING",
-"charm"
+      "満点人生",
+      "GAMING",
+      "charm"
     ]
   },
   {
@@ -933,29 +877,29 @@ const liveData = [
     venue: "浜松FORCE",
     city: "静岡",
     note: "さやわかMC伝説級の大ウケ",
-　image: "images/charmtour.jpg",
+    image: "images/charmtour.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"ただの口約束",
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"君がいなくなったくらいじゃ",
-"キーホルダー",
-"生きてるだけでいい",
-"マフラー",
-"英雄になりたい",
-"死にものぐるいで恋をしていた",
-"NEVER MIND!!!",
-"メンヘラブストーリー",
-"Find me Find you"
+      "本当に無駄な恋",
+      "ただの口約束",
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "君がいなくなったくらいじゃ",
+      "キーホルダー",
+      "生きてるだけでいい",
+      "マフラー",
+      "英雄になりたい",
+      "死にものぐるいで恋をしていた",
+      "NEVER MIND!!!",
+      "メンヘラブストーリー",
+      "Find me Find you"
     ],
     setlistEncore: [
-"満点人生",
-"GAMING",
-"charm"
+      "満点人生",
+      "GAMING",
+      "charm"
     ]
   },
   {
@@ -965,30 +909,30 @@ const liveData = [
     venue: "ell.FITS ALL",
     city: "愛知",
     note: "",
-　image: "images/charmtour.jpg",
+    image: "images/charmtour.jpg",
     setlistMain: [
-"本当に無駄な恋",
-"ただの口約束",
-"Jealousy",
-"浮気相手さんへ",
-"嘘、やっぱ好きです",
-"泣いてばっかだったな",
-"君と同じになりたくて",
-"君がいなくなったくらいじゃ",
-"キーホルダー",
-"生きてるだけでいい",
-"マフラー",
-"英雄になりたい",
-"けいはんでんしゃ",
-"死にものぐるいで恋をしていた",
-"NEVER MIND!!!",
-"メンヘラブストーリー",
-"Find me Find you"
+      "本当に無駄な恋",
+      "ただの口約束",
+      "Jealousy",
+      "浮気相手さんへ",
+      "嘘、やっぱ好きです。",
+      "泣いてばっかだったな",
+      "君と同じになりたくて",
+      "君がいなくなったくらいじゃ",
+      "キーホルダー",
+      "生きてるだけでいい",
+      "マフラー",
+      "英雄になりたい",
+      "けいはんでんしゃ",
+      "死にものぐるいで恋をしていた",
+      "NEVER MIND!!!",
+      "メンヘラブストーリー",
+      "Find me Find you"
     ],
     setlistEncore: [
-"満点人生",
-"GAMING",
-"charm"
+      "満点人生",
+      "GAMING",
+      "charm"
     ]
   },
   {
@@ -998,17 +942,15 @@ const liveData = [
     venue: "ヨドコウ桜スタジアム",
     city: "大阪",
     note: "",
-　image: "images/20250621.jpg",
+    image: "images/20250621.jpg",
     setlistMain: [
-"Jealousy",
-"崖っぷちガール",
-"泣いてばっかだったな",
-"はたち。",
-"死にものぐるいで恋をしていた"
+      "Jealousy",
+      "崖っぷちガール",
+      "泣いてばっかだったな",
+      "はたち。",
+      "死にものぐるいで恋をしていた"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   },
   {
     id: "2025-06-21-osaka2",
@@ -1017,18 +959,14 @@ const liveData = [
     venue: "ヨドコウ桜スタジアム",
     city: "大阪",
     note: "",
-　image: "images/20250621.jpg",
+    image: "images/20250621.jpg",
     setlistMain: [
-"君を泣かせたい",
-"今更、何様？",
-"22歳",
-"泣いてばっかだったな",
-"崖っぷちガール"
+      "君を泣かせたい",
+      "今更、何様？",
+      "22歳",
+      "泣いてばっかだったな",
+      "崖っぷちガール"
     ],
-    setlistEncore: [
-
-    ]
+    setlistEncore: []
   }
-
-  
 ];
