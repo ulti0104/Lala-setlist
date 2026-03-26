@@ -90,6 +90,7 @@
   </footer>
 
   <script src="data.js"></script>
+  <script src="songLinks.js"></script>
   <script>
     function toAppleEmbedUrl(url) {
       if (!url) return "";
@@ -124,11 +125,11 @@
 
     function createSongItem(song) {
       const li = document.createElement("li");
+      li.className = "setlist-item";
 
       const songText = document.createElement("span");
       songText.className = "song-name";
       songText.textContent = song;
-
       li.appendChild(songText);
 
       // songLinks が存在し、かつ該当曲のURLがある場合のみボタン表示
@@ -137,6 +138,7 @@
         button.className = "listen-btn";
         button.textContent = "聴く";
         button.type = "button";
+        button.setAttribute("aria-label", `${song} をApple Musicで聴く`);
 
         button.addEventListener("click", () => {
           showApplePlayer(song, songLinks[song]);
