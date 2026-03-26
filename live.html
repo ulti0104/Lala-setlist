@@ -41,6 +41,11 @@
         <div><strong>都市：</strong><span id="metaCity"></span></div>
       </div>
 
+      <!-- コピーボタン -->
+      <div class="copy-actions">
+        <button id="copySetlistButton" class="copy-setlist-btn" type="button">セットリストをコピー</button>
+      </div>
+
       <section>
         <h3 class="detail-section-title">本編</h3>
         <div class="setlist-box">
@@ -150,11 +155,49 @@
       return li;
     }
 
+    async function copySetlistText(live) {
+      if (!live) return;
+
+      const lines = [];
+
+      // 本編
+      (live.setlistMain || []).forEach((song, index) => {
+        lines.push(`${index + 1}. ${song}`);
+      });
+
+      // アンコール
+      if (live.setlistEncore && live.setlistEncore.length > 0) {
+        lines.push("");
+        lines.push("【アンコール】");
+        live.setlistEncore.forEach((song, index) => {
+          lines.push(`${index + 1}. ${song}`);
+        });
+      }
+
+      const text = lines.join("\n");
+
+      try {
+        await navigator.clipboard.writeText(text);
+        const btn = document.getElementById("copySetlistButton");
+        if (btn) {
+          const original = btn.textContent;
+          btn.textContent = "コピーしました！";
+          setTimeout(() => {
+            btn.textContent = original;
+          }, 1600);
+        }
+      } catch (error) {
+        alert("コピーに失敗しました。");
+        console.error(error);
+      }
+    }
+
     const params = new URLSearchParams(window.location.search);
     const liveId = params.get("id");
 
     const detailCard = document.getElementById("detailCard");
     const notFoundCard = document.getElementById("notFoundCard");
+    const copySetlistButton = document.getElementById("copySetlistButton");
 
     const live = liveData.find(item => item.id === liveId);
 
@@ -183,7 +226,7 @@
       }
 
       const mainSetlist = document.getElementById("mainSetlist");
-      live.setlistMain.forEach(song => {
+      (live.setlistMain || []).forEach(song => {
         mainSetlist.appendChild(createSongItem(song));
       });
 
@@ -205,6 +248,10 @@
         memoSection.style.display = "block";
         memoText.textContent = live.note;
       }
+
+      copySetlistButton.addEventListener("click", () => {
+        copySetlistText(live);
+      });
 
       detailCard.style.display = "block";
     }
