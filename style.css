@@ -47,6 +47,16 @@ a {
   opacity: 0.95;
 }
 
+.site-desc a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-desc a:hover {
+  opacity: 0.9;
+}
+
 /* ===== Main ===== */
 main {
   padding: 24px 0 48px;
@@ -97,6 +107,14 @@ main {
   margin-bottom: 18px;
 }
 
+.search-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #374151;
+}
+
 .search-input {
   width: 100%;
   border: 1px solid #d1d5db;
@@ -105,11 +123,57 @@ main {
   font-size: 1rem;
   background: #fff;
   outline: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .search-input:focus {
   border-color: #7c3aed;
   box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
+}
+
+/* ===== Filter Buttons ===== */
+.filter-actions {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.clear-button,
+.oneman-button {
+  appearance: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  min-width: 110px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+}
+
+.clear-button {
+  background: #ede9fe;
+  color: #5b21b6;
+  box-shadow: 0 4px 10px rgba(91, 33, 182, 0.08);
+}
+
+.oneman-button {
+  background: #e0f2fe;
+  color: #075985;
+  box-shadow: 0 4px 10px rgba(7, 89, 133, 0.08);
+}
+
+.clear-button:hover,
+.oneman-button:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
 }
 
 /* ===== Live List ===== */
@@ -173,6 +237,18 @@ main {
   font-size: 0.95rem;
 }
 
+.song-hit-badge {
+  margin: 10px 0 0;
+  display: inline-block;
+  background: #ecfeff;
+  color: #0f766e;
+  border: 1px solid #a5f3fc;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .empty-text {
   margin: 18px 0 0;
   color: #6b7280;
@@ -191,6 +267,13 @@ main {
   border: 1px solid #eceff5;
 }
 
+.detail-title {
+  margin: 0 0 12px;
+  font-size: clamp(1.5rem, 5vw, 2.1rem);
+  line-height: 1.35;
+  color: #111827;
+}
+
 .detail-meta {
   display: grid;
   gap: 8px;
@@ -199,66 +282,67 @@ main {
   font-size: 0.95rem;
 }
 
-.detail-title {
-  margin: 0 0 12px;
-  font-size: clamp(1.5rem, 5vw, 2.1rem);
-  line-height: 1.35;
-  color: #111827;
-}
-
-/* 通常の見出し */
 .detail-section-title {
   margin: 24px 0 12px;
   font-size: 1.2rem;
   color: #111827;
 }
 
-/* セットリスト見出し + コピーボタン */
-.detail-section-title-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin: 24px 0 12px;
-  flex-wrap: wrap;
+/* ===== Detail Image ===== */
+.detail-image-wrap {
+  margin: 0 0 20px;
 }
 
-.detail-section-title-row .detail-section-title {
-  margin: 0;
+.detail-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.1);
 }
 
-/* コピーボタン */
+/* ===== Copy Button ===== */
+.copy-actions {
+  margin: 16px 0 20px;
+}
+
 .copy-setlist-btn {
   appearance: none;
   border: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #e0f2fe;
-  color: #0369a1;
+  background: linear-gradient(135deg, #e0f2fe, #eef2ff);
+  color: #334155;
   font-weight: 700;
   border-radius: 999px;
-  padding: 8px 14px;
-  min-width: 72px;
+  padding: 10px 16px;
+  min-width: 140px;
   cursor: pointer;
   font-size: 0.9rem;
   line-height: 1.2;
   white-space: nowrap;
-  flex-shrink: 0;
+  box-shadow: 0 6px 14px rgba(148, 163, 184, 0.14);
+  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
 }
 
 .copy-setlist-btn:hover {
-  opacity: 0.9;
+  opacity: 0.96;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(148, 163, 184, 0.18);
 }
 
+/* ===== Setlist ===== */
 .setlist-box {
-  background: #f8fafc;
+  background: linear-gradient(180deg, #f8fbff 0%, #f8fafc 100%);
   border: 1px solid #e5e7eb;
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 18px 18px 18px 24px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .setlist {
@@ -267,73 +351,86 @@ main {
 }
 
 .setlist li {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .setlist li:last-child {
   margin-bottom: 0;
 }
 
-/* セトリ1行（曲名 + ボタン） */
+/* セトリ1行（下ボタン版） */
 .setlist-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px;
   width: 100%;
-  flex-wrap: nowrap;
+}
+
+/* 曲名 + ボタンのまとまり */
+.song-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
 }
 
 /* 曲名 */
 .song-name {
-  flex: 1;
-  min-width: 0;
-  line-height: 1.7;
+  display: block;
+  line-height: 1.75;
   word-break: break-word;
   overflow-wrap: anywhere;
+  color: #111827;
 }
 
-/* 聴くボタン */
-.listen-btn {
-  flex-shrink: 0;
+/* 聴くボタン（下に小さく / おしゃれ版） */
+.listen-btn.small-under {
+  appearance: none;
+  border: 1px solid #fbcfe8;
+  background: linear-gradient(135deg, #fff1f6, #ffe4ef);
+  color: #be185d;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 6px;
-  padding: 5px 10px;
-  min-width: 52px;
-  font-size: 12px;
-  line-height: 1.2;
+  gap: 4px;
+  font-size: 11px;
+  line-height: 1;
   font-weight: 700;
-  border: none;
+  padding: 6px 11px;
   border-radius: 999px;
-  background: #fa233b;
-  color: #fff;
   cursor: pointer;
   white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(244, 114, 182, 0.12);
+  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
 }
 
-.listen-btn:hover {
-  opacity: 0.9;
+.listen-btn.small-under::before {
+  content: "♪";
+  font-size: 10px;
+  line-height: 1;
 }
 
-/* Apple Music プレイヤー */
+.listen-btn.small-under:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(244, 114, 182, 0.16);
+}
+
+/* ===== Apple Music Player ===== */
 .apple-player-section {
-  margin-top: 20px;
+  margin-top: 22px;
   padding: 16px;
-  border-radius: 14px;
-  background: #f8f9fc;
-  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fdf2f8 0%, #f8fafc 100%);
+  border: 1px solid #f3d5e4;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
 }
 
 .apple-player-title {
   margin: 4px 0 12px;
   font-size: 14px;
   font-weight: 700;
-  color: #555;
+  color: #6b7280;
   word-break: break-word;
 }
 
@@ -346,9 +443,10 @@ main {
   background: #fff;
 }
 
+/* ===== Memo ===== */
 .memo-box {
   margin-top: 18px;
-  background: #faf5ff;
+  background: linear-gradient(180deg, #faf5ff 0%, #fdfaff 100%);
   border: 1px solid #ead8ff;
   border-radius: 16px;
   padding: 16px;
@@ -359,6 +457,7 @@ main {
   white-space: pre-line;
 }
 
+/* ===== Back Link ===== */
 .back-link {
   display: inline-block;
   margin-top: 20px;
@@ -392,78 +491,4 @@ main {
   .apple-player-frame {
     height: 175px;
   }
-}
-
-/* ===== Extra Search UI ===== */
-.search-label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: #374151;
-}
-
-.filter-actions {
-  margin-bottom: 18px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.clear-button {
-  appearance: none;
-  border: none;
-  background: #ede9fe;
-  color: #5b21b6;
-  font-weight: 700;
-  border-radius: 999px;
-  padding: 10px 14px;
-  cursor: pointer;
-  font-size: 0.92rem;
-}
-
-.oneman-button {
-  appearance: none;
-  border: none;
-  background: #eef2ff;
-  color: #4338ca;
-  font-weight: 700;
-  border-radius: 999px;
-  padding: 10px 14px;
-  cursor: pointer;
-  font-size: 0.92rem;
-}
-
-.clear-button:hover {
-  opacity: 0.9;
-}
-
-.oneman-button:hover {
-  opacity: 0.9;
-}
-
-.song-hit-badge {
-  margin: 10px 0 0;
-  display: inline-block;
-  background: #ecfeff;
-  color: #0f766e;
-  border: 1px solid #a5f3fc;
-  border-radius: 999px;
-  padding: 4px 10px;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-/* ===== Detail Image ===== */
-.detail-image-wrap {
-  margin: 0 0 20px;
-}
-
-.detail-image {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  border-radius: 14px;
-  object-fit: cover;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
