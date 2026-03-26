@@ -13,7 +13,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-FFBFNCYXK6');
   </script>
 </head>
@@ -135,7 +134,7 @@
       const songContent = document.createElement("div");
       songContent.className = "song-content";
 
-      const songText = document.createElement("div");
+      const songText = document.createElement("span");
       songText.className = "song-name";
       songText.textContent = song;
       songContent.appendChild(songText);
@@ -143,7 +142,7 @@
       // songLinks が存在し、かつ該当曲のURLがある場合のみボタン表示
       if (typeof songLinks !== "undefined" && songLinks[song]) {
         const button = document.createElement("button");
-        button.className = "listen-btn small-under";
+        button.className = "listen-btn inline-mini";
         button.textContent = "▶︎";
         button.type = "button";
         button.setAttribute("aria-label", `${song} をApple Musicで聴く`);
