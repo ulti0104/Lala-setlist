@@ -639,7 +639,7 @@ const liveData = [
     venue: "Music Club JANUS",
     city: "大阪",
     note: "",
-    image: "",
+    image: "images/20250619.jpg",
     setlistMain: [
       "もし君の恋人になれたら",
       "泣いてばっかだったな",
@@ -658,7 +658,7 @@ const liveData = [
     venue: "京都MUSE",
     city: "京都",
     note: "",
-    image: "",
+    image: "images/20250902.jpg",
     setlistMain: [
       "もし君の恋人になれたら",
       "サーチライト",
@@ -1020,5 +1020,96 @@ const liveData = [
       "崖っぷちガール"
     ],
     setlistEncore: []
+  },
+  {
+    id: "2023-12-13-osaka",
+    date: "2023-12-13",
+    title: "Lala ONEMAN LIVE 「メイクオーバー」",
+    venue: "梅田Shangri-La",
+    city: "大阪",
+    note: "",
+　image: "images/20231213.jpg",
+    setlistMain: [
+
+"君を泣かせたい",
+"崖っぷちガール",
+"DATE",
+"余計なお世話",
+"最低限君がいなくても",
+"あたしだけ",
+"だまされてあげる",
+"別れのキスで",
+"Jealousy",
+"ほろ酔い",
+"はたち。",
+"死にものぐるいで恋をしていた"
+    ],
+    setlistEncore: [
+"月が綺麗に見えるのは",
+"夜明けまで"
+    ]
+  },
+  {
+    id: "2024-12-03-aichi",
+    date: "2024-12-03",
+    title: "SUNDAY FOLK PROMOTION presents NO TITLE vol.3",
+    venue: " 新栄 SPADE BOX",
+    city: "愛知",
+    note: "",
+　image: "images/20241203.jpg",
+    setlistMain: [
+"サーチライト",
+"﻿死にものぐるいで恋をしていた",
+"﻿﻿Jealousy",
+"﻿別れのキスで",
+"﻿はたち。",
+"﻿「あたしだけ。」",
+"22歳",
+"﻿ほろ酔い",
+"﻿夜明けまで"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2025-02-08-aichi",
+    date: "2025-02-08",
+    title: "浪漫派マシュマロ 燦燦と輝いてツアー",
+    venue: " 名古屋RAD SEVEN",
+    city: "愛知",
+    note: "",
+　image: "images/20250208.jpg",
+    setlistMain: [
+"マフラー",
+"Jealousy",
+"愛ゆえに",
+"死にものぐるいで恋をしていた",
+"ほろ酔い",
+"夜明けまで"
+    ],
+    setlistEncore: [
+
+    ]
+  },
+  {
+    id: "2024-10-13-osaka",
+    date: "2024-10-13",
+    title: "MINAMI WHEEL2024",
+    venue: "アメリカ村 DROP",
+    city: "大阪",
+    note: "",
+　image: "images/20241013.jpg",
+    setlistMain: [
+"Jealousy",
+"22歳",
+"別れのキスで",
+"あたしだけ",
+"死にものぐるいで恋をしていた",
+"ほろ酔い"
+    ],
+    setlistEncore: [
+
+    ]
   }
 ];
