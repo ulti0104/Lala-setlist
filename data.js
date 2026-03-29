@@ -1109,5 +1109,24 @@ window.liveData = [
     setlistEncore: [
 
     ]
-  }
+  },
+  {
+  id: "2026-03-29-osaka",
+  date: "2026-03-29",
+  title: "Eggsレコメンライブ+ 10th Anniversary tour 〜OSAKA〜",
+  venue: "LIVE SQUARE 2nd LINE",
+  city: "大阪",
+  note: "",
+  image: "images/20260329.jpg",
+  setlistMain: [
+    "Jealousy",
+    "死にものぐるいで恋をしていた",
+    "泣いてばっかだったな",
+    "本当に無駄な恋",
+    "ほろ酔い"
+  ],
+  setlistEncore: [
+    "夜明けまで"
+]
+}
 ];
