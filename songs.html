@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>曲一覧 | Lala セトリまとめ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>曲一覧</h1>
+      <p class="subtitle">Lala セトリまとめ</p>
+
+      <div class="official-links">
+        <a href="https://x.com/lala_official20?s=21" target="_blank" rel="noopener noreferrer" class="official-link">X</a>
+        <a href="https://www.instagram.com/lala_official_band" target="_blank" rel="noopener noreferrer" class="official-link">Instagram</a>
+        <a href="https://www.tiktok.com/@lala_official_1213?_r=1&_t=ZS-952VOtI3p2a" target="_blank" rel="noopener noreferrer" class="official-link">TikTok</a>
+      </div>
+
+      <div class="songs-header-actions">
+        <a href="index.html" class="back-link-btn">← セトリ一覧へ</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="songs-page-card">
+        <div class="songs-page-top">
+          <input
+            type="text"
+            id="songSearchInput"
+            class="search-input"
+            placeholder="曲名で検索"
+          />
+        </div>
+
+        <ul id="songsList" class="songs-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="songs.js"></script>
+</body>
+</html>
