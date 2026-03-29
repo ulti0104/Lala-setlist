@@ -1031,47 +1031,45 @@ const liveData = [
 　image: "images/20231213.jpg",
     setlistMain: [
 
-"君を泣かせたい",
-"崖っぷちガール",
-"DATE",
-"余計なお世話",
-"最低限、君がいなくても",
-"「あたしだけ。」",
-"だまされてあげる",
-"別れのキスで",
-"Jealousy",
-"ほろ酔い",
-"はたち。",
-"死にものぐるいで恋をしていた"
+    "君を泣かせたい",
+    "崖っぷちガール",
+    "DATE",
+    "余計なお世話",
+    "最低限、君がいなくても",
+    "「あたしだけ。」",
+    "だまされてあげる",
+    "別れのキスで",
+    "Jealousy",
+    "ほろ酔い",
+    "はたち。",
+    "死にものぐるいで恋をしていた"
     ],
     setlistEncore: [
-"月が綺麗に見えるのは",
-"夜明けまで"
+    "月が綺麗に見えるのは",
+    "夜明けまで"
     ]
   },
   {
-    id: "2024-12-03-aichi",
-    date: "2024-12-03",
-    title: "SUNDAY FOLK PROMOTION presents NO TITLE vol.3",
-    venue: " 新栄 SPADE BOX",
-    city: "愛知",
-    note: "",
-　image: "images/20241203.jpg",
-    setlistMain: [
-"サーチライト",
-"﻿死にものぐるいで恋をしていた",
-"﻿﻿Jealousy",
-"﻿別れのキスで",
-"﻿はたち。",
-"﻿「あたしだけ。」",
-"22歳",
-"﻿ほろ酔い",
-"﻿夜明けまで"
-    ],
-    setlistEncore: [
-
-    ]
-  },
+  id: "2024-12-03-aichi",
+  date: "2024-12-03",
+  title: "SUNDAY FOLK PROMOTION presents NO TITLE vol.3",
+  venue: "新栄 SPADE BOX",
+  city: "愛知",
+  note: "",
+  image: "images/20241203.jpg",
+  setlistMain: [
+    "サーチライト",
+    "死にものぐるいで恋をしていた",
+    "Jealousy",
+    "別れのキスで",
+    "はたち。",
+    "「あたしだけ。」",
+    "22歳",
+    "ほろ酔い",
+    "夜明けまで"
+  ],
+  setlistEncore: []
+},
   {
     id: "2025-02-08-aichi",
     date: "2025-02-08",
@@ -1081,12 +1079,12 @@ const liveData = [
     note: "",
 　image: "images/20250208.jpg",
     setlistMain: [
-"マフラー",
-"Jealousy",
-"愛ゆえに",
-"死にものぐるいで恋をしていた",
-"ほろ酔い",
-"夜明けまで"
+    "マフラー",
+    "Jealousy",
+    "愛ゆえに",
+    "死にものぐるいで恋をしていた",
+    "ほろ酔い",
+    "夜明けまで"
     ],
     setlistEncore: [
 
@@ -1101,12 +1099,12 @@ const liveData = [
     note: "",
 　image: "images/20241013.jpg",
     setlistMain: [
-"Jealousy",
-"22歳",
-"別れのキスで",
-"「あたしだけ。」",
-"死にものぐるいで恋をしていた",
-"ほろ酔い"
+    "Jealousy",
+    "22歳",
+    "別れのキスで",
+    "「あたしだけ。」",
+    "死にものぐるいで恋をしていた",
+    "ほろ酔い"
     ],
     setlistEncore: [
 
