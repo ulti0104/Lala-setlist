@@ -27,29 +27,33 @@
   <link rel="stylesheet" href="style.css" />
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFBFNCYXK6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFBFNCYXK6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-FFBFNCYXK6');
-</script>
+    gtag('config', 'G-FFBFNCYXK6');
+  </script>
   
 </head>
 
-  
 <body>
   <header class="site-header">
     <div class="wrap">
       <p class="site-subtitle">SETLIST ARCHIVE</p>
       <h1 class="site-title">Lala セットリストまとめ</h1>
       <p class="site-desc">
-  ライブごとのセットリストを一覧でまとめています<br>
-  Lala公式X 及び画像引用元→ <a href="https://x.com/Lala_official20" target="_blank" rel="noopener noreferrer">https://x.com/Lala_official20</a><br>
-  Lala公式Instagram 及び画像引用元→ <a href="https://www.instagram.com/lala_official_band" target="_blank" rel="noopener noreferrer">https://www.instagram.com/lala_official_band</a><br>
-  Prepared by:X@Lala_mimi14
-</p>
+        ライブごとのセットリストを一覧でまとめています<br>
+        Lala公式X 及び画像引用元→ <a href="https://x.com/Lala_official20" target="_blank" rel="noopener noreferrer">https://x.com/Lala_official20</a><br>
+        Lala公式Instagram 及び画像引用元→ <a href="https://www.instagram.com/lala_official_band" target="_blank" rel="noopener noreferrer">https://www.instagram.com/lala_official_band</a><br>
+        Prepared by:X@Lala_mimi14
+      </p>
+
+      <!-- 曲一覧ページへの導線 -->
+      <div class="top-nav-links">
+        <a href="songs.html" class="top-nav-link">曲一覧を見る</a>
+      </div>
     </div>
   </header>
 
@@ -83,10 +87,10 @@
         />
       </div>
 
-<div class="filter-actions">
-  <button id="clearButton" class="clear-button" type="button">検索をクリア</button>
-  <button id="onemanButton" class="oneman-button" type="button">ワンマンのみ</button>
-</div>
+      <div class="filter-actions">
+        <button id="clearButton" class="clear-button" type="button">検索をクリア</button>
+        <button id="onemanButton" class="oneman-button" type="button">ワンマンのみ</button>
+      </div>
 
       <div class="live-grid" id="liveList"></div>
 
@@ -110,7 +114,7 @@
     const songSearchInput = document.getElementById("songSearchInput");
     const emptyText = document.getElementById("emptyText");
     const clearButton = document.getElementById("clearButton");
-　　const onemanButton = document.getElementById("onemanButton");
+    const onemanButton = document.getElementById("onemanButton");
 
     // 新しい順
     const sortedLives = [...liveData].sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -119,8 +123,15 @@
       return (text || "")
         .toString()
         .toLowerCase()
+        .replace(/[\u200B-\u200D\uFEFF]/g, "") // 不可視文字除去
+        .replace(/\u00A0/g, " ")               // nbsp → 半角スペース
         .replace(/\s+/g, "")
         .replace(/[　]/g, "");
+    }
+
+    function getQueryParam(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name) || "";
     }
 
     function renderLives() {
@@ -197,12 +208,22 @@
       searchInput.value = "";
       songSearchInput.value = "";
       renderLives();
+
+      const url = new URL(window.location.href);
+      url.searchParams.delete("song");
+      window.history.replaceState({}, "", url);
     });
 
     onemanButton.addEventListener("click", () => {
-  searchInput.value = "Lala ONEMAN";
-  renderLives();
-});
+      searchInput.value = "Lala ONEMAN";
+      renderLives();
+    });
+
+    // 曲一覧ページから ?song=曲名 で来たとき自動入力
+    const initialSong = getQueryParam("song");
+    if (initialSong) {
+      songSearchInput.value = initialSong;
+    }
 
     renderLives();
   </script>
