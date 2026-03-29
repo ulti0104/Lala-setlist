@@ -114,22 +114,9 @@
         .trim();
     }
 
-    // 表記ゆれを統一（ここ大事）
-    function canonicalSongName(song) {
-      const cleaned = cleanSongName(song);
-      const normalized = normalizeText(cleaned);
 
-      const aliasMap = {
-        "嘘やっぱ好きです": "嘘、やっぱ好きです。",
-        "今更何様": "今更、何様？",
-        "はたち": "はたち。",
-        "メンヘラブストーリー": "メンヘラブストーリー"
-      };
 
-      return aliasMap[normalized] || cleaned;
-    }
-
-    // Apple Musicリンク取得（data.js の songLinks を使う）
+    // Apple Musicリンク取得
     function getSongLink(songName) {
       if (typeof songLinks !== "undefined" && songLinks) {
         return songLinks[songName] || "";
@@ -165,7 +152,7 @@
       });
 
       return Array.from(songMap.values()).sort((a, b) => {
-        // まず50音っぽく文字列ソート
+        // 50音ソート
         return a.displayName.localeCompare(b.displayName, "ja");
       });
     }
