@@ -1,4 +1,4 @@
-const songLinks = {
+window.songLinks = {
   "22歳": "https://music.apple.com/jp/album/22%E6%AD%B3/1803051850?i=1803052563",
   "23さい": "https://music.apple.com/jp/album/23%E3%81%95%E3%81%84/1867115620?i=1867116383",
   "Find me Find you": "https://music.apple.com/jp/album/find-me-find-you/1803051850?i=1803052573",
@@ -50,7 +50,7 @@ const songLinks = {
 
 
 
-const liveData = [
+window.liveData = [
   {
     id: "2026-03-02-tokyo",
     date: "2026-03-02",
