@@ -1128,5 +1128,24 @@ window.liveData = [
   setlistEncore: [
     "夜明けまで"
 ]
+},
+{
+  id: "2026-04-04-tokyo",
+  date: "2026-04-04",
+  title: "YURERUKO vs LIVE 揺れる恋ってやつだ！ vol.1",
+  venue: "下北沢MOSAiC",
+  city: "東京",
+  note: "",
+  image: "images/20260404.jpg",
+  setlistMain: [
+    "喧嘩しようぜ!（cover）",
+    "Jealousy",
+    "泣いてばっかだったな",
+    "マフラー",
+    "メンヘラブストーリー",
+    "本当に無駄な恋"
+  ],
+  setlistEncore: [
+]
 }
 ];
