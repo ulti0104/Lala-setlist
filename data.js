@@ -1137,6 +1137,7 @@ window.liveData = [
   city: "東京",
   note: "",
   image: "images/20260404.jpg",
+  video: "videos/20260404.mp4",
   setlistMain: [
     "喧嘩しようぜ!（cover）",
     "Jealousy",
