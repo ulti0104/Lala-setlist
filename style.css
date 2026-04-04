@@ -536,3 +536,12 @@ main {
     font-size: 0.84rem;
   }
 
+/* ===== Detail Video ===== */
+.detail-video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 16px;
+  background: #000;
+  box-shadow: 0 10px 28px rgba(30, 41, 59, 0.12);
+}
