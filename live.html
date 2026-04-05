@@ -30,9 +30,22 @@
     <article class="detail-card" id="detailCard" style="display: none;">
       <h2 class="detail-title">セットリスト</h2>
 
-      <div class="detail-image-wrap" id="detailImageWrap" style="display: none;">
-        <img id="detailImage" class="detail-image" src="" alt="ライブ画像" />
-      </div>
+if (live.video) {
+  html += `
+    <div class="detail-image-wrap">
+      <video class="detail-video" controls playsinline preload="metadata">
+        <source src="${live.video}" type="video/mp4">
+        お使いのブラウザは動画再生に対応していません。
+      </video>
+    </div>
+  `;
+} else if (live.image) {
+  html += `
+    <div class="detail-image-wrap">
+      <img src="${live.image}" alt="${live.title}" class="detail-image">
+    </div>
+  `;
+}
 
       <div class="detail-meta">
         <div><strong>日付：</strong><span id="metaDate"></span></div>
