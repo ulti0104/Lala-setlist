@@ -1148,5 +1148,23 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+  {
+  id: "2026-04-05-tokyo",
+  date: "2026-04-05",
+  title: "シン・ロック列島CIRCUIT 2026",
+  venue: "下北沢MOSAiC",
+  city: "東京",
+  note: "",
+  image: "images/20260405.jpg",
+  setlistMain: [
+    "死にものぐるいで恋をしていた",
+    "英雄になりたい",
+    "泣いてばっかだったな",
+    "サーチライト",
+    "GAMING"
+  ],
+  setlistEncore: [
+]
 }
 ];
