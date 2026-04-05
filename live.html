@@ -30,22 +30,28 @@
     <article class="detail-card" id="detailCard" style="display: none;">
       <h2 class="detail-title">セットリスト</h2>
 
-if (live.video) {
-  html += `
-    <div class="detail-image-wrap">
-      <video class="detail-video" controls playsinline preload="metadata">
-        <source src="${live.video}" type="video/mp4">
-        お使いのブラウザは動画再生に対応していません。
-      </video>
-    </div>
-  `;
-} else if (live.image) {
-  html += `
-    <div class="detail-image-wrap">
-      <img src="${live.image}" alt="${live.title}" class="detail-image">
-    </div>
-  `;
-}
+      <!-- メディア表示（動画優先 / なければ画像） -->
+      <div class="detail-image-wrap" id="detailMediaWrap" style="display: none;">
+        <video
+          id="detailVideo"
+          class="detail-video"
+          controls
+          playsinline
+          preload="metadata"
+          style="display: none;"
+        >
+          <source id="detailVideoSource" src="" type="video/mp4">
+          お使いのブラウザは動画再生に対応していません。
+        </video>
+
+        <img
+          id="detailImage"
+          src=""
+          alt=""
+          class="detail-image"
+          style="display: none;"
+        />
+      </div>
 
       <div class="detail-meta">
         <div><strong>日付：</strong><span id="metaDate"></span></div>
@@ -168,7 +174,6 @@ if (live.video) {
       }
 
       li.appendChild(songContent);
-
       return li;
     }
 
@@ -177,7 +182,15 @@ if (live.video) {
 
       const lines = [];
 
+      // タイトル情報
+      lines.push(live.title || "");
+      if (live.date) lines.push(`日付：${live.date}`);
+      if (live.venue) lines.push(`会場：${live.venue}`);
+      if (live.city) lines.push(`都市：${live.city}`);
+      lines.push("");
+
       // 本編
+      lines.push("【本編】");
       (live.setlistMain || []).forEach((song, index) => {
         lines.push(`${index + 1}. ${song}`);
       });
@@ -216,7 +229,9 @@ if (live.video) {
     const notFoundCard = document.getElementById("notFoundCard");
     const copySetlistButton = document.getElementById("copySetlistButton");
 
-    const live = liveData.find(item => item.id === liveId);
+    const live = Array.isArray(liveData)
+      ? liveData.find(item => String(item.id) === String(liveId))
+      : null;
 
     if (!live) {
       document.getElementById("pageTitle").textContent = "ライブが見つかりません";
@@ -225,28 +240,42 @@ if (live.video) {
     } else {
       document.title = `${live.title} | セトリまとめ`;
 
-      document.getElementById("pageTitle").textContent = live.title;
-      document.getElementById("pageVenue").textContent = live.venue;
+      document.getElementById("pageTitle").textContent = live.title || "ライブ詳細";
+      document.getElementById("pageVenue").textContent = live.venue || "";
 
-      document.getElementById("metaDate").textContent = live.date;
-      document.getElementById("metaVenue").textContent = live.venue;
-      document.getElementById("metaCity").textContent = live.city;
+      document.getElementById("metaDate").textContent = live.date || "-";
+      document.getElementById("metaVenue").textContent = live.venue || "-";
+      document.getElementById("metaCity").textContent = live.city || "-";
 
-      // 画像表示（image があれば表示、なければ非表示）
-      const detailImageWrap = document.getElementById("detailImageWrap");
+      // ===== メディア表示（動画優先、なければ画像） =====
+      const detailMediaWrap = document.getElementById("detailMediaWrap");
+      const detailVideo = document.getElementById("detailVideo");
+      const detailVideoSource = document.getElementById("detailVideoSource");
       const detailImage = document.getElementById("detailImage");
 
-      if (live.image && live.image.trim() !== "") {
+      if (live.video && live.video.trim() !== "") {
+        detailVideoSource.src = live.video;
+        detailVideo.load();
+
+        detailVideo.style.display = "block";
+        detailImage.style.display = "none";
+        detailMediaWrap.style.display = "block";
+      } else if (live.image && live.image.trim() !== "") {
         detailImage.src = live.image;
         detailImage.alt = `${live.title} のライブ画像`;
-        detailImageWrap.style.display = "block";
+
+        detailImage.style.display = "block";
+        detailVideo.style.display = "none";
+        detailMediaWrap.style.display = "block";
       }
 
+      // ===== 本編 =====
       const mainSetlist = document.getElementById("mainSetlist");
       (live.setlistMain || []).forEach(song => {
         mainSetlist.appendChild(createSongItem(song));
       });
 
+      // ===== アンコール =====
       const encoreSection = document.getElementById("encoreSection");
       const encoreSetlist = document.getElementById("encoreSetlist");
 
@@ -258,6 +287,7 @@ if (live.video) {
         });
       }
 
+      // ===== メモ =====
       const memoSection = document.getElementById("memoSection");
       const memoText = document.getElementById("memoText");
 
@@ -266,6 +296,7 @@ if (live.video) {
         memoText.textContent = live.note;
       }
 
+      // ===== コピーボタン =====
       copySetlistButton.addEventListener("click", () => {
         copySetlistText(live);
       });
