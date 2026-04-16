@@ -1166,5 +1166,151 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-04-12-fukuoka",
+  date: "2026-04-12",
+  title: "Lala ONEMAN LIVE ララカンパニー 1st Anniversary -入社式ってことにしてツアーやっちゃいます編-福岡公演",
+  venue: "Live House 秘密",
+  city: "福岡",
+  note: "",
+  image: "images/fctour2026.jpg",
+  setlistMain: [
+"I'm a Believer（cover）",
+"別れのキスで",
+"余計なお世話",
+"Mellow",
+"だまされてあげる",
+"Jealousy",
+"強く生きたい",
+"愛してるの読み方",
+"マフラー",
+"英雄になりたい",
+"「あたしだけ。」",
+"最低限、君がいなくても",
+"本当に無駄な恋",
+"君を泣かせたい"
+  ],
+  setlistEncore: [
+"失恋讃歌",
+"23さい"
+]
+},
+{
+  id: "2026-04-13-hiroshima",
+  date: "2026-04-13",
+  title: "Lala ONEMAN LIVE ララカンパニー 1st Anniversary -入社式ってことにしてツアーやっちゃいます編-広島公演",
+  venue: "ALMIGHTY",
+  city: "広島",
+  note: "",
+  image: "images/fctour2026.jpg",
+  setlistMain: [
+"I'm a Believer（cover）",
+"別れのキスで",
+"余計なお世話",
+"Mellow",
+"だまされてあげる",
+"Jealousy",
+"強く生きたい",
+"愛してるの読み方",
+"マフラー",
+"死にものぐるいで恋をしていた",
+"「あたしだけ。」",
+"最低限、君がいなくても",
+"本当に無駄な恋",
+"君を泣かせたい"
+  ],
+  setlistEncore: [
+"月が綺麗に見えるのは",
+"23さい"
+]
+},
+{
+  id: "2026-04-14-osaka",
+  date: "2026-04-14",
+  title: "Lala ONEMAN LIVE ララカンパニー 1st Anniversary -入社式ってことにしてツアーやっちゃいます編-大阪公演",
+  venue: "yogibo HOLY MOUNTAIN",
+  city: "大阪",
+  note: "",
+  image: "images/fctour2026.jpg",
+  setlistMain: [
+"I'm a Believer（cover）",
+"別れのキスで",
+"余計なお世話",
+"Mellow",
+"だまされてあげる",
+"Jealousy",
+"強く生きたい",
+"愛してるの読み方",
+"マフラー",
+"崖っぷちガール",
+"「あたしだけ。」",
+"最低限、君がいなくても",
+"本当に無駄な恋",
+"君を泣かせたい"
+  ],
+  setlistEncore: [
+"正真正銘両片想い",
+"23さい"
+]
+},
+{
+  id: "2026-04-15-tokyo",
+  date: "2026-04-15",
+  title: "Lala ONEMAN LIVE ララカンパニー 1st Anniversary -入社式ってことにしてツアーやっちゃいます編-東京公演",
+  venue: "下北沢 ReG",
+  city: "東京",
+  note: "",
+  image: "images/fctour2026.jpg",
+  setlistMain: [
+"I'm a Believer（cover）",
+"別れのキスで",
+"余計なお世話",
+"Mellow",
+"だまされてあげる",
+"Jealousy",
+"強く生きたい",
+"愛してるの読み方",
+"マフラー",
+"サーチライト",
+"「あたしだけ。」",
+"最低限、君がいなくても",
+"本当に無駄な恋",
+"君を泣かせたい"
+  ],
+  setlistEncore: [
+"DATE",
+"23さい"
+]
+},
+{
+  id: "2026-04-16-aichi",
+  date: "2026-04-16",
+  title: "Lala ONEMAN LIVE ララカンパニー 1st Anniversary -入社式ってことにしてツアーやっちゃいます編-愛知公演",
+  venue: "Live House R.A.D",
+  city: "愛知",
+  note: "",
+  image: "images/fctour2026.jpg",
+  setlistMain: [
+"I'm a Believer（cover）",
+"別れのキスで",
+"余計なお世話",
+"Mellow",
+"だまされてあげる",
+"Jealousy",
+"強く生きたい",
+"愛してるの読み方",
+"マフラー",
+"サーチライト",
+"GAMING",
+"「あたしだけ。」",
+"最低限、君がいなくても",
+"本当に無駄な恋",
+"君を泣かせたい"
+  ],
+  setlistEncore: [
+"LOVER",
+"23さい"
+]
 }
 ];
