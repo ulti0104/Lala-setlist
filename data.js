@@ -1193,6 +1193,7 @@ window.liveData = [
   ],
   setlistEncore: [
 "失恋讃歌",
+"ハッピーバースデー（TAKETO）",
 "23さい"
 ]
 },
@@ -1222,6 +1223,7 @@ window.liveData = [
   ],
   setlistEncore: [
 "月が綺麗に見えるのは",
+"ハピバブルース（TAKETO）",
 "23さい"
 ]
 },
@@ -1251,6 +1253,7 @@ window.liveData = [
   ],
   setlistEncore: [
 "正真正銘両片想い",
+"前日のブルース（TAKETO）",
 "23さい"
 ]
 },
@@ -1280,6 +1283,7 @@ window.liveData = [
   ],
   setlistEncore: [
 "DATE",
+"おめでとうブルース（TAKETO）",
 "23さい"
 ]
 },
@@ -1310,6 +1314,7 @@ window.liveData = [
   ],
   setlistEncore: [
 "LOVER",
+"後夜祭レゲエ（TAKETO）",
 "23さい"
 ]
 }
