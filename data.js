@@ -1174,7 +1174,7 @@ window.liveData = [
   venue: "Live House 秘密",
   city: "福岡",
   note: "",
-  image: "images/fctour2026.jpg",
+  image: "images/fctour2026.JPG",
   setlistMain: [
 "I'm a Believer（cover）",
 "別れのキスで",
@@ -1203,7 +1203,7 @@ window.liveData = [
   venue: "ALMIGHTY",
   city: "広島",
   note: "",
-  image: "images/fctour2026.jpg",
+  image: "images/fctour2026.JPG",
   setlistMain: [
 "I'm a Believer（cover）",
 "別れのキスで",
@@ -1232,7 +1232,7 @@ window.liveData = [
   venue: "yogibo HOLY MOUNTAIN",
   city: "大阪",
   note: "",
-  image: "images/fctour2026.jpg",
+  image: "images/fctour2026.JPG",
   setlistMain: [
 "I'm a Believer（cover）",
 "別れのキスで",
@@ -1261,7 +1261,7 @@ window.liveData = [
   venue: "下北沢 ReG",
   city: "東京",
   note: "",
-  image: "images/fctour2026.jpg",
+  image: "images/fctour2026.JPG",
   setlistMain: [
 "I'm a Believer（cover）",
 "別れのキスで",
@@ -1290,7 +1290,7 @@ window.liveData = [
   venue: "Live House R.A.D",
   city: "愛知",
   note: "",
-  image: "images/fctour2026.jpg",
+  image: "images/fctour2026.JPG",
   setlistMain: [
 "I'm a Believer（cover）",
 "別れのキスで",
