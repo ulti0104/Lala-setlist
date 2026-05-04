@@ -1317,5 +1317,23 @@ window.liveData = [
 "後夜祭レゲエ（TAKETO）",
 "23さい"
 ]
+},
+{
+  id: "2026-05-04-aichi",
+  date: "2026-05-04",
+  title: "RAD CREATION & RAD ENTERTAINMENT presents GOLD RUSH 2026",
+  venue: "Live House R.A.D",
+  city: "愛知",
+  note: "",
+  image: "images/20260504.jpg",
+  setlistMain: [
+"Jealousy",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"愛してるの読み方",
+"死にものぐるいで恋をしていた"
+  ],
+  setlistEncore: [
+]
 }
 ];
