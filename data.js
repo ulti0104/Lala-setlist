@@ -46,7 +46,7 @@ window.songLinks = {
   "英雄になりたい": "https://music.apple.com/jp/album/%E8%8B%B1%E9%9B%84%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84/1867115620?i=1867116173",
   "失恋讃歌": "https://music.apple.com/jp/album/%E5%A4%B1%E6%81%8B%E8%AE%83%E6%AD%8C/1867115620?i=1867116174",
   "今更、何様？": "https://music.apple.com/jp/album/%E4%BB%8A%E6%9B%B4-%E4%BD%95%E6%A7%98/1760279933?i=1760280127",
-  "愛してるの読み方": "https://music.apple.com/jp/album/愛してるの読み方/1896167861?i=6766026125"
+  "愛してるの読み方": "https://music.apple.com/jp/song/%E6%84%9B%E3%81%97%E3%81%A6%E3%82%8B%E3%81%AE%E8%AA%AD%E3%81%BF%E6%96%B9/6766026125"
 };
 
 
