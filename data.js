@@ -1359,5 +1359,23 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-06-02-osaka",
+  date: "2026-06-02",
+  title: "見放題 FRONTIER EDITION × 学生天国",
+  venue: "関大前TH-R HALL",
+  city: "大阪",
+  note: "",
+  image: "images/20260602.jpg",
+  setlistMain: [
+"メンヘラブストーリー",
+"Jealousy",
+"愛してるの読み方",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた"
+  ],
+  setlistEncore: [
+]
 }
 ];
