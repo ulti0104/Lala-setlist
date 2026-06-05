@@ -1377,5 +1377,433 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+60分1本勝負ツアーセトリ
+{
+  id: "2026-05-07-hokkaido",
+  date: "2026-05-07",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！北海道公演",
+  venue: "Crazy Monkey",
+  city: "北海道",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"愛してるの読み方",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+},
+{
+  id: "2026-05-10-osaka",
+  date: "2026-05-10",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！大阪公演",
+  venue: "LIVE SQUARE 2nd LINE",
+  city: "大阪",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-12-tokyo",
+  date: "2026-05-12",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！東京公演",
+  venue: "MOSAiC",
+  city: "東京",
+  note: "Dr.YUMEKA Happy  Birthday",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-13-aichi",
+  date: "2026-05-13",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！愛知公演",
+  venue: "Heartland",
+  city: "愛知",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-14-kyoto",
+  date: "2026-05-14",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！京都公演",
+  venue: "KYOTO MOJO",
+  city: "京都",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"愛してるの読み方",
+"サーチライト",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-16-fukuoka",
+  date: "2026-05-16",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！福岡公演",
+  venue: "Live House 秘密",
+  city: "福岡",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-18-hiroshima",
+  date: "2026-05-18",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！広島公演",
+  venue: "Almighty",
+  city: "広島",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-19-ehime",
+  date: "2026-05-19",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！愛媛公演",
+  venue: "Double-u",
+  city: "愛媛",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-20-kagawa",
+  date: "2026-05-20",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！香川公演",
+  venue: "TOONICE",
+  city: "香川",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"愛してるの読み方",
+"英雄になりたい",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-21-okayama",
+  date: "2026-05-21",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！岡山公演",
+  venue: "CRAZYMAMA 2ndRoom",
+  city: "岡山",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"君を泣かせたい",
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-24-kanagawa",
+  date: "2026-05-24",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！神奈川公演",
+  venue: "BAYSIS",
+  city: "神奈川",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"君を泣かせたい",
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"Mellow",
+"愛してるの読み方",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-25-miyagi",
+  date: "2026-05-25",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！宮城公演",
+  venue: "enn 3rd",
+  city: "宮城",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-26-chiba",
+  date: "2026-05-26",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！千葉公演",
+  venue: "LOOK",
+  city: "千葉",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"愛してるの読み方",
+"Jealousy",
+"崖っぷちガール",
+"死にものぐるいで恋をしていた",
+"メンヘラブストーリー",
+"嘘、やっぱ好きです。",
+"泣いてばっかだったな",
+"英雄になりたい",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-27-saitama",
+  date: "2026-05-27",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！埼玉公演",
+  venue: "西川口Hearts",
+  city: "埼玉",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"ただの口約束",
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-05-29-hyogo",
+  date: "2026-05-29",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！兵庫公演",
+  venue: "KOBE BLUEPORT",
+  city: "兵庫",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"君を泣かせたい",
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"愛してるの読み方",
+"ただの口約束",
+"泣いてばっかだったな",
+"別れのキスで",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-06-03-tokyo",
+  date: "2026-06-03",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！追加東京公演",
+  venue: "DaisyBar",
+  city: "東京",
+  note: "",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"メンヘラブストーリー",
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"崖っぷちガール",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"別れのキスで",
+"22歳",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
+}, 
+{
+  id: "2026-06-05-shizuoka",
+  date: "2026-06-05",
+  title: "Lala ONEMAN LIVE TOUR 2026 - 60分1本勝負！静岡公演",
+  venue: "浜松FORCE",
+  city: "静岡",
+  note: "ツアーファイナル",
+  image: "images/60minutestour.jpg",
+  setlistMain: [
+"君を泣かせたい",
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"英雄になりたい",
+"愛してるの読み方",
+"泣いてばっかだったな",
+"別れのキスで",
+"22歳",
+"ほろ酔い",
+"本当に無駄な恋",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
 }
 ];
