@@ -1378,7 +1378,6 @@ window.liveData = [
   setlistEncore: [
 ]
 },
-60分1本勝負ツアーセトリ
 {
   id: "2026-05-07-hokkaido",
   date: "2026-05-07",
