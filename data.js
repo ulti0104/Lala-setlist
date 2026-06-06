@@ -1809,6 +1809,7 @@ window.liveData = [
   id: "2026-06-06-aichi",
   date: "2026-06-06",
   title: "SAKAE-SPRING 2026",
+  venue: "RAD HALL",
   city: "愛知",
   note: "",
   image: "images/20260606.JPG",
