@@ -1804,5 +1804,23 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-06-06-aichi",
+  date: "2026-06-06",
+  title: "SAKAE-SPRING 2026",
+  city: "愛知",
+  note: "",
+  image: "images/20260606.JPG",
+  setlistMain: [
+"本当に無駄な恋",
+"メンヘラブストーリー",
+"死にものぐるいで恋をしていた",
+"愛してるの読み方",
+"泣いてばっかだったな",
+"Jealousy"
+  ],
+  setlistEncore: [
+]
 }
 ];
