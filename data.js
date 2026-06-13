@@ -1823,5 +1823,24 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-06-13-tokyo",
+  date: "2026-06-13",
+  title: "つぶら×7秒とロック pre.『NiNiMu fes.』",
+  venue: "WAVER",
+  city: "東京",
+  note: "",
+  image: "images/20260613.jpg",
+  setlistMain: [
+"崖っぷちガール",
+"Jealousy",
+"愛してるの読み方",
+"泣いてばっかだったな",
+"Mellow",
+"本当に無駄な恋"
+  ],
+  setlistEncore: [
+]
 }
 ];
