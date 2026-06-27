@@ -1853,6 +1853,7 @@ window.liveData = [
   image: "images/20260627.jpg",
   setlistMain: [
 "別れのキスで",
+"メンヘラブストーリー",
 "愛してるの読み方",
 "Jealousy",
 "泣いてばっかだったな",
