@@ -1842,5 +1842,23 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-06-27-tokyo",
+  date: "2026-06-27",
+  title: "MiMiNOKOROCK FES JAPAN in 吉祥寺 2026",
+  venue: "SHUFFLE",
+  city: "東京",
+  note: "",
+  image: "images/20260627.jpg",
+  setlistMain: [
+"別れのキスで",
+"愛してるの読み方",
+"Jealousy",
+"泣いてばっかだったな",
+"本当に無駄な恋"
+  ],
+  setlistEncore: [
+]
 }
 ];
