@@ -1850,7 +1850,7 @@ window.liveData = [
   venue: "SHUFFLE",
   city: "東京",
   note: "",
-  image: "images/20260627.jpg",
+  image: "images/20260627.JPG",
   setlistMain: [
 "別れのキスで",
 "メンヘラブストーリー",
