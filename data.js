@@ -1861,5 +1861,24 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-07-04-osaka",
+  date: "2026-07-04",
+  title: "見放題大阪2026",
+  venue: "hillsパン工場",
+  city: "大阪",
+  note: "",
+  image: "images/20260704.jpg",
+  setlistMain: [
+"Jealousy",
+"メンヘラブストーリー",
+"最低限、君がいなくても",
+"泣いてばっかだったな",
+"本当に無駄な恋",
+"死にものぐるいで恋をしていた"
+  ],
+  setlistEncore: [
+]
 }
 ];
