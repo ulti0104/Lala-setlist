@@ -1880,5 +1880,24 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-07-05-aichi",
+  date: "2026-07-05",
+  title: "見放題名古屋2026",
+  venue: "バーニーズ",
+  city: "愛知",
+  note: "",
+  image: "images/20260705.jpg",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"メンヘラブストーリー",
+"泣いてばっかだったな",
+"本当に無駄な恋",
+"ほろ酔い"
+  ],
+  setlistEncore: [
+]
 }
 ];
