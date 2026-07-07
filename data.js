@@ -1899,5 +1899,25 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-07-07-osaka",
+  date: "2026-07-07",
+  title: "ATMC Tanabata Session",
+  venue: "梅田Shangri-La",
+  city: "大阪",
+  note: "",
+  image: "images/20260707.jpg",
+  setlistMain: [
+"本当に無駄な恋",
+"Jealousy",
+"ただの口約束",
+"Mellow",
+"泣いてばっかだったな",
+"英雄になりたい",
+"ほろ酔い"
+  ],
+  setlistEncore: [
+]
 }
 ];
