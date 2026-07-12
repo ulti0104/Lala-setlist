@@ -1919,5 +1919,24 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-07-12-tokyo",
+  date: "2026-07-12",
+  title: "白フェス2026",
+  venue: "下北沢MOSAiC",
+  city: "東京",
+  note: "",
+  image: "images/20260712.JPG",
+  setlistMain: [
+"Jealousy",
+"愛してるの読み方",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた",
+"本当に無駄な恋"
+  ],
+  setlistEncore: [
+]
 }
 ];
