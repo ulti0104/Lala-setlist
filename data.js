@@ -1956,6 +1956,7 @@ window.liveData = [
 "愛してるの読み方"
   ],
   setlistEncore: [
+"英雄になりたい"
 ]
 }
 ];
