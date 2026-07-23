@@ -1938,5 +1938,24 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-07-23-aichi",
+  date: "2026-07-23",
+  title: "Various colors",
+  venue: "CLUB UPSET",
+  city: "愛知",
+  note: "",
+  image: "images/20260723.JPG",
+  setlistMain: [
+"Jealousy",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"キーホルダー",
+"本当に無駄な恋",
+"愛してるの読み方"
+  ],
+  setlistEncore: [
+]
 }
 ];
