@@ -1958,5 +1958,24 @@ window.liveData = [
   setlistEncore: [
 "英雄になりたい"
 ]
+},
+{
+  id: "2026-07-30-tokyo",
+  date: "2026-07-30",
+  title: "New Signals",
+  venue: "SHELTER",
+  city: "東京",
+  note: "初SHELTER\nアニメぼっち・ざ・ろっく！聖地",
+  image: "images/20260730.JPG",
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"最低限、君がいなくても",
+"泣いてばっかだったな",
+"英雄になりたい",
+"ほろ酔い"
+  ],
+  setlistEncore: [
+]
 }
 ];
