@@ -1985,7 +1985,7 @@ window.liveData = [
   venue: "渋谷CLUB CRAWL",
   city: "東京",
   note: "",
-  image: "images/heartbeat2024.jpg",
+  image: "images/heartbeat2024summer.jpg",
   setlistMain: [
 "君を泣かせたい",
 "Jealousy",
