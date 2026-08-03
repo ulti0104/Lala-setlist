@@ -1977,5 +1977,35 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2024-08-18-tokyo",
+  date: "2024-08-18",
+  title: "Lala ONEMAN LIVE ハートビートin Summer 恋する君も恋しない君もときめきが止まらないツアー",
+  venue: "渋谷CLUB CRAWL",
+  city: "東京",
+  note: "",
+  image: "images/heartbeat2024.jpg",
+  setlistMain: [
+"君を泣かせたい",
+"Jealousy",
+"最低限君がいなくても",
+"別れのキスで",
+"愛ゆえに",
+"だまされてあげる",
+"「あたしだけ。」",
+"今更、何様？",
+"はたち。",
+"Monster",
+"22歳",
+"崖っぷちガール",
+"ほろ酔い",
+"死にものぐるいで恋をしていた",
+"サマーラブ"
+  ],
+  setlistEncore: [
+"月が綺麗に見えるのは",
+"夜明けまで"
+]
 }
 ];
