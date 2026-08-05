@@ -60,6 +60,7 @@ window.liveData = [
     city: "東京",
     note: "ツアーファイナル",
     image: "images/20260302.jpg",
+    attended: true,
     setlistMain: [
       "本当に無駄な恋",
       "ただの口約束",
@@ -95,6 +96,7 @@ window.liveData = [
     city: "東京",
     note: "",
     image: "images/20260318.jpg",
+    attended: true,
     setlistMain: [
       "崖っぷちガール",
       "浮気相手さんへ",
@@ -279,6 +281,7 @@ window.liveData = [
     city: "東京",
     note: "",
     image: "images/20260107.jpg",
+    attended: true,
     setlistMain: [
       "死にものぐるいで恋をしていた",
       "泣いてばっかだったな",
@@ -473,6 +476,7 @@ window.liveData = [
     city: "愛知",
     note: "",
     image: "images/20251016.jpg",
+    attended: true,
     setlistMain: [
       "Jealousy",
       "メンヘラブストーリー",
@@ -711,6 +715,7 @@ window.liveData = [
     city: "埼玉",
     note: "",
     image: "images/charmtour.jpg",
+    attended: true,
     setlistMain: [
       "本当に無駄な恋",
       "ただの口約束",
@@ -867,6 +872,7 @@ window.liveData = [
     city: "神奈川",
     note: "",
     image: "images/charmtour.jpg",
+    attended: true,
     setlistMain: [
       "本当に無駄な恋",
       "ただの口約束",
@@ -899,6 +905,7 @@ window.liveData = [
     city: "宮城",
     note: "牛タンMC大ウケ",
     image: "images/charmtour.jpg",
+    attended: true,
     setlistMain: [
       "本当に無駄な恋",
       "ただの口約束",
@@ -931,6 +938,7 @@ window.liveData = [
     city: "静岡",
     note: "さやわかMC伝説級の大ウケ",
     image: "images/charmtour.jpg",
+    attended: true,
     setlistMain: [
       "本当に無駄な恋",
       "ただの口約束",
@@ -963,6 +971,7 @@ window.liveData = [
     city: "愛知",
     note: "",
     image: "images/charmtour.jpg",
+    attended: true,
     setlistMain: [
       "本当に無駄な恋",
       "ただの口約束",
@@ -1236,6 +1245,7 @@ window.liveData = [
   city: "大阪",
   note: "",
   image: "images/fctour2026.JPG",
+  attended: true,
   setlistMain: [
 "I'm a Believer（cover）",
 "別れのキスで",
@@ -1266,6 +1276,7 @@ window.liveData = [
   city: "東京",
   note: "",
   image: "images/fctour2026.JPG",
+  attended: true,
   setlistMain: [
 "I'm a Believer（cover）",
 "別れのキスで",
@@ -1296,6 +1307,7 @@ window.liveData = [
   city: "愛知",
   note: "",
   image: "images/fctour2026.JPG",
+  attended: true,
   setlistMain: [
 "I'm a Believer（cover）",
 "別れのキスで",
@@ -1435,6 +1447,7 @@ window.liveData = [
   city: "東京",
   note: "Dr.YUMEKA Happy  Birthday",
   image: "images/60minutestour.jpg",
+  attended: true,
   setlistMain: [
 "死にものぐるいで恋をしていた",
 "Jealousy",
@@ -1460,6 +1473,7 @@ window.liveData = [
   city: "愛知",
   note: "",
   image: "images/60minutestour.jpg",
+  attended: true,
   setlistMain: [
 "死にものぐるいで恋をしていた",
 "Jealousy",
@@ -1485,6 +1499,7 @@ window.liveData = [
   city: "京都",
   note: "",
   image: "images/60minutestour.jpg",
+  attended: true,
   setlistMain: [
 "死にものぐるいで恋をしていた",
 "Jealousy",
@@ -1635,6 +1650,7 @@ window.liveData = [
   city: "神奈川",
   note: "",
   image: "images/60minutestour.jpg",
+  attended: true,
   setlistMain: [
 "君を泣かせたい",
 "死にものぐるいで恋をしていた",
@@ -1660,6 +1676,7 @@ window.liveData = [
   city: "宮城",
   note: "",
   image: "images/60minutestour.jpg",
+  attended: true,
   setlistMain: [
 "死にものぐるいで恋をしていた",
 "Jealousy",
@@ -1685,6 +1702,7 @@ window.liveData = [
   city: "千葉",
   note: "",
   image: "images/60minutestour.jpg",
+  attended: true,
   setlistMain: [
 "愛してるの読み方",
 "Jealousy",
@@ -1760,6 +1778,7 @@ window.liveData = [
   city: "東京",
   note: "",
   image: "images/60minutestour.jpg",
+  attended: true,
   setlistMain: [
 "メンヘラブストーリー",
 "死にものぐるいで恋をしていた",
@@ -1786,6 +1805,7 @@ window.liveData = [
   city: "静岡",
   note: "ツアーファイナル",
   image: "images/60minutestour.jpg",
+  attended: true,
   setlistMain: [
 "君を泣かせたい",
 "死にものぐるいで恋をしていた",
@@ -1813,6 +1833,7 @@ window.liveData = [
   city: "愛知",
   note: "",
   image: "images/20260606.JPG",
+  attended: true,
   setlistMain: [
 "本当に無駄な恋",
 "メンヘラブストーリー",
@@ -1947,6 +1968,7 @@ window.liveData = [
   city: "愛知",
   note: "",
   image: "images/20260723.JPG",
+  attended: true,
   setlistMain: [
 "Jealousy",
 "浮気相手さんへ",
@@ -1967,6 +1989,7 @@ window.liveData = [
   city: "東京",
   note: "初SHELTER\nアニメぼっち・ざ・ろっく！聖地",
   image: "images/20260730.JPG",
+  attended: true,
   setlistMain: [
 "死にものぐるいで恋をしていた",
 "Jealousy",
