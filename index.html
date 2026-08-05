@@ -162,7 +162,10 @@
         ];
         const songTarget = normalizeText(songs.join(" "));
 
-        const matchLive = !liveKeyword || liveTarget.includes(liveKeyword);
+        const matchLive =
+        secretMode ||
+        !liveKeyword ||
+        liveTarget.includes(liveKeyword);
 　　　　　const matchSong = !songKeyword || songTarget.includes(songKeyword);
 　　　　　const matchSecret = !secretMode || live.attended;
 
