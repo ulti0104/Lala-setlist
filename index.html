@@ -144,6 +144,7 @@
     function renderLives() {
       const liveKeyword = normalizeText(searchInput.value);
       const songKeyword = normalizeText(songSearchInput.value);
+      const secretMode = liveKeyword === "くまきち";
 
       const filtered = sortedLives.filter(live => {
         // ライブ情報検索対象
@@ -162,9 +163,10 @@
         const songTarget = normalizeText(songs.join(" "));
 
         const matchLive = !liveKeyword || liveTarget.includes(liveKeyword);
-        const matchSong = !songKeyword || songTarget.includes(songKeyword);
+　　　　　const matchSong = !songKeyword || songTarget.includes(songKeyword);
+　　　　　const matchSecret = !secretMode || live.attended;
 
-        return matchLive && matchSong;
+　　　　　return matchLive && matchSong && matchSecret;
       });
 
       liveList.innerHTML = "";
@@ -232,11 +234,7 @@
       songSearchInput.value = initialSong;
     }
 
-    renderLives();
-
-    const secretMode = liveKeyword === "くまきち";
-　　　const matchSecret = !secretMode || live.attended;
-　　　return matchLive && matchSong && matchSecret;
+    renderLives);
     
   </script>
 </body>
