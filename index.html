@@ -233,6 +233,11 @@
     }
 
     renderLives();
+
+    const secretMode = liveKeyword === "くまきち";
+　　　const matchSecret = !secretMode || live.attended;
+　　　return matchLive && matchSong && matchSecret;
+    
   </script>
 </body>
 </html>
