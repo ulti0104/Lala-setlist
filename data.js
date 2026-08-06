@@ -2030,5 +2030,136 @@ window.liveData = [
 "月が綺麗に見えるのは",
 "夜明けまで"
 ]
+},
+{
+  id: "2026-08-02-fukuoka",
+  date: "2026-08-02",
+  title: "Lala ONEMAN LIVE TOUR2026 SUMMER BREAK 福岡公演",
+  venue: "Live House 秘密",
+  city: "福岡",
+  note: "",
+  image: "images/summertour2026.jpg",
+  setlistMain: [
+"⭐️新曲　ああ　やっと君に会えた〜",
+"英雄になりたい",
+"夜明けまで",
+"最低限、君がいなくても",
+"キーホルダー",
+"愛ゆえに",
+"⭐️新曲　夏めいた",
+"NEVER MIND!!!",
+"泣いてばっかだったな",
+"君がいなくなったくらいじゃ",
+"浮気相手さんへ",
+"Mellow",
+"嘘、やっぱ好きです。",
+"Jealousy",
+"メンヘラブストーリー",
+"愛してるの読み方"
+  ],
+  setlistEncore: [
+"22歳",
+"⭐️新曲　24ぶんの10",
+"サマーラブ"
+]
+},
+{
+  id: "2026-08-04-osaka",
+  date: "2026-08-04",
+  title: "Lala ONEMAN LIVE TOUR2026 SUMMER BREAK 大阪公演",
+  venue: "yogibo HOLY MOUNTAIN",
+  city: "大阪",
+  note: "",
+  image: "images/summertour2026.jpg",
+  attended: true,
+  setlistMain: [
+"⭐️新曲　ああ　やっと君に会えた〜",
+"英雄になりたい",
+"夜明けまで",
+"最低限、君がいなくても",
+"キーホルダー",
+"愛ゆえに",
+"⭐️新曲　夏めいた",
+"NEVER MIND!!!",
+"泣いてばっかだったな",
+"君がいなくなったくらいじゃ",
+"浮気相手さんへ",
+"Mellow",
+"嘘、やっぱ好きです。",
+"Jealousy",
+"メンヘラブストーリー",
+"愛してるの読み方"
+  ],
+  setlistEncore: [
+"22歳",
+"⭐️新曲　24ぶんの10",
+"サマーラブ"
+]
+},
+{
+  id: "2026-08-05-tokyo",
+  date: "2026-08-05",
+  title: "Lala ONEMAN LIVE TOUR2026 SUMMER BREAK 東京公演",
+  venue: "渋谷 CHELSEA HOTEL",
+  city: "東京",
+  note: "Vo&Gt ayaho Happy Birthday",
+  image: "images/summertour2026.jpg",
+  attended: true,
+  setlistMain: [
+"⭐️新曲　ああ　やっと君に会えた〜",
+"英雄になりたい",
+"夜明けまで",
+"最低限、君がいなくても",
+"キーホルダー",
+"愛ゆえに",
+"⭐️新曲　夏めいた",
+"NEVER MIND!!!",
+"泣いてばっかだったな",
+"君がいなくなったくらいじゃ",
+"浮気相手さんへ",
+"Mellow",
+"嘘、やっぱ好きです。",
+"Jealousy",
+"メンヘラブストーリー",
+"愛してるの読み方"
+  ],
+  setlistEncore: [
+"22歳",
+"⭐️新曲　24ぶんの10",
+"サマーラブ"
+]
+},
+{
+  id: "2026-08-06-aichi",
+  date: "2026-08-06",
+  title: "Lala ONEMAN LIVE TOUR2026 SUMMER BREAK 愛知公演",
+  venue: "Heartland",
+  city: "愛知",
+  note: "",
+  image: "images/summertour2026.jpg",
+  attended: true,
+  setlistMain: [
+"⭐️新曲　ああやっと君に会えた〜",
+"英雄になりたい",
+"夜明けまで",
+"最低限、君がいなくても",
+"キーホルダー",
+"愛ゆえに",
+"⭐️新曲　夏めいた",
+"NEVER MIND!!!",
+"泣いてばっかだったな",
+"君がいなくなったくらいじゃ",
+"浮気相手さんへ",
+"Mellow",
+"嘘、やっぱ好きです。",
+"Jealousy",
+"メンヘラブストーリー",
+"愛してるの読み方"
+  ],
+  setlistEncore: [
+"22歳",
+"⭐️新曲　24ぶんの10",
+"サマーラブ"
+]
 }
 ];
