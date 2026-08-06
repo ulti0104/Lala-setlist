@@ -2102,7 +2102,7 @@ window.liveData = [
   title: "Lala ONEMAN LIVE TOUR2026 SUMMER BREAK 東京公演",
   venue: "渋谷 CHELSEA HOTEL",
   city: "東京",
-  note: "Vo&Gt ayaho Happy Birthday",
+  note: "ayaho Happy Birthday",
   image: "images/summertour2026.jpg",
   attended: true,
   setlistMain: [
