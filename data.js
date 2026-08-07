@@ -2161,5 +2161,26 @@ window.liveData = [
 "新曲、24ぶんの10",
 "サマーラブ"
 ]
+},
+{
+  id: "2026-08-07-tokyo",
+  date: "2026-08-07",
+  title: "THE SEDAI EXPO'26",
+  venue: "渋谷 CHELSEA HOTEL",
+  city: "東京",
+  note: "",
+  image: "images/20260807.JPG",
+  attended: true,
+  setlistMain: [
+"サマーラブ",
+"Jealousy",
+"浮気相手さんへ",
+"愛してるの読み方",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた"
+  ],
+  setlistEncore: [
+"本当に無駄な恋"
+]
 }
 ];
