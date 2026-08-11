@@ -2040,7 +2040,7 @@ window.liveData = [
   note: "",
   image: "images/summertour2026.jpg",
   setlistMain: [
-"新曲、ああやっと君に会えた〜",
+"Lalaに会いにきた",
 "英雄になりたい",
 "夜明けまで",
 "最低限、君がいなくても",
@@ -2073,7 +2073,7 @@ window.liveData = [
   image: "images/summertour2026.jpg",
   attended: true,
   setlistMain: [
-"新曲、ああやっと君に会えた〜",
+"Lalaに会いにきた",
 "英雄になりたい",
 "夜明けまで",
 "最低限、君がいなくても",
@@ -2106,7 +2106,7 @@ window.liveData = [
   image: "images/summertour2026.jpg",
   attended: true,
   setlistMain: [
-"新曲、ああやっと君に会えた〜",
+"Lalaに会いにきた",
 "英雄になりたい",
 "夜明けまで",
 "最低限、君がいなくても",
@@ -2139,7 +2139,7 @@ window.liveData = [
   image: "images/summertour2026.jpg",
   attended: true,
   setlistMain: [
-"新曲、ああやっと君に会えた〜",
+"Lalaに会いにきた",
 "英雄になりたい",
 "夜明けまで",
 "最低限、君がいなくても",
