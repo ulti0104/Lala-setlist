@@ -2059,7 +2059,7 @@ window.liveData = [
   ],
   setlistEncore: [
 "22歳",
-"24/10",
+"10/24",
 "サマーラブ"
 ]
 },
@@ -2092,7 +2092,7 @@ window.liveData = [
   ],
   setlistEncore: [
 "22歳",
-"24/10",
+"10/24",
 "サマーラブ"
 ]
 },
@@ -2125,7 +2125,7 @@ window.liveData = [
   ],
   setlistEncore: [
 "22歳",
-"24/10",
+"10/24",
 "サマーラブ"
 ]
 },
@@ -2158,7 +2158,7 @@ window.liveData = [
   ],
   setlistEncore: [
 "22歳",
-"24/10",
+"10/24",
 "サマーラブ"
 ]
 },
