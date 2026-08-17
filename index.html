@@ -244,6 +244,28 @@
     }
 
     renderLives();
+
+
+    const scrollKey = "scrollPosition_" + location.pathname;
+
+    // スクロール位置を保存
+    window.addEventListener("scroll", () => {
+    sessionStorage.setItem(scrollKey, window.scrollY);
+    });
+
+    // ページ読み込み後に復元
+    window.addEventListener("load", () => {
+    const savedPosition = sessionStorage.getItem(scrollKey);
+
+    if (savedPosition !== null) {
+    setTimeout(() => {
+      window.scrollTo({
+        top: Number(savedPosition),
+        behavior: "instant"
+      });
+    }, 100);
+    }
+  });
     
   </script>
 </body>
