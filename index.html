@@ -91,6 +91,23 @@
         />
       </div>
 
+      <!-- 年月検索 -->
+      <div class="date-filter">
+      <div class="date-filter-item">
+      <label class="search-label" for="yearFilter">年</label>
+      <select id="yearFilter" class="search-input">
+      <option value="">すべて</option>
+      </select>
+      </div>
+
+      <div class="date-filter-item">
+      <label class="search-label" for="monthFilter">月</label>
+      <select id="monthFilter" class="search-input">
+      <option value="">すべて</option>
+      </select>
+      </div>
+      </div>
+
       <!-- 曲名検索 -->
       <div class="search-box">
         <label class="search-label" for="songSearchInput">曲名検索</label>
@@ -130,10 +147,33 @@
     const emptyText = document.getElementById("emptyText");
     const clearButton = document.getElementById("clearButton");
     const onemanButton = document.getElementById("onemanButton");
+    const yearFilter = document.getElementById("yearFilter");
+    const monthFilter = document.getElementById("monthFilter");
 
     // 新しい順
     const sortedLives = [...liveData].sort((a, b) => new Date(b.date) - new Date(a.date));
 
+    // 年の選択肢を作成
+    const years = [...new Set(
+    liveData.map(live => new Date(live.date).getFullYear())
+    )].sort((a, b) => b - a);
+
+    years.forEach(year => {
+    const option = document.createElement("option");
+    option.value = year;
+    option.textContent = ${year}年;
+    yearFilter.appendChild(option);
+    });
+
+    // 月の選択肢を作成
+    for (let month = 1; month <= 12; month++) {
+    const option = document.createElement("option");
+    option.value = month;
+    option.textContent = ${month}月;
+    monthFilter.appendChild(option);
+    }
+
+    
     function normalizeText(text) {
       return (text || "")
         .toString()
@@ -152,9 +192,22 @@
     function renderLives() {
       const liveKeyword = normalizeText(searchInput.value);
       const songKeyword = normalizeText(songSearchInput.value);
+      const selectedYear = yearFilter.value;
+      const selectedMonth = monthFilter.value;
       const secretMode = liveKeyword === "くまきち";
 
       const filtered = sortedLives.filter(live => {
+
+      const liveDate = new Date(live.date);
+      const liveYear = liveDate.getFullYear();
+      const liveMonth = liveDate.getMonth() + 1;
+
+      const matchYear =
+      !selectedYear || liveYear === Number(selectedYear);
+
+      const matchMonth =
+      !selectedMonth || liveMonth === Number(selectedMonth);
+        
         // ライブ情報検索対象
         const liveTarget = normalizeText([
           live.date,
@@ -177,7 +230,7 @@
 　　　　　const matchSong = !songKeyword || songTarget.includes(songKeyword);
 　　　　　const matchSecret = !secretMode || live.attended;
 
-　　　　　return matchLive && matchSong && matchSecret;
+　　　　　return matchLive && matchSong && matchSecret && matchYear && matchMonth;
       });
 
       liveList.innerHTML = "";
@@ -223,6 +276,9 @@
 
     searchInput.addEventListener("input", renderLives);
     songSearchInput.addEventListener("input", renderLives);
+
+    yearFilter.addEventListener("change", renderLives);
+    monthFilter.addEventListener("change", renderLives);
 
     clearButton.addEventListener("click", () => {
       searchInput.value = "";
