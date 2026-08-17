@@ -11,11 +11,11 @@
   --line: #e7eaf3;
   --line-soft: #f1f4fa;
 
-  /* main accent */
-  --primary: #6d5dfc;
-  --primary-2: #8b5cf6;
-  --primary-soft: #f2efff;
-  --primary-text: #5b45e0;
+  /* main accent - light blue */
+  --primary: #42a5e8;
+  --primary-2: #6ec6f2;
+  --primary-soft: #eaf8ff;
+  --primary-text: #2188c7;
 
   /* accent red/pink */
   --danger: #ff4d6d;
@@ -32,8 +32,17 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
-  background: linear-gradient(180deg, #f7f8fc 0%, #f3f5fa 100%);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Hiragino Sans",
+    "Yu Gothic",
+    sans-serif;
+  background: linear-gradient(
+    180deg,
+    #f7f8fc 0%,
+    #f3f5fa 100%
+  );
   color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -49,45 +58,79 @@ a {
   margin: 0 auto;
 }
 
+
 /* ===== Header ===== */
+
 .site-header {
-  background: linear-gradient(135deg, #5f5af7 0%, #8b5cf6 55%, #a78bfa 100%);
-  color: #fff;
+  background: linear-gradient(
+    135deg,
+    #dff6ff 0%,
+    #c8edff 50%,
+    #b8e6fa 100%
+  );
+
+  color: #23405a;
+
   padding: 40px 0 32px;
-  box-shadow: 0 8px 28px rgba(109, 93, 252, 0.24);
+
+  box-shadow:
+    0 8px 28px rgba(66, 165, 232, 0.16);
 }
 
 .site-subtitle {
   margin: 0 0 8px;
+
   font-size: 0.8rem;
   letter-spacing: 0.12em;
+
   opacity: 0.88;
+
+  color: #278bc5;
 }
 
 .site-title {
   margin: 0;
+
   font-size: clamp(2rem, 6vw, 3rem);
   line-height: 1.2;
+
+  color: #1f4561;
 }
 
 .site-desc {
   margin: 12px 0 0;
+
   font-size: 0.98rem;
+
   opacity: 0.94;
+
+  color: #315a73;
 }
 
+
 /* ===== Main ===== */
+
 main {
   padding: 24px 0 48px;
 }
 
 .notice-box {
-  background: linear-gradient(180deg, #fffaf0, #fff6dd);
+  background: linear-gradient(
+    180deg,
+    #fffaf0,
+    #fff6dd
+  );
+
   border: 1px solid #f4d58d;
+
   color: #7a5a00;
+
   border-radius: 14px;
+
   padding: 14px 16px;
+
   margin-bottom: 24px;
+
   box-shadow: var(--shadow-sm);
 }
 
@@ -102,227 +145,391 @@ main {
 
 .section-head {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
+
   gap: 12px;
+
   margin-bottom: 16px;
+
   flex-wrap: wrap;
 }
 
 .section-title {
   margin: 0;
+
   font-size: 1.35rem;
+
   color: #171a2d;
 }
 
 .count-text {
   margin: 0;
+
   color: var(--muted);
+
   font-size: 0.95rem;
 }
 
+
 /* ===== Search ===== */
+
 .search-box {
   margin-bottom: 18px;
 }
 
 .search-label {
   display: block;
+
   margin-bottom: 8px;
+
   font-size: 0.92rem;
+
   font-weight: 700;
+
   color: #434b63;
 }
 
 .search-input {
   width: 100%;
+
   border: 1px solid #d9deea;
+
   border-radius: 14px;
+
   padding: 14px 16px;
+
   font-size: 1rem;
+
   background: rgba(255, 255, 255, 0.96);
+
   outline: none;
-  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
 }
 
 .search-input:focus {
   border-color: var(--primary-2);
-  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.12);
+
+  box-shadow:
+    0 0 0 4px rgba(66, 165, 232, 0.14);
+
   background: #fff;
 }
 
+
+/* ===== Year / Month Filter ===== */
+
+.date-filter {
+  display: flex;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+.date-filter-item {
+  flex: 1;
+}
+
+.date-filter-item .search-input {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .date-filter {
+    gap: 8px;
+  }
+}
+
+
 /* ===== Filter Buttons ===== */
+
 .filter-actions {
   margin-bottom: 18px;
+
   display: flex;
+
   gap: 10px;
+
   flex-wrap: wrap;
 }
 
 .clear-button,
 .oneman-button {
   appearance: none;
+
   border: none;
+
   font-weight: 700;
+
   border-radius: 999px;
+
   padding: 10px 14px;
+
   cursor: pointer;
+
   font-size: 0.92rem;
-  transition: transform 0.16s ease, opacity 0.16s ease, box-shadow 0.16s ease;
+
+  transition:
+    transform 0.16s ease,
+    opacity 0.16s ease,
+    box-shadow 0.16s ease;
 }
 
 .clear-button {
-  background: linear-gradient(180deg, #f3efff, #ece7ff);
-  color: #6b38d1;
-  box-shadow: 0 4px 10px rgba(139, 92, 246, 0.08);
+  background: linear-gradient(
+    180deg,
+    #eaf8ff,
+    #def3ff
+  );
+
+  color: #2188c7;
+
+  box-shadow:
+    0 4px 10px rgba(66, 165, 232, 0.08);
 }
 
 .oneman-button {
-  background: linear-gradient(180deg, #edf2ff, #e7edff);
-  color: #4d56d8;
-  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.08);
+  background: linear-gradient(
+    180deg,
+    #edf9ff,
+    #e2f5ff
+  );
+
+  color: #2687bd;
+
+  box-shadow:
+    0 4px 10px rgba(66, 165, 232, 0.08);
 }
 
 .clear-button:hover,
 .oneman-button:hover {
   opacity: 0.96;
+
   transform: translateY(-1px);
 }
 
+
 /* ===== Live List ===== */
+
 .live-grid {
   display: grid;
+
   gap: 16px;
 }
 
 .live-card {
   display: block;
+
   text-decoration: none;
+
   background: rgba(255, 255, 255, 0.96);
+
   backdrop-filter: blur(6px);
+
   border-radius: 18px;
+
   padding: 18px 18px 16px;
-  box-shadow: 0 8px 22px rgba(38, 45, 72, 0.07);
+
+  box-shadow:
+    0 8px 22px rgba(38, 45, 72, 0.07);
+
   border: 1px solid #e9edf6;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
 }
 
 .live-card:hover {
   transform: translateY(-3px);
+
   box-shadow: var(--shadow-lg);
-  border-color: #dcd8ff;
+
+  border-color: #b9e4f8;
 }
 
 .live-date {
   display: inline-block;
-  background: linear-gradient(180deg, #f4f1ff, #eee9ff);
+
+  background: linear-gradient(
+    180deg,
+    #eaf8ff,
+    #def3ff
+  );
+
   color: var(--primary-text);
+
   font-weight: 700;
+
   font-size: 0.8rem;
+
   padding: 4px 10px;
+
   border-radius: 999px;
+
   margin-bottom: 10px;
 }
 
 .live-name {
   margin: 0;
+
   font-size: 1.08rem;
+
   line-height: 1.5;
+
   color: #171a2d;
 }
 
 .live-place {
   margin: 8px 0 0;
+
   color: var(--muted);
+
   font-size: 0.95rem;
 }
 
 .live-meta {
   margin: 4px 0 0;
+
   color: #98a0b3;
+
   font-size: 0.9rem;
 }
 
 .live-link {
   display: inline-block;
+
   margin-top: 12px;
-  color: #5f5af7;
+
+  color: #2c9bd5;
+
   font-weight: 700;
+
   font-size: 0.95rem;
 }
 
 .song-hit-badge {
   margin: 10px 0 0;
+
   display: inline-block;
-  background: linear-gradient(180deg, #ecfeff, #dffafe);
+
+  background: linear-gradient(
+    180deg,
+    #ecfeff,
+    #dffafe
+  );
+
   color: #0f766e;
+
   border: 1px solid #a5f3fc;
+
   border-radius: 999px;
+
   padding: 4px 10px;
+
   font-size: 0.8rem;
+
   font-weight: 700;
 }
 
 .empty-text {
   margin: 18px 0 0;
+
   color: var(--muted);
 }
 
+
 /* ===== Detail Page ===== */
+
 .detail-main {
   padding: 24px 0 48px;
 }
 
 .detail-card {
   background: rgba(255, 255, 255, 0.97);
+
   border-radius: 20px;
+
   padding: 22px;
+
   box-shadow: var(--shadow-md);
+
   border: 1px solid #e9edf6;
 }
 
 .detail-meta {
   display: grid;
+
   gap: 8px;
+
   margin-bottom: 18px;
+
   color: #596176;
+
   font-size: 0.95rem;
 }
 
 .detail-title {
   margin: 0 0 12px;
+
   font-size: clamp(1.5rem, 5vw, 2.1rem);
+
   line-height: 1.35;
+
   color: #171a2d;
 }
 
+
 /* ===== Detail Image ===== */
+
 .detail-image-wrap {
   margin: 0 0 20px;
 }
 
 .detail-image {
   display: block;
+
   width: 100%;
+
   max-width: 100%;
+
   border-radius: 16px;
+
   object-fit: cover;
-  box-shadow: 0 10px 28px rgba(30, 41, 59, 0.1);
+
+  box-shadow:
+    0 10px 28px rgba(30, 41, 59, 0.1);
 }
 
+
 /* ===== Section Titles ===== */
+
 .detail-section-title {
   margin: 24px 0 12px;
+
   font-size: 1.2rem;
+
   color: #171a2d;
 }
 
 .detail-section-title-row {
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
+
   gap: 12px;
+
   margin: 24px 0 12px;
+
   flex-wrap: wrap;
 }
 
@@ -330,47 +537,90 @@ main {
   margin: 0;
 }
 
+
 /* ===== Copy Button ===== */
+
 .copy-setlist-btn {
   appearance: none;
-  border: 1px solid #c7d2fe;
+
+  border: 1px solid #a9dff5;
+
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
-  background: linear-gradient(180deg, #f5f7ff, #e9eeff);
-  color: #4353d6;
+
+  background: linear-gradient(
+    180deg,
+    #f3fbff,
+    #e6f7ff
+  );
+
+  color: #2687bd;
+
   font-weight: 700;
+
   border-radius: 999px;
+
   padding: 8px 14px;
+
   min-width: 72px;
+
   cursor: pointer;
+
   font-size: 0.88rem;
+
   line-height: 1.2;
+
   white-space: nowrap;
+
   flex-shrink: 0;
-  box-shadow: 0 3px 10px rgba(99, 102, 241, 0.08);
-  transition: transform 0.16s ease, box-shadow 0.16s ease, opacity 0.16s ease;
+
+  box-shadow:
+    0 3px 10px rgba(66, 165, 232, 0.08);
+
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    opacity 0.16s ease;
+
   user-select: none;
+
   -webkit-user-select: none;
+
   -webkit-touch-callout: none;
 }
 
 .copy-setlist-btn:hover {
   opacity: 0.96;
+
   transform: translateY(-1px);
-  box-shadow: 0 5px 14px rgba(99, 102, 241, 0.12);
+
+  box-shadow:
+    0 5px 14px rgba(66, 165, 232, 0.12);
 }
 
+
 /* ===== Setlist Box ===== */
+
 .setlist-box {
-  background: linear-gradient(180deg, #fcfcff, #f7f9fd);
-  border: 1px solid #e6ebf5;
+  background: linear-gradient(
+    180deg,
+    #fcfeff,
+    #f4faff
+  );
+
+  border: 1px solid #dfeef6;
+
   border-radius: 16px;
+
   padding: 18px 18px 18px 24px;
 }
 
 .setlist {
   margin: 0;
+
   padding-left: 1.4em;
 }
 
@@ -382,110 +632,193 @@ main {
   margin-bottom: 0;
 }
 
+
 /* セトリ1行（曲名 + ▶︎ボタン） */
+
 .setlist-item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto;
+
   align-items: start;
+
   gap: 8px;
+
   width: 100%;
 }
 
+
 /* 曲名 */
+
 .song-name {
   min-width: 0;
+
   line-height: 1.65;
+
   word-break: break-word;
+
   overflow-wrap: anywhere;
 }
 
-/* ▶︎ ボタン（小さく・主張弱め） */
+
+/* ▶︎ ボタン */
+
 .listen-btn {
   flex-shrink: 0;
+
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
+
   align-self: start;
+
   margin: 1px 0 0;
+
   padding: 3px 8px;
+
   min-width: auto;
+
   font-size: 10px;
+
   line-height: 1;
+
   font-weight: 700;
+
   border: 1px solid var(--danger-line);
+
   border-radius: 999px;
+
   background: var(--danger-soft);
+
   color: #e13a5c;
+
   cursor: pointer;
+
   white-space: nowrap;
+
   letter-spacing: 0.01em;
-  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
+
   user-select: none;
+
   -webkit-user-select: none;
+
   -webkit-touch-callout: none;
 }
 
 .listen-btn:hover {
   background: var(--danger-soft-hover);
+
   border-color: var(--danger-line-hover);
+
   color: #cf274a;
+
   transform: translateY(-1px);
 }
 
+
 /* ===== Apple Music Player ===== */
-/* Apple Music プレイヤー全体 */
+
 .apple-player-section {
   margin-top: 1.5rem;
+
   padding: 1rem;
+
   border-radius: 18px;
-  background: linear-gradient(135deg, #fff8f8 0%, #ffeef1 100%);
+
+  background: linear-gradient(
+    135deg,
+    #fff8f8 0%,
+    #ffeef1 100%
+  );
+
   border: 1px solid #ffd6dc;
-  box-shadow: 0 10px 24px rgba(255, 120, 140, 0.08);
+
+  box-shadow:
+    0 10px 24px rgba(255, 120, 140, 0.08);
 }
 
-/* 曲名タイトル */
 .apple-player-title {
   margin: 0 0 0.85rem;
+
   font-size: 0.95rem;
+
   font-weight: 700;
+
   color: #8f4a56;
+
   background: rgba(255, 255, 255, 0.78);
+
   padding: 0.55rem 0.8rem;
+
   border-radius: 12px;
+
   border: 1px solid rgba(255, 214, 220, 0.9);
 }
 
-/* iframe */
 .apple-player-frame {
   width: 100%;
+
   height: 175px;
+
   border: 0;
+
   border-radius: 14px;
+
   overflow: hidden;
+
   background: #ffffff;
-  box-shadow: inset 0 0 0 1px rgba(255, 225, 230, 0.9);
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 225, 230, 0.9);
 }
 
+
 /* ===== Memo ===== */
+
 .memo-box {
   margin-top: 18px;
-  background: linear-gradient(180deg, #faf6ff, #f4edff);
-  border: 1px solid #e8d8ff;
+
+  background: linear-gradient(
+    180deg,
+    #f1faff,
+    #eaf7ff
+  );
+
+  border: 1px solid #ccecf9;
+
   border-radius: 16px;
+
   padding: 16px;
 }
 
 .memo-box p {
   margin: 0;
+
   white-space: pre-line;
 }
 
+
 /* ===== Back Link ===== */
+
 .back-link {
   display: inline-block;
+
   margin-top: 20px;
+
   text-decoration: none;
-  color: #5f5af7;
+
+  color: #2c9bd5;
+
   font-weight: 700;
 }
 
@@ -493,85 +826,81 @@ main {
   text-decoration: underline;
 }
 
+
 /* ===== Footer ===== */
+
 .site-footer {
   padding: 20px 0 28px;
+
   color: var(--muted);
+
   font-size: 0.9rem;
+
   text-align: center;
 }
 
-/* ===== PC ===== */
-@media (min-width: 768px) {
-  .live-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .detail-card {
-    padding: 28px;
-  }
-
-  .apple-player-frame {
-    height: 175px;
-  }
-}
-
-/* ===== Mobile Tuning ===== */
-@media (max-width: 767px) {
-  .detail-card {
-    padding: 18px;
-    border-radius: 18px;
-  }
-
-  .setlist-box {
-    padding: 16px 14px 16px 20px;
-  }
-
-  .detail-section-title-row {
-    align-items: flex-start;
-  }
-
-  .copy-setlist-btn {
-    padding: 7px 12px;
-    font-size: 0.84rem;
-  }
 
 /* ===== Detail Video ===== */
+
 .detail-video {
   display: block;
+
   width: 100%;
+
   max-width: 100%;
+
   border-radius: 16px;
+
   background: #000;
-  box-shadow: 0 10px 28px rgba(30, 41, 59, 0.12);
+
+  box-shadow:
+    0 10px 28px rgba(30, 41, 59, 0.12);
 }
+
+
+/* ===== Twitter ===== */
 
 .twitter-tweet {
   margin: 0 auto !important;
 }
 
+
 /* ===== Header Navigation ===== */
+
 .header-nav {
   margin: 18px 0 0;
 }
 
 .header-nav a {
   display: inline-block;
+
   padding: 8px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.45);
+
+  border: 1px solid #54b5e8;
+
   border-radius: 999px;
-  color: #fff;
+
+  color: #2188c7;
+
   text-decoration: none;
+
   font-size: 0.9rem;
+
   font-weight: 700;
-  background: rgba(255, 255, 255, 0.12);
-  transition: background 0.18s ease, transform 0.18s ease;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  transition:
+    background 0.18s ease,
+    transform 0.18s ease;
 }
 
 .header-nav a:hover {
-  background: rgba(255, 255, 255, 0.22);
+  background: #ffffff;
+
   transform: translateY(-1px);
 }
+
 
 /* ========================================
    My Lala Record
@@ -579,56 +908,77 @@ main {
 
 .record-stats {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
   gap: 14px;
+
   margin-top: 18px;
 }
 
 .record-stat-card {
   background: #ffffff;
+
   border: 1px solid #e9edf6;
+
   border-radius: 18px;
+
   padding: 20px 16px;
+
   text-align: center;
+
   box-shadow: var(--shadow-sm);
 
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
 }
 
 .record-stat-icon {
   font-size: 1.5rem;
+
   margin-bottom: 4px;
 }
 
 .record-stat-number {
   font-size: 1.8rem;
+
   font-weight: 800;
+
   line-height: 1.2;
+
   color: #171a2d;
 }
 
 .record-stat-label {
   margin-top: 4px;
+
   color: var(--muted);
+
   font-size: 0.85rem;
 }
 
 
-/* ライブ一覧 */
+/* ===== ライブ一覧 ===== */
 
 .record-live-list {
   display: grid;
+
   gap: 12px;
 }
 
 .record-live-card {
   display: block;
+
   text-decoration: none;
 
   background: rgba(255, 255, 255, 0.96);
+
   border: 1px solid #e9edf6;
+
   border-radius: 16px;
 
   padding: 16px;
@@ -643,21 +993,24 @@ main {
 
 .record-live-card:hover {
   transform: translateY(-2px);
+
   box-shadow: var(--shadow-md);
-  border-color: #dcd8ff;
+
+  border-color: #b9e4f8;
 }
 
 
-/* バックアップ */
+/* ===== バックアップ ===== */
 
 .backup-box {
   background: linear-gradient(
     180deg,
-    #f8f7ff,
-    #f1efff
+    #f3fbff,
+    #eaf7ff
   );
 
-  border: 1px solid #e3ddff;
+  border: 1px solid #cfeaf7;
+
   border-radius: 18px;
 
   padding: 18px;
@@ -665,16 +1018,20 @@ main {
 
 .backup-box p {
   margin: 0 0 16px;
+
   color: #596176;
+
   font-size: 0.92rem;
 }
 
 
-/* ボタン */
+/* ===== バックアップボタン ===== */
 
 .backup-actions {
   display: flex;
+
   gap: 10px;
+
   flex-wrap: wrap;
 }
 
@@ -682,15 +1039,19 @@ main {
   appearance: none;
 
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
 
   border: none;
+
   border-radius: 999px;
 
   padding: 10px 16px;
 
   font-size: 0.9rem;
+
   font-weight: 700;
 
   cursor: pointer;
@@ -705,39 +1066,40 @@ main {
 
 .record-button:hover {
   transform: translateY(-1px);
+
   opacity: 0.95;
 }
 
 .backup-button {
   background: linear-gradient(
     180deg,
-    #eeeaff,
-    #e5deff
+    #eaf8ff,
+    #ddf3ff
   );
 
-  color: #5b45e0;
+  color: #2188c7;
 
   box-shadow:
     0 4px 10px
-    rgba(109, 93, 252, 0.1);
+    rgba(66, 165, 232, 0.1);
 }
 
 .restore-button {
   background: linear-gradient(
     180deg,
-    #edf2ff,
-    #e5ebff
+    #edf9ff,
+    #e2f5ff
   );
 
-  color: #4d56d8;
+  color: #2687bd;
 
   box-shadow:
     0 4px 10px
-    rgba(99, 102, 241, 0.1);
+    rgba(66, 165, 232, 0.1);
 }
 
 
-/* 削除 */
+/* ===== 削除 ===== */
 
 .danger-box {
   margin-top: 8px;
@@ -745,6 +1107,7 @@ main {
   background: #fff7f8;
 
   border: 1px solid #ffd9df;
+
   border-radius: 18px;
 
   padding: 18px;
@@ -754,53 +1117,142 @@ main {
   margin: 0 0 14px;
 
   color: #7c4a55;
+
   font-size: 0.9rem;
 }
 
 .danger-button {
   background: #fff0f2;
+
   color: #d13c59;
 
   border: 1px solid #ffcbd3;
 }
 
 
-/* ヘッダーのナビゲーション */
+/* ========================================
+   Live Record Buttons
+======================================== */
 
-.header-nav {
-  margin: 18px 0 0;
+.live-record-actions {
+  display: flex;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+  margin: 14px 0 20px;
 }
 
-.header-nav a {
-  display: inline-block;
+.live-record-button {
+  appearance: none;
 
-  padding: 8px 14px;
-
-  border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 999px;
 
-  color: #fff;
-  text-decoration: none;
+  padding: 9px 14px;
 
   font-size: 0.9rem;
+
   font-weight: 700;
 
-  background: rgba(255, 255, 255, 0.12);
+  cursor: pointer;
 
   transition:
-    background 0.18s ease,
-    transform 0.18s ease;
+    transform 0.16s ease,
+    background 0.16s ease,
+    border-color 0.16s ease,
+    box-shadow 0.16s ease;
 }
 
-.header-nav a:hover {
-  background: rgba(255, 255, 255, 0.22);
+.live-record-button:hover {
   transform: translateY(-1px);
 }
 
 
-/* スマホ */
+/* ===== お気に入り ===== */
+
+.favorite-live-button {
+  background: #fff6f8;
+
+  color: #d13c59;
+
+  border: 1px solid #ffcbd3;
+}
+
+.favorite-live-button.is-active {
+  background: #ffe9ee;
+
+  border-color: #ff9eb0;
+
+  box-shadow:
+    0 4px 12px
+    rgba(255, 77, 109, 0.12);
+}
+
+
+/* ===== 参加 ===== */
+
+.attended-live-button {
+  background: #edf9ff;
+
+  color: #2687bd;
+
+  border: 1px solid #b9e4f8;
+}
+
+.attended-live-button.is-active {
+  background: #dff3ff;
+
+  border-color: #7fc9ed;
+
+  box-shadow:
+    0 4px 12px
+    rgba(66, 165, 232, 0.12);
+}
+
+
+/* ===== PC ===== */
+
+@media (min-width: 768px) {
+
+  .live-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .detail-card {
+    padding: 28px;
+  }
+
+  .apple-player-frame {
+    height: 175px;
+  }
+}
+
+
+/* ===== Mobile Tuning ===== */
 
 @media (max-width: 767px) {
+
+  .detail-card {
+    padding: 18px;
+
+    border-radius: 18px;
+  }
+
+  .setlist-box {
+    padding: 16px 14px 16px 20px;
+  }
+
+  .detail-section-title-row {
+    align-items: flex-start;
+  }
+
+  .copy-setlist-btn {
+    padding: 7px 12px;
+
+    font-size: 0.84rem;
+  }
 
   .record-stats {
     gap: 10px;
@@ -822,91 +1274,13 @@ main {
     width: 100%;
   }
 
-}
-
-/* ========================================
-   Live Record Buttons
-======================================== /
-
-.live-record-actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-
-  margin: 14px 0 20px;
-}
-
-.live-record-button {
-  appearance: none;
-
-  border-radius: 999px;
-
-  padding: 9px 14px;
-
-  font-size: 0.9rem;
-  font-weight: 700;
-
-  cursor: pointer;
-
-  transition:
-    transform 0.16s ease,
-    background 0.16s ease,
-    border-color 0.16s ease,
-    box-shadow 0.16s ease;
-}
-
-.live-record-button:hover {
-  transform: translateY(-1px);
-}
-
-
-/ お気に入り /
-
-.favorite-live-button {
-  background: #fff6f8;
-  color: #d13c59;
-
-  border: 1px solid #ffcbd3;
-}
-
-.favorite-live-button.is-active {
-  background: #ffe9ee;
-  border-color: #ff9eb0;
-
-  box-shadow:
-    0 4px 12px
-    rgba(255, 77, 109, 0.12);
-}
-
-
-/ 参加 */
-
-.attended-live-button {
-  background: #f3f6ff;
-  color: #4d56d8;
-
-  border: 1px solid #cfd6ff;
-}
-
-.attended-live-button.is-active {
-  background: #e9edff;
-  border-color: #aeb9ff;
-
-  box-shadow:
-    0 4px 12px
-    rgba(99, 102, 241, 0.12);
-}
-
-
-@media (max-width: 767px) {
-
   .live-record-actions {
     gap: 8px;
   }
 
   .live-record-button {
     font-size: 0.84rem;
+
     padding: 8px 12px;
   }
-
 }
