@@ -43,288 +43,761 @@
     <div class="wrap">
       <p class="site-subtitle">SETLIST ARCHIVE</p>
       <h1 class="site-title">Lala セットリストまとめ</h1>
+
       <p class="site-desc">
         ライブごとのセットリストを一覧でまとめています<br>
-        Lala公式X 及び画像引用元→ <a href="https://x.com/Lala_official20" target="_blank" rel="noopener noreferrer">https://x.com/Lala_official20</a><br>
-        Lala公式Instagram 及び画像引用元→ <a href="https://www.instagram.com/lala_official_band" target="_blank" rel="noopener noreferrer">https://www.instagram.com/lala_official_band</a><br>
-        Lalaのメンバーを簡単に紹介→ <a href="members.html" target="_blank" rel="noopener noreferrer">メンバー紹介ページ</a><br>
+
+        Lala公式X 及び画像引用元→
+        <a href="https://x.com/Lala_official20" target="_blank" rel="noopener noreferrer">
+          https://x.com/Lala_official20
+        </a><br>
+
+        Lala公式Instagram 及び画像引用元→
+        <a href="https://www.instagram.com/lala_official_band" target="_blank" rel="noopener noreferrer">
+          https://www.instagram.com/lala_official_band
+        </a><br>
+
+        Lalaのメンバーを簡単に紹介→
+        <a href="members.html" target="_blank" rel="noopener noreferrer">
+          メンバー紹介ページ
+        </a><br>
+
         Prepared by:X@Lala_mimi14<br>
+
         　<br>
+
         行ったライブ、お気に入りのライブの記録が出来ます↓
+
         <p class="header-nav">
-        <a href="my-record.html">あなたのLala記録</a>
+          <a href="my-record.html">
+            あなたのLala記録
+          </a>
         </p>
       </p>
     </div>
   </header>
 
 
-
   <main class="wrap">
 
-      <!-- Lalaのお知らせ -->
-  <section class="section-block">
-    <h2 class="section-title">Lalaのお知らせ</h2>
+    <!-- Lalaのお知らせ -->
+    <section class="section-block">
+      <h2 class="section-title">Lalaのお知らせ</h2>
 
-    <blockquote class="twitter-tweet">
-      <a href="https://x.com/lala_official20/status/2087464618864304329?s=46"></a>
-    </blockquote>
+      <blockquote class="twitter-tweet">
+        <a href="https://x.com/lala_official20/status/2087464618864304329?s=46"></a>
+      </blockquote>
 
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </section>
-    
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8">
+      </script>
+    </section>
+
 
     <section class="section-block">
+
       <div class="section-head">
         <h2 class="section-title">ライブ一覧</h2>
         <p class="count-text" id="liveCount">0件</p>
       </div>
 
+
       <!-- ライブ情報検索 -->
       <div class="search-box">
-        <label class="search-label" for="searchInput">ライブ検索</label>
+
+        <label class="search-label" for="searchInput">
+          ライブ検索
+        </label>
+
         <input
           type="text"
           id="searchInput"
           class="search-input"
           placeholder="ライブ名・会場・都市名で検索"
         />
+
       </div>
+
 
       <!-- 年月検索 -->
       <div class="date-filter">
-      <div class="date-filter-item">
-      <label class="search-label" for="yearFilter">年</label>
-      <select id="yearFilter" class="search-input">
-      <option value="">すべて</option>
-      </select>
+
+        <div class="date-filter-item">
+
+          <label
+            class="search-label"
+            for="yearFilter">
+            年
+          </label>
+
+          <select
+            id="yearFilter"
+            class="search-input">
+
+            <option value="">
+              すべて
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="date-filter-item">
+
+          <label
+            class="search-label"
+            for="monthFilter">
+            月
+          </label>
+
+          <select
+            id="monthFilter"
+            class="search-input">
+
+            <option value="">
+              すべて
+            </option>
+
+          </select>
+
+        </div>
+
       </div>
 
-      <div class="date-filter-item">
-      <label class="search-label" for="monthFilter">月</label>
-      <select id="monthFilter" class="search-input">
-      <option value="">すべて</option>
-      </select>
-      </div>
-      </div>
 
       <!-- 曲名検索 -->
       <div class="search-box">
-        <label class="search-label" for="songSearchInput">曲名検索</label>
+
+        <label
+          class="search-label"
+          for="songSearchInput">
+          曲名検索
+        </label>
+
         <input
           type="text"
           id="songSearchInput"
           class="search-input"
           placeholder="曲名を入れると、その曲が含まれる公演だけ表示"
         />
+
       </div>
+
 
       <div class="filter-actions">
-        <button id="clearButton" class="clear-button" type="button">検索をクリア</button>
-        <button id="onemanButton" class="oneman-button" type="button">ワンマンのみ</button>
+
+        <button
+          id="clearButton"
+          class="clear-button"
+          type="button">
+          検索をクリア
+        </button>
+
+        <button
+          id="onemanButton"
+          class="oneman-button"
+          type="button">
+          ワンマンのみ
+        </button>
+
       </div>
 
-      <div class="live-grid" id="liveList"></div>
 
-      <p class="empty-text" id="emptyText" style="display: none;">
+      <div
+        class="live-grid"
+        id="liveList">
+      </div>
+
+
+      <p
+        class="empty-text"
+        id="emptyText"
+        style="display: none;">
+
         該当するライブがありません。
+
       </p>
+
     </section>
+
   </main>
 
+
   <footer class="site-footer">
+
     <div class="wrap">
-      <p>© 2026 セトリまとめ</p>
+
+      <p>
+        © 2026 セトリまとめ
+      </p>
+
     </div>
+
   </footer>
 
+
   <script src="data.js"></script>
+
   <script>
-    const liveList = document.getElementById("liveList");
-    const liveCount = document.getElementById("liveCount");
-    const searchInput = document.getElementById("searchInput");
-    const songSearchInput = document.getElementById("songSearchInput");
-    const emptyText = document.getElementById("emptyText");
-    const clearButton = document.getElementById("clearButton");
-    const onemanButton = document.getElementById("onemanButton");
-    const yearFilter = document.getElementById("yearFilter");
-    const monthFilter = document.getElementById("monthFilter");
 
-    // 新しい順
-    const sortedLives = [...liveData].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const liveList =
+      document.getElementById("liveList");
 
+    const liveCount =
+      document.getElementById("liveCount");
+
+    const searchInput =
+      document.getElementById("searchInput");
+
+    const songSearchInput =
+      document.getElementById("songSearchInput");
+
+    const emptyText =
+      document.getElementById("emptyText");
+
+    const clearButton =
+      document.getElementById("clearButton");
+
+    const onemanButton =
+      document.getElementById("onemanButton");
+
+    const yearFilter =
+      document.getElementById("yearFilter");
+
+    const monthFilter =
+      document.getElementById("monthFilter");
+
+
+    // =========================
+    // ライブを新しい順に並べる
+    // =========================
+
+    const sortedLives =
+      [...liveData].sort(
+        (a, b) =>
+          new Date(b.date) - new Date(a.date)
+      );
+
+
+    // =========================
     // 年の選択肢を作成
-    const years = [...new Set(
-    liveData.map(live => new Date(live.date).getFullYear())
-    )].sort((a, b) => b - a);
+    // =========================
+
+    const years =
+      [...new Set(
+        liveData.map(
+          live => new Date(live.date).getFullYear()
+        )
+      )].sort(
+        (a, b) => b - a
+      );
+
 
     years.forEach(year => {
-    const option = document.createElement("option");
-    option.value = year;
-    option.textContent = ${year}年;
-    yearFilter.appendChild(option);
+
+      const option =
+        document.createElement("option");
+
+      option.value = year;
+
+      option.textContent =
+        `${year}年`;
+
+      yearFilter.appendChild(option);
+
     });
 
+
+    // =========================
     // 月の選択肢を作成
+    // =========================
+
     for (let month = 1; month <= 12; month++) {
-    const option = document.createElement("option");
-    option.value = month;
-    option.textContent = ${month}月;
-    monthFilter.appendChild(option);
+
+      const option =
+        document.createElement("option");
+
+      option.value = month;
+
+      option.textContent =
+        `${month}月`;
+
+      monthFilter.appendChild(option);
+
     }
 
-    
+
+    // =========================
+    // 検索用文字列の正規化
+    // =========================
+
     function normalizeText(text) {
+
       return (text || "")
         .toString()
         .toLowerCase()
-        .replace(/[\u200B-\u200D\uFEFF]/g, "") // 不可視文字除去
-        .replace(/\u00A0/g, " ")               // nbsp → 半角スペース
-        .replace(/\s+/g, "")
-        .replace(/[　]/g, "");
+
+        // 不可視文字除去
+        .replace(
+          /[\u200B-\u200D\uFEFF]/g,
+          ""
+        )
+
+        // nbsp → 半角スペース
+        .replace(
+          /\u00A0/g,
+          " "
+        )
+
+        // 空白除去
+        .replace(
+          /\s+/g,
+          ""
+        )
+
+        // 全角スペース除去
+        .replace(
+          /[　]/g,
+          ""
+        );
+
     }
+
+
+    // =========================
+    // URLパラメータ取得
+    // =========================
 
     function getQueryParam(name) {
-      const params = new URLSearchParams(window.location.search);
+
+      const params =
+        new URLSearchParams(
+          window.location.search
+        );
+
       return params.get(name) || "";
+
     }
 
+
+    // =========================
+    // ライブ一覧表示
+    // =========================
+
     function renderLives() {
-      const liveKeyword = normalizeText(searchInput.value);
-      const songKeyword = normalizeText(songSearchInput.value);
-      const selectedYear = yearFilter.value;
-      const selectedMonth = monthFilter.value;
-      const secretMode = liveKeyword === "くまきち";
 
-      const filtered = sortedLives.filter(live => {
+      const liveKeyword =
+        normalizeText(
+          searchInput.value
+        );
 
-      const liveDate = new Date(live.date);
-      const liveYear = liveDate.getFullYear();
-      const liveMonth = liveDate.getMonth() + 1;
+      const songKeyword =
+        normalizeText(
+          songSearchInput.value
+        );
 
-      const matchYear =
-      !selectedYear || liveYear === Number(selectedYear);
+      const selectedYear =
+        yearFilter.value;
 
-      const matchMonth =
-      !selectedMonth || liveMonth === Number(selectedMonth);
-        
-        // ライブ情報検索対象
-        const liveTarget = normalizeText([
-          live.date,
-          live.title,
-          live.venue,
-          live.city
-        ].join(" "));
+      const selectedMonth =
+        monthFilter.value;
 
-        // 曲検索対象（本編 + アンコール）
-        const songs = [
-          ...(live.setlistMain || []),
-          ...(live.setlistEncore || [])
-        ];
-        const songTarget = normalizeText(songs.join(" "));
 
-        const matchLive =
-        secretMode ||
-        !liveKeyword ||
-        liveTarget.includes(liveKeyword);
-　　　　　const matchSong = !songKeyword || songTarget.includes(songKeyword);
-　　　　　const matchSecret = !secretMode || live.attended;
+      // 「くまきち」と入力した場合
+      // attended: true のライブだけ表示
+      const secretMode =
+        liveKeyword === "くまきち";
 
-　　　　　return matchLive && matchSong && matchSecret && matchYear && matchMonth;
-      });
+
+      const filtered =
+        sortedLives.filter(live => {
+
+
+          // =========================
+          // 年月判定
+          // =========================
+
+          const liveDate =
+            new Date(live.date);
+
+          const liveYear =
+            liveDate.getFullYear();
+
+          const liveMonth =
+            liveDate.getMonth() + 1;
+
+
+          const matchYear =
+            !selectedYear ||
+            liveYear === Number(selectedYear);
+
+
+          const matchMonth =
+            !selectedMonth ||
+            liveMonth === Number(selectedMonth);
+
+
+          // =========================
+          // ライブ情報検索
+          // =========================
+
+          const liveTarget =
+            normalizeText([
+              live.date,
+              live.title,
+              live.venue,
+              live.city
+            ].join(" "));
+
+
+          // =========================
+          // 曲検索
+          // =========================
+
+          const songs = [
+
+            ...(live.setlistMain || []),
+
+            ...(live.setlistEncore || [])
+
+          ];
+
+
+          const songTarget =
+            normalizeText(
+              songs.join(" ")
+            );
+
+
+          // =========================
+          // 通常ライブ検索
+          // =========================
+
+          const matchLive =
+            secretMode ||
+            !liveKeyword ||
+            liveTarget.includes(
+              liveKeyword
+            );
+
+
+          // =========================
+          // 曲検索判定
+          // =========================
+
+          const matchSong =
+            !songKeyword ||
+            songTarget.includes(
+              songKeyword
+            );
+
+
+          // =========================
+          // くまきち判定
+          // =========================
+
+          const matchSecret =
+            !secretMode ||
+            live.attended === true;
+
+
+          // =========================
+          // 全条件
+          // =========================
+
+          return (
+            matchLive &&
+            matchSong &&
+            matchSecret &&
+            matchYear &&
+            matchMonth
+          );
+
+        });
+
+
+      // =========================
+      // 一覧をクリア
+      // =========================
 
       liveList.innerHTML = "";
 
+
+      // =========================
+      // 0件表示
+      // =========================
+
       if (filtered.length === 0) {
-        emptyText.style.display = "block";
+
+        emptyText.style.display =
+          "block";
+
       } else {
-        emptyText.style.display = "none";
+
+        emptyText.style.display =
+          "none";
+
       }
 
-      liveCount.textContent = `${filtered.length}件`;
+
+      // =========================
+      // 件数
+      // =========================
+
+      liveCount.textContent =
+        `${filtered.length}件`;
+
+
+      // =========================
+      // ライブカード作成
+      // =========================
 
       filtered.forEach(live => {
+
+
         const songs = [
+
           ...(live.setlistMain || []),
+
           ...(live.setlistEncore || [])
+
         ];
 
-        const isSongMatched = songKeyword && songs.some(song =>
-          normalizeText(song).includes(songKeyword)
-        );
 
-        const card = document.createElement("a");
-        card.className = "live-card";
-        card.href = `live.html?id=${encodeURIComponent(live.id)}`;
+        const isSongMatched =
+          songKeyword &&
+          songs.some(song =>
+            normalizeText(song)
+              .includes(songKeyword)
+          );
+
+
+        const card =
+          document.createElement("a");
+
+
+        card.className =
+          "live-card";
+
+
+        card.href =
+          `live.html?id=${encodeURIComponent(live.id)}`;
+
 
         card.innerHTML = `
-          <div class="live-date">${live.date}</div>
-          <h3 class="live-name">${live.title}</h3>
-          <p class="live-place">${live.venue}</p>
-          <p class="live-meta">${live.city}</p>
+
+          <div class="live-date">
+            ${live.date}
+          </div>
+
+          <h3 class="live-name">
+            ${live.title}
+          </h3>
+
+          <p class="live-place">
+            ${live.venue}
+          </p>
+
+          <p class="live-meta">
+            ${live.city}
+          </p>
+
           ${
             isSongMatched
-              ? `<p class="song-hit-badge">この公演に曲名が含まれています</p>`
+              ? `
+                <p class="song-hit-badge">
+                  この公演に曲名が含まれています
+                </p>
+              `
               : ""
           }
-          <span class="live-link">セトリを見る →</span>
+
+          <span class="live-link">
+            セトリを見る →
+          </span>
+
         `;
 
+
         liveList.appendChild(card);
+
       });
+
     }
 
-    searchInput.addEventListener("input", renderLives);
-    songSearchInput.addEventListener("input", renderLives);
 
-    yearFilter.addEventListener("change", renderLives);
-    monthFilter.addEventListener("change", renderLives);
+    // =========================
+    // 検索イベント
+    // =========================
 
-    clearButton.addEventListener("click", () => {
-      searchInput.value = "";
-      songSearchInput.value = "";
-      renderLives();
+    searchInput.addEventListener(
+      "input",
+      renderLives
+    );
 
-      const url = new URL(window.location.href);
-      url.searchParams.delete("song");
-      window.history.replaceState({}, "", url);
-    });
 
-    onemanButton.addEventListener("click", () => {
-      searchInput.value = "Lala ONEMAN";
-      renderLives();
-    });
+    songSearchInput.addEventListener(
+      "input",
+      renderLives
+    );
 
-    // 曲一覧ページから ?song=曲名 で来たとき自動入力
-    const initialSong = getQueryParam("song");
+
+    yearFilter.addEventListener(
+      "change",
+      renderLives
+    );
+
+
+    monthFilter.addEventListener(
+      "change",
+      renderLives
+    );
+
+
+    // =========================
+    // 検索クリア
+    // =========================
+
+    clearButton.addEventListener(
+      "click",
+      () => {
+
+        searchInput.value = "";
+
+        songSearchInput.value = "";
+
+        yearFilter.value = "";
+
+        monthFilter.value = "";
+
+        renderLives();
+
+
+        const url =
+          new URL(
+            window.location.href
+          );
+
+
+        url.searchParams.delete(
+          "song"
+        );
+
+
+        window.history.replaceState(
+          {},
+          "",
+          url
+        );
+
+      }
+    );
+
+
+    // =========================
+    // ワンマンのみ
+    // =========================
+
+    onemanButton.addEventListener(
+      "click",
+      () => {
+
+        searchInput.value =
+          "Lala ONEMAN";
+
+        renderLives();
+
+      }
+    );
+
+
+    // =========================
+    // 曲一覧ページから
+    // ?song=曲名
+    // =========================
+
+    const initialSong =
+      getQueryParam("song");
+
+
     if (initialSong) {
-      songSearchInput.value = initialSong;
+
+      songSearchInput.value =
+        initialSong;
+
     }
 
+
+    // 初期表示
     renderLives();
 
 
-    const scrollKey = "scrollPosition_" + location.pathname;
+    // =========================
+    // スクロール位置保存
+    // =========================
+
+    const scrollKey =
+      "scrollPosition_" +
+      location.pathname;
+
 
     // スクロール位置を保存
-    window.addEventListener("scroll", () => {
-    sessionStorage.setItem(scrollKey, window.scrollY);
-    });
+    window.addEventListener(
+      "scroll",
+      () => {
 
-    // ページ読み込み後に復元
-    window.addEventListener("load", () => {
-    const savedPosition = sessionStorage.getItem(scrollKey);
+        sessionStorage.setItem(
+          scrollKey,
+          window.scrollY
+        );
 
-    if (savedPosition !== null) {
-    setTimeout(() => {
-      window.scrollTo({
-        top: Number(savedPosition),
-        behavior: "instant"
-      });
-    }, 100);
-    }
-  });
-    
+      }
+    );
+
+
+    // =========================
+    // スクロール位置復元
+    // =========================
+
+    window.addEventListener(
+      "load",
+      () => {
+
+        const savedPosition =
+          sessionStorage.getItem(
+            scrollKey
+          );
+
+
+        if (savedPosition !== null) {
+
+          setTimeout(
+            () => {
+
+              window.scrollTo({
+
+                top:
+                  Number(savedPosition),
+
+                behavior:
+                  "instant"
+
+              });
+
+            },
+            100
+          );
+
+        }
+
+      }
+    );
+
   </script>
+
 </body>
+
 </html>
