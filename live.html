@@ -64,6 +64,26 @@
         <button id="copySetlistButton" class="copy-setlist-btn" type="button">セットリストをコピー</button>
       </div>
 
+      <!-- あなたのLala記録 -->
+      <div class="live-record-actions">
+
+      <button
+      id="favoriteLiveButton"
+      class="live-record-button favorite-live-button"
+      type="button"
+      >
+      ☆ お気に入り
+      </button>
+
+      <button
+      id="attendedLiveButton"
+      class="live-record-button attended-live-button"
+      type="button"
+      >
+       □ 行ったライブ
+      </button>
+      </div>
+
       <section>
         <h3 class="detail-section-title">本編</h3>
         <div class="setlist-box">
@@ -303,6 +323,194 @@
 
       detailCard.style.display = "block";
     }
+
+
+    const FAVORITES_KEY = "lala_favorite_lives";
+const ATTENDED_KEY = "lala_attended_lives";
+
+
+function getRecordArray(key) {
+  try {
+    const data = JSON.parse(localStorage.getItem(key));
+
+    return Array.isArray(data) ? data : [];
+
+  } catch {
+    return [];
+  }
+}
+
+
+function saveRecordArray(key, array) {
+  localStorage.setItem(
+    key,
+    JSON.stringify(array)
+  );
+}
+
+
+function updateLiveRecordButtons() {
+
+  if (!live) return;
+
+
+  const favoriteButton =
+    document.getElementById(
+      "favoriteLiveButton"
+    );
+
+  const attendedButton =
+    document.getElementById(
+      "attendedLiveButton"
+    );
+
+
+  const favorites =
+    getRecordArray(FAVORITES_KEY);
+
+  const attended =
+    getRecordArray(ATTENDED_KEY);
+
+
+  const isFavorite =
+    favorites.includes(live.id);
+
+  const isAttended =
+    attended.includes(live.id);
+
+
+  /* お気に入り */
+
+  if (isFavorite) {
+
+    favoriteButton.textContent =
+      "★ お気に入り登録済み";
+
+    favoriteButton.classList.add(
+      "is-active"
+    );
+
+  } else {
+
+    favoriteButton.textContent =
+      "☆ お気に入り";
+
+    favoriteButton.classList.remove(
+      "is-active"
+    );
+
+  }
+
+
+  /* 参加 */
+
+  if (isAttended) {
+
+    attendedButton.textContent =
+      "✓ 行ったライブ";
+
+    attendedButton.classList.add(
+      "is-active"
+    );
+
+  } else {
+
+    attendedButton.textContent =
+      "□ 行ったライブ";
+
+    attendedButton.classList.remove(
+      "is-active"
+    );
+
+  }
+
+}
+
+
+/* お気に入り */
+
+document
+  .getElementById("favoriteLiveButton")
+  .addEventListener("click", () => {
+
+    if (!live) return;
+
+
+    const favorites =
+      getRecordArray(FAVORITES_KEY);
+
+
+    const index =
+      favorites.indexOf(live.id);
+
+
+    if (index === -1) {
+
+      favorites.push(live.id);
+
+    } else {
+
+      favorites.splice(index, 1);
+
+    }
+
+
+    saveRecordArray(
+      FAVORITES_KEY,
+      favorites
+    );
+
+
+    updateLiveRecordButtons();
+
+  });
+
+
+/* 行ったライブ */
+
+document
+  .getElementById("attendedLiveButton")
+  .addEventListener("click", () => {
+
+    if (!live) return;
+
+
+    const attended =
+      getRecordArray(ATTENDED_KEY);
+
+
+    const index =
+      attended.indexOf(live.id);
+
+
+    if (index === -1) {
+
+      attended.push(live.id);
+
+    } else {
+
+      attended.splice(index, 1);
+
+    }
+
+
+    saveRecordArray(
+      ATTENDED_KEY,
+      attended
+    );
+
+
+    updateLiveRecordButtons();
+
+  });
+
+  copySetlistButton.addEventListener("click", () => {
+  copySetlistText(live);
+});
+
+updateLiveRecordButtons();
+
+detailCard.style.display = "block";
   </script>
 </body>
 </html>
