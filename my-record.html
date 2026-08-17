@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>あなたのLala記録 | セトリまとめ</title>
+  <meta
+    name="description"
+    content="あなたが行ったLalaのライブやお気に入りのライブを記録できます。"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFBFNCYXK6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FFBFNCYXK6');
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="site-subtitle">MY LALA RECORD</p>
+    <h1 class="site-title">あなたのLala記録</h1>
+
+    <p class="site-desc">
+      あなたが行ったライブやお気に入りのライブを記録できます。
+    </p>
+
+    <p class="header-nav">
+      <a href="index.html">ライブ一覧</a>
+    </p>
+  </div>
+</header>
+
+<main class="wrap detail-main">
+
+  <!-- 集計 -->
+  <section class="section-block">
+    <div class="section-head">
+      <h2 class="section-title">あなたの記録</h2>
+    </div>
+
+    <div class="record-stats">
+
+      <div class="record-stat-card">
+        <span class="record-stat-icon">🎤</span>
+        <span class="record-stat-number" id="attendedCount">0</span>
+        <span class="record-stat-label">参加ライブ</span>
+      </div>
+
+      <div class="record-stat-card">
+        <span class="record-stat-icon">⭐</span>
+        <span class="record-stat-number" id="favoriteCount">0</span>
+        <span class="record-stat-label">お気に入り</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 参加ライブ -->
+  <section class="section-block">
+    <div class="section-head">
+      <h2 class="section-title">🎤 行ったライブ</h2>
+      <p class="count-text" id="attendedListCount">0公演</p>
+    </div>
+
+    <div class="record-live-list" id="attendedList"></div>
+
+    <p class="empty-text" id="attendedEmpty">
+      まだ参加したライブがありません。
+    </p>
+  </section>
+
+  <!-- お気に入り -->
+  <section class="section-block">
+    <div class="section-head">
+      <h2 class="section-title">⭐ お気に入りライブ</h2>
+      <p class="count-text" id="favoriteListCount">0公演</p>
+    </div>
+
+    <div class="record-live-list" id="favoriteList"></div>
+
+    <p class="empty-text" id="favoriteEmpty">
+      まだお気に入りのライブがありません。
+    </p>
+  </section>
+
+  <!-- バックアップ -->
+  <section class="section-block">
+    <div class="section-head">
+      <h2 class="section-title">💾 記録のバックアップ</h2>
+    </div>
+
+    <div class="backup-box">
+
+      <p>
+        ※お気に入り・参加記録はスマートフォンの機種変更やブラウザのデータ削除時に消えてしまいます。消えた場合はバックアップから復元します。
+      </p>
+
+      <div class="backup-actions">
+
+        <button
+          id="backupButton"
+          class="record-button backup-button"
+          type="button"
+        >
+          💾 バックアップ
+        </button>
+
+        <label class="record-button restore-button">
+          📂 復元
+          <input
+            type="file"
+            id="restoreInput"
+            accept=".json,application/json"
+            hidden
+          />
+        </label>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 全削除 -->
+  <section class="section-block">
+    <div class="danger-box">
+
+      <p>
+        現在のブラウザに保存されている
+        お気に入り・参加記録をすべて削除します。
+      </p>
+
+      <button
+        id="clearRecordButton"
+        class="record-button danger-button"
+        type="button"
+      >
+        🗑️ すべての記録を削除
+      </button>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 セトリまとめ</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+
+<script>
+
+  /* ========================================
+     LocalStorage
+  ======================================== */
+
+  const FAVORITES_KEY = "lala_favorite_lives";
+  const ATTENDED_KEY = "lala_attended_lives";
+
+
+  function getStoredArray(key) {
+    try {
+      const data = JSON.parse(localStorage.getItem(key));
+
+      if (Array.isArray(data)) {
+        return data;
+      }
+
+      return [];
+
+    } catch (error) {
+      console.error(error);
+      return [];
+    }
+  }
+
+
+  function saveStoredArray(key, array) {
+    localStorage.setItem(key, JSON.stringify(array));
+  }
+
+
+  /* ========================================
+     表示
+  ======================================== */
+
+  const attendedList = document.getElementById("attendedList");
+  const favoriteList = document.getElementById("favoriteList");
+
+  const attendedEmpty = document.getElementById("attendedEmpty");
+  const favoriteEmpty = document.getElementById("favoriteEmpty");
+
+  const attendedCount = document.getElementById("attendedCount");
+  const favoriteCount = document.getElementById("favoriteCount");
+
+  const attendedListCount =
+    document.getElementById("attendedListCount");
+
+  const favoriteListCount =
+    document.getElementById("favoriteListCount");
+
+
+  function createLiveCard(live) {
+
+    const card = document.createElement("a");
+
+    card.className = "record-live-card";
+
+    card.href =
+      `live.html?id=${encodeURIComponent(live.id)}`;
+
+
+    card.innerHTML = `
+      <div class="live-date">
+        ${live.date}
+      </div>
+
+      <h3 class="live-name">
+        ${live.title}
+      </h3>
+
+      <p class="live-place">
+        ${live.venue}
+      </p>
+
+      <p class="live-meta">
+        ${live.city}
+      </p>
+
+      <span class="live-link">
+        セトリを見る →
+      </span>
+    `;
+
+    return card;
+  }
+
+
+  function renderRecord() {
+
+    const favorites =
+      getStoredArray(FAVORITES_KEY);
+
+    const attended =
+      getStoredArray(ATTENDED_KEY);
+
+
+    /* 件数 */
+
+    attendedCount.textContent =
+      attended.length;
+
+    favoriteCount.textContent =
+      favorites.length;
+
+    attendedListCount.textContent =
+      `${attended.length}公演`;
+
+    favoriteListCount.textContent =
+      `${favorites.length}公演`;
+
+
+    /* ========================================
+       参加ライブ
+    ======================================== */
+
+    attendedList.innerHTML = "";
+
+    const attendedLives = liveData
+      .filter(live => attended.includes(live.id))
+      .sort((a, b) =>
+        new Date(b.date) - new Date(a.date)
+      );
+
+
+    if (attendedLives.length === 0) {
+
+      attendedEmpty.style.display = "block";
+
+    } else {
+
+      attendedEmpty.style.display = "none";
+
+      attendedLives.forEach(live => {
+
+        attendedList.appendChild(
+          createLiveCard(live)
+        );
+
+      });
+    }
+
+
+    /* ========================================
+       お気に入り
+    ======================================== */
+
+    favoriteList.innerHTML = "";
+
+    const favoriteLives = liveData
+      .filter(live => favorites.includes(live.id))
+      .sort((a, b) =>
+        new Date(b.date) - new Date(a.date)
+      );
+
+
+    if (favoriteLives.length === 0) {
+
+      favoriteEmpty.style.display = "block";
+
+    } else {
+
+      favoriteEmpty.style.display = "none";
+
+      favoriteLives.forEach(live => {
+
+        favoriteList.appendChild(
+          createLiveCard(live)
+        );
+
+      });
+    }
+
+  }
+
+
+  /* ========================================
+     バックアップ
+  ======================================== */
+
+  document
+    .getElementById("backupButton")
+    .addEventListener("click", () => {
+
+      const backupData = {
+
+        version: 1,
+
+        createdAt:
+          new Date().toISOString(),
+
+        favorites:
+          getStoredArray(FAVORITES_KEY),
+
+        attended:
+          getStoredArray(ATTENDED_KEY)
+
+      };
+
+
+      const json =
+        JSON.stringify(
+          backupData,
+          null,
+          2
+        );
+
+
+      const blob =
+        new Blob(
+          [json],
+          {
+            type: "application/json"
+          }
+        );
+
+
+      const url =
+        URL.createObjectURL(blob);
+
+
+      const a =
+        document.createElement("a");
+
+      a.href = url;
+
+      a.download =
+        `lala-record-backup-${new Date()
+          .toISOString()
+          .slice(0, 10)}.json`;
+
+      document.body.appendChild(a);
+
+      a.click();
+
+      a.remove();
+
+      URL.revokeObjectURL(url);
+
+  });
+
+
+  /* ========================================
+     復元
+  ======================================== */
+
+  document
+    .getElementById("restoreInput")
+    .addEventListener("change", event => {
+
+      const file =
+        event.target.files[0];
+
+      if (!file) return;
+
+
+      const reader =
+        new FileReader();
+
+
+      reader.onload = () => {
+
+        try {
+
+          const data =
+            JSON.parse(reader.result);
+
+
+          if (
+            !data ||
+            !Array.isArray(data.favorites) ||
+            !Array.isArray(data.attended)
+          ) {
+
+            throw new Error(
+              "バックアップデータの形式が正しくありません。"
+            );
+
+          }
+
+
+          /*
+           * 現在のliveDataに存在するIDだけを復元
+           */
+
+          const validIds =
+            new Set(
+              liveData.map(live => live.id)
+            );
+
+
+          const favorites =
+            data.favorites.filter(
+              id => validIds.has(id)
+            );
+
+
+          const attended =
+            data.attended.filter(
+              id => validIds.has(id)
+            );
+
+
+          saveStoredArray(
+            FAVORITES_KEY,
+            favorites
+          );
+
+
+          saveStoredArray(
+            ATTENDED_KEY,
+            attended
+          );
+
+
+          renderRecord();
+
+
+          alert(
+            "記録を復元しました！"
+          );
+
+
+        } catch (error) {
+
+          console.error(error);
+
+          alert(
+            "復元に失敗しました。\n\n" +
+            "正しいLalaのバックアップファイルを選択してください。"
+          );
+
+        }
+
+      };
+
+
+      reader.readAsText(file);
+
+      event.target.value = "";
+
+  });
+
+
+  /* ========================================
+     全削除
+  ======================================== */
+
+  document
+    .getElementById("clearRecordButton")
+    .addEventListener("click", () => {
+
+      const result =
+        confirm(
+          "お気に入りと参加記録をすべて削除します。\n\n本当に削除しますか？"
+        );
+
+
+      if (!result) return;
+
+
+      localStorage.removeItem(
+        FAVORITES_KEY
+      );
+
+      localStorage.removeItem(
+        ATTENDED_KEY
+      );
+
+
+      renderRecord();
+
+
+      alert(
+        "すべての記録を削除しました。"
+      );
+
+  });
+
+
+  /* 初期表示 */
+
+  renderRecord();
+
+</script>
+
+</body>
+</html>
