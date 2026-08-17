@@ -572,3 +572,254 @@ main {
   background: rgba(255, 255, 255, 0.22);
   transform: translateY(-1px);
 }
+
+/* ========================================
+   My Lala Record
+======================================== */
+
+.record-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.record-stat-card {
+  background: #ffffff;
+  border: 1px solid #e9edf6;
+  border-radius: 18px;
+  padding: 20px 16px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.record-stat-icon {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.record-stat-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #171a2d;
+}
+
+.record-stat-label {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+
+/* ライブ一覧 */
+
+.record-live-list {
+  display: grid;
+  gap: 12px;
+}
+
+.record-live-card {
+  display: block;
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #e9edf6;
+  border-radius: 16px;
+
+  padding: 16px;
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.record-live-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #dcd8ff;
+}
+
+
+/* バックアップ */
+
+.backup-box {
+  background: linear-gradient(
+    180deg,
+    #f8f7ff,
+    #f1efff
+  );
+
+  border: 1px solid #e3ddff;
+  border-radius: 18px;
+
+  padding: 18px;
+}
+
+.backup-box p {
+  margin: 0 0 16px;
+  color: #596176;
+  font-size: 0.92rem;
+}
+
+
+/* ボタン */
+
+.backup-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.record-button {
+  appearance: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 999px;
+
+  padding: 10px 16px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.16s ease,
+    opacity 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.record-button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.backup-button {
+  background: linear-gradient(
+    180deg,
+    #eeeaff,
+    #e5deff
+  );
+
+  color: #5b45e0;
+
+  box-shadow:
+    0 4px 10px
+    rgba(109, 93, 252, 0.1);
+}
+
+.restore-button {
+  background: linear-gradient(
+    180deg,
+    #edf2ff,
+    #e5ebff
+  );
+
+  color: #4d56d8;
+
+  box-shadow:
+    0 4px 10px
+    rgba(99, 102, 241, 0.1);
+}
+
+
+/* 削除 */
+
+.danger-box {
+  margin-top: 8px;
+
+  background: #fff7f8;
+
+  border: 1px solid #ffd9df;
+  border-radius: 18px;
+
+  padding: 18px;
+}
+
+.danger-box p {
+  margin: 0 0 14px;
+
+  color: #7c4a55;
+  font-size: 0.9rem;
+}
+
+.danger-button {
+  background: #fff0f2;
+  color: #d13c59;
+
+  border: 1px solid #ffcbd3;
+}
+
+
+/* ヘッダーのナビゲーション */
+
+.header-nav {
+  margin: 18px 0 0;
+}
+
+.header-nav a {
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  transition:
+    background 0.18s ease,
+    transform 0.18s ease;
+}
+
+.header-nav a:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
+}
+
+
+/* スマホ */
+
+@media (max-width: 767px) {
+
+  .record-stats {
+    gap: 10px;
+  }
+
+  .record-stat-card {
+    padding: 16px 10px;
+  }
+
+  .record-stat-number {
+    font-size: 1.55rem;
+  }
+
+  .backup-actions {
+    flex-direction: column;
+  }
+
+  .backup-actions .record-button {
+    width: 100%;
+  }
+
+}
