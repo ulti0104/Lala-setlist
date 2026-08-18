@@ -2034,7 +2034,7 @@ window.liveData = [
 {
   id: "2026-08-02-fukuoka",
   date: "2026-08-02",
-  title: "Lala ONEMAN LIVE TOUR2026 SUMMER BREAK 福岡公演",
+  title: "Lala ONEMAN LIVE TOUR 2026 SUMMER BREAK 福岡公演",
   venue: "Live House 秘密",
   city: "福岡",
   note: "",
@@ -2066,7 +2066,7 @@ window.liveData = [
 {
   id: "2026-08-04-osaka",
   date: "2026-08-04",
-  title: "Lala ONEMAN LIVE TOUR2026 SUMMER BREAK 大阪公演",
+  title: "Lala ONEMAN LIVE TOUR 2026 SUMMER BREAK 大阪公演",
   venue: "yogibo HOLY MOUNTAIN",
   city: "大阪",
   note: "",
@@ -2099,7 +2099,7 @@ window.liveData = [
 {
   id: "2026-08-05-tokyo",
   date: "2026-08-05",
-  title: "Lala ONEMAN LIVE TOUR2026 SUMMER BREAK 東京公演",
+  title: "Lala ONEMAN LIVE TOUR 2026 SUMMER BREAK 東京公演",
   venue: "渋谷 CHELSEA HOTEL",
   city: "東京",
   note: "ayaho Happy Birthday！",
@@ -2132,7 +2132,7 @@ window.liveData = [
 {
   id: "2026-08-06-aichi",
   date: "2026-08-06",
-  title: "Lala ONEMAN LIVE TOUR2026 SUMMER BREAK 愛知公演",
+  title: "Lala ONEMAN LIVE TOUR 2026 SUMMER BREAK 愛知公演",
   venue: "Heartland",
   city: "愛知",
   note: "",
@@ -2181,6 +2181,36 @@ window.liveData = [
   ],
   setlistEncore: [
 "本当に無駄な恋"
+]
+},
+{
+  id: "2025-08-07-aichi",
+  date: "2025-08-07",
+  title: "Lala ONEMAN LIVE TOUR 2025 君のせいで溶けちゃいそうだよ 愛知公演",
+  venue: "Heartland",
+  city: "愛知",
+  note: "",
+  image: "images/summertour2025.jpg",
+  attended: true,
+  setlistMain: [
+"サマーラブ",
+"君を泣かせたい",
+"Jealousy",
+"だまされてあげる",
+"泣いてばっかだったな",
+"最低限、君がいなくても",
+"NEVER MIND!!!",
+"メンへラブストーリー",
+"嘘、やっぱ好きです。",
+"チャイムの音で",
+"ラメ降る夜",
+"はたち。",
+"死にものぐるいで恋をしていた",
+"22歳"
+  ],
+  setlistEncore: [
+"23さい",
+"夜明けまで"
 ]
 }
 ];
