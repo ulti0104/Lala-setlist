@@ -838,7 +838,7 @@ window.liveData = [
     id: "2026-02-04-osaka",
     date: "2026-02-04",
     title: "Lala ONEMAN LIVE TOUR 2026 FULL OF CHARM!!! 大阪公演",
-    venue: "Yogibo META VALLEY",
+    venue: "yogibo META VALLEY",
     city: "大阪",
     note: "",
     image: "images/charmtour.jpg",
@@ -2213,5 +2213,66 @@ window.liveData = [
 "23さい",
 "夜明けまで"
 ]
+},
+{
+  id: "2025-08-04-tokyo",
+  date: "2025-08-04",
+  title: "Lala ONEMAN LIVE TOUR 2025 君のせいで溶けちゃいそうだよ 東京公演",
+  venue: "下北沢 ReG",
+  city: "東京",
+  note: "",
+  image: "images/summertour2025.jpg",
+  attended: true,
+  setlistMain: [
+"サマーラブ",
+"君を泣かせたい",
+"Jealousy",
+"だまされてあげる",
+"泣いてばっかだったな",
+"最低限、君がいなくても",
+"NEVER MIND!!!",
+"メンヘラブストーリー",
+"嘘、やっぱ好きです。",
+"チャイムの音で（ayaho）",
+"ラメ降る夜（ayaho）",
+"はたち。",
+"死にものぐるいで恋をしていた",
+"22歳"
+  ],
+  setlistEncore: [
+"23さい",
+"夜明けまで"
+]
+},
+{
+  id: "2025-08-05-osaka",
+  date: "2025-08-05",
+  title: "Lala ONEMAN LIVE TOUR 2025 君のせいで溶けちゃいそうだよ 大阪公演",
+  venue: "Yogibo HOLY MOUNTAIN",
+  city: "大阪",
+  note: "",
+  image: "images/summertour2025.jpg",
+  attended: true,
+  setlistMain: [
+"サマーラブ",
+"君を泣かせたい",
+"Jealousy",
+"だまされてあげる",
+"泣いてばっかだったな",
+"最低限、君がいなくても",
+"NEVER MIND!!!",
+"メンヘラブストーリー",
+"嘘、やっぱ好きです。",
+"チャイムの音で（ayaho）",
+"ラメ降る夜（ayaho）",
+"はたち。",
+"死にものぐるいで恋をしていた",
+"22歳"
+  ],
+  setlistEncore: [
+"23さい",
+"夜明けまで"
+]
 }
+
 ];
