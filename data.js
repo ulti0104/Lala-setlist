@@ -2273,6 +2273,27 @@ window.liveData = [
 "23さい",
 "夜明けまで"
 ]
+},
+{
+  id: "2026-09-09-aichi",
+  date: "2026-09-09",
+  title: "Jack in the Boxxx 2026!!!",
+  venue: "CLUB UPSET",
+  city: "愛知",
+  note: "",
+  image: "images/20260909.JPG",
+  attended: true,
+  setlistMain: [
+"メンヘラブストーリー",
+"別れのキスで",
+"君と同じになりたくて",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた",
+"本当に無駄な恋"
+  ],
+  setlistEncore: [
+"Jealousy"
+]
 }
 
 ];
