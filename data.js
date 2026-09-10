@@ -2294,6 +2294,25 @@ window.liveData = [
   setlistEncore: [
 "Jealousy"
 ]
+},
+{
+  id: "2026-09-10-tokyo",
+  date: "2026-09-10",
+  title: "ONE ON ONE -NEXT-",
+  venue: "Shibuya Milkyway",
+  city: "東京",
+  note: "",
+  image: "images/20260910.jpg",
+  attended: false,
+  setlistMain: [
+"本当に無駄な恋",
+"Jealousy",
+"失恋讃歌",
+"君がいなくなったくらいじゃ",
+"泣いてばっかだったな"
+  ],
+  setlistEncore: [
+]
 }
 
 ];
