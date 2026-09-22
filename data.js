@@ -2313,6 +2313,26 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-09-22-tokyo",
+  date: "2026-09-22",
+  title: "TOKYO CALLING 2026",
+  venue: "下北沢　近松",
+  city: "東京",
+  note: "",
+  image: "images/20260922.JPG",
+  attended: true,
+  setlistMain: [
+"本当に無駄な恋",
+"別れのキスで",
+"泣いてばっかだったな",
+"だまされてあげる",
+"Jealousy",
+"死にものぐるいで恋をしていた"
+  ],
+  setlistEncore: [
+]
 }
 
 ];
