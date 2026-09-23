@@ -2333,6 +2333,28 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-09-23-aichi",
+  date: "2026-09-23",
+  title: "GOLD RUSH 2026 -AUTUMN-",
+  venue: "RAD NINE",
+  city: "愛知",
+  note: "",
+  image: "images/20260923.JPG",
+  attended: true,
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"満点人生",
+"浮気相手さんへ",
+"サーチライト",
+"泣いてばっかだったな",
+"キーホルダー",
+"本当に無駄な恋",
+"愛してるの読み方"
+  ],
+  setlistEncore: [
+]
 }
 
 ];
