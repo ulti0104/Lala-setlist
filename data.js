@@ -2355,6 +2355,31 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-10-01-osaka",
+  date: "2026-10-01",
+  title: "MUSIC BUSKER IN UMEKITA",
+  venue: "大阪駅 うめきた広場東",
+  city: "大阪",
+  note: "",
+  image: "images/20261001.JPG",
+  attended: true,
+  setlistMain: [
+"本当に無駄な恋",
+"君を泣かせたい",
+"浮気相手さんへ",
+"嘘、やっぱ好きです。",
+"泣いてばっかだったな",
+"けいはんでんしゃ",
+"君と同じになりたくて",
+"チャイムの音で（ayaho）",
+"今更、何様？",
+"Jealousy",
+"愛してるの読み方"
+  ],
+  setlistEncore: [
+]
 }
 
 ];
