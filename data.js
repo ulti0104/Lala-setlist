@@ -2384,7 +2384,7 @@ window.liveData = [
 {
   id: "2026-10-09-fukuoka",
   date: "2026-10-09",
-  title: "JIJIM LIVE HOUSE TOUR 2026-Us-",
+  title: "JIJIM LIVE HOUSE TOUR 2026 Us 福岡公演",
   venue: "OP's",
   city: "福岡",
   note: "",
