@@ -2380,6 +2380,26 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-10-09-fukuoka",
+  date: "2026-10-09",
+  title: "JIJIM LIVE HOUSE TOUR 2026-Us-",
+  venue: "OP's",
+  city: "福岡",
+  note: "",
+  image: "images/20261009.jpg",
+  attended: true,
+  setlistMain: [
+"崖っぷちガール",
+"Jealousy",
+"別れのキスで",
+"泣いてばっかだったな",
+"愛ゆえに",
+"本当に無駄な恋"
+  ],
+  setlistEncore: [
+]
 }
 
 ];
