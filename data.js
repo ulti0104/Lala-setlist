@@ -2400,6 +2400,26 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-10-10-hiroshima",
+  date: "2026-10-10",
+  title: "SUPER ROCK CITY HIROSHIMA 2026DX",
+  venue: "LIVE VANQUISH",
+  city: "広島",
+  note: "",
+  image: "images/20261009.jpg",
+  attended: true,
+  setlistMain: [
+"メンヘラブストーリー",
+"Jealousy",
+"本当に無駄な恋",
+"泣いてばっかだったな",
+"愛してるの読み方",
+"死にものぐるいで恋をしていた"
+  ],
+  setlistEncore: [
+]
 }
 
 ];
