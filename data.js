@@ -2364,7 +2364,7 @@ window.liveData = [
   city: "大阪",
   note: "",
   image: "images/20261001.JPG",
-  attended: true,
+  attended: false,
   setlistMain: [
 "本当に無駄な恋",
 "君を泣かせたい",
@@ -2389,7 +2389,7 @@ window.liveData = [
   city: "福岡",
   note: "",
   image: "images/20261009.jpg",
-  attended: true,
+  attended: false,
   setlistMain: [
 "崖っぷちガール",
 "Jealousy",
@@ -2408,8 +2408,8 @@ window.liveData = [
   venue: "LIVE VANQUISH",
   city: "広島",
   note: "",
-  image: "images/20261009.jpg",
-  attended: true,
+  image: "images/20261010.jpg",
+  attended: false,
   setlistMain: [
 "メンヘラブストーリー",
 "Jealousy",
@@ -2417,6 +2417,27 @@ window.liveData = [
 "泣いてばっかだったな",
 "愛してるの読み方",
 "死にものぐるいで恋をしていた"
+  ],
+  setlistEncore: [
+]
+},
+{
+  id: "2026-10-11-osaka",
+  date: "2026-10-11",
+  title: "MINAMI WHEEL 2026",
+  venue: "OSAKA MUSE",
+  city: "大阪",
+  note: "",
+  image: "images/20261011.jpg",
+  attended: false,
+  setlistMain: [
+"本当に無駄な恋",
+"メンヘラブストーリー",
+"浮気相手さんへ",
+"泣いてばっかだったな",
+"君がいなくなったくらいじゃ",
+"Jealousy",
+"愛してるの読み方"
   ],
   setlistEncore: [
 ]
