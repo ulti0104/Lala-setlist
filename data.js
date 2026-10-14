@@ -2449,7 +2449,7 @@ window.liveData = [
   venue: "LIVE SQUARE 2nd LINE",
   city: "大阪",
   note: "月追う彼方「月面秘密基地 vol.3」大阪公演延期につき急遽開催フリーライブ",
-  image: "images/20261014.jpg",
+  image: "images/20261014a.jpg",
   attended: true,
   setlistMain: [
 "君を泣かせたい",
