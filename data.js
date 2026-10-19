@@ -2445,12 +2445,12 @@ window.liveData = [
 {
   id: "2026-10-14-osaka",
   date: "2026-10-14",
-  title: "延期になったけどみんなに会いたいのでちょっと多めにセトリ組んで急遽ワンマンやっちゃいます！~フライング3周年記念大阪編!?大集合！~",
+  title: "Lala ONEMAN LIVE 延期になったけどみんなに会いたいのでちょっと多めにセトリ組んで急遽ワンマンやっちゃいます！~フライング3周年記念大阪編!?大集合！~",
   venue: "LIVE SQUARE 2nd LINE",
   city: "大阪",
   note: "月追う彼方「月面秘密基地 vol.3」大阪公演延期につき急遽開催フリーライブ",
   image: "images/20261014a.jpg",
-  attended: true,
+  attended: false,
   setlistMain: [
 "君を泣かせたい",
 "英雄になりたい",
