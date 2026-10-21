@@ -22,6 +22,7 @@ window.songLinks = {
   "サマーラブ": "https://music.apple.com/jp/album/%E3%82%B5%E3%83%9E%E3%83%BC%E3%83%A9%E3%83%96/1803051850?i=1803052558",
   "チャイムの音で（ayaho）": "https://music.apple.com/jp/album/%E3%83%81%E3%83%A3%E3%82%A4%E3%83%A0%E3%81%AE%E9%9F%B3%E3%81%A7/1550534280?i=1550534283",
   "ラメ降る夜（ayaho）": "https://music.apple.com/jp/album/%E3%83%A9%E3%83%A1%E9%99%8D%E3%82%8B%E5%A4%9C/1605889196?i=1605889197",
+  "サヨナ来世で（ayaho）": "https://music.apple.com/jp/song/%E3%82%B5%E3%83%A8%E3%83%8A%E6%9D%A5%E4%B8%96%E3%81%A7/1641859639",
   "マフラー": "https://music.apple.com/jp/album/%E3%83%9E%E3%83%95%E3%83%A9%E3%83%BC/1803051850?i=1803052330",
   "メンヘラブストーリー": "https://music.apple.com/jp/album/%E3%83%A1%E3%83%B3%E3%83%98%E3%83%A9%E3%83%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/1803051850?i=1803051859",
   "別れのキスで": "https://music.apple.com/jp/album/%E5%88%A5%E3%82%8C%E3%81%AE%E3%82%AD%E3%82%B9%E3%81%A7-2024-remaster/1733492139?i=1733492953",
