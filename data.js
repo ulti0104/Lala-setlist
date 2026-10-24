@@ -2472,6 +2472,26 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-10-24-aichi",
+  date: "2026-10-24",
+  title: "JIJIM LIVE HOUSE TOUR 2026 Us 愛知公演",
+  venue: "OP's",
+  city: "愛知",
+  note: "",
+  image: "images/20261024.jpg",
+  attended: false,
+  setlistMain: [
+"英雄になりたい",
+"キーホルダー",
+"Jealousy",
+"泣いてばっかだったな",
+"夜明けまで",
+"Monster"
+  ],
+  setlistEncore: [
+]
 }
 
 ];
