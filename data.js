@@ -2477,7 +2477,7 @@ window.liveData = [
   id: "2026-10-24-aichi",
   date: "2026-10-24",
   title: "JIJIM LIVE HOUSE TOUR 2026 Us 愛知公演",
-  venue: "OP's",
+  venue: "Heartland",
   city: "愛知",
   note: "",
   image: "images/20261024.jpg",
