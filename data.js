@@ -2492,6 +2492,29 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-10-25-saitama",
+  date: "2026-10-25",
+  title: "第25回 尚美祭 PRISM",
+  venue: "尚美学園大学",
+  city: "埼玉",
+  note: "",
+  image: "images/20261025.jpg",
+  attended: true,
+  setlistMain: [
+"死にものぐるいで恋をしていた",
+"Jealousy",
+"崖っぷちガール",
+"泣いてばっかだったな",
+"君と同じになりたくて",
+"本当に無駄な恋",
+"メンヘラブストーリー"
+  ],
+  setlistEncore: [
+"夜明けまで"
+]
 }
+
 
 ];
