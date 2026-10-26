@@ -403,9 +403,9 @@ window.liveData = [
   {
     id: "2025-11-03-osaka",
     date: "2025-11-03",
-    title: "成城大学   柳祭 2025",
+    title: "成城大学 柳祭 2025",
     venue: "成城大学",
-    city: "大阪",
+    city: "東京",
     note: "",
     image: "images/20251103.jpg",
     setlistMain: [
