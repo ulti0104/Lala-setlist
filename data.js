@@ -2514,6 +2514,26 @@ window.liveData = [
   setlistEncore: [
 "夜明けまで"
 ]
+},
+{
+  id: "2026-10-27-aichi",
+  date: "2026-10-27",
+  title: "TRUST RECORDS presents ROCK IN AUTUMN",
+  venue: "RAD SEVEN",
+  city: "愛知",
+  note: "",
+  image: "images/20261027.JPG",
+  attended: true,
+  setlistMain: [
+"本当に無駄な恋",
+"マフラー",
+"愛ゆえに",
+"「あたしだけ。」",
+"死にものぐるいで恋をしていた",
+"ほろ酔い"
+  ],
+  setlistEncore: [
+]
 }
 
 
