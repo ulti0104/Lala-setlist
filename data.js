@@ -2534,6 +2534,26 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-11-01-tokyo",
+  date: "2026-11-01",
+  title: "KNOCKOUT FES 2026",
+  venue: "CLUB251",
+  city: "東京",
+  note: "",
+  image: "images/20261101.JPG",
+  attended: true,
+  setlistMain: [
+"愛してるの読み方",
+"別れのキスで",
+"メンヘラブストーリー",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた",
+"ほろ酔い"
+  ],
+  setlistEncore: [
+]
 }
 
 
