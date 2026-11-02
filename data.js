@@ -2554,6 +2554,102 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-10-08-fukuoka",
+  date: "2026-10-08",
+  title: "ララカンパニーpresents ayaho ONEMAN LIVE TOUR 2026 -10/24 -24ぶんの10-",
+  venue: "Live House 秘密",
+  city: "福岡",
+  note: "",
+  image: "images/ayahotour2026.jpg",
+  attended: false,
+  setlistMain: [
+"サヨナ来世で（ayaho）",
+"理不尽サーカス（ayaho）",
+"16のうた（ayaho）",
+"愛してるの読み方",
+"18 （ayaho）",
+"ラメ降る夜（ayaho）",
+"君と同じになりたくて",
+"Monster",
+"大人にならないで",
+"10/24"
+  ],
+  setlistEncore: [
+]
+},
+{
+  id: "2026-10-19-osaka",
+  date: "2026-10-19",
+  title: "ララカンパニーpresents ayaho ONEMAN LIVE TOUR 2026 -10/24 -24ぶんの10-",
+  venue: "Yogibo HOLY MOUNTAIN",
+  city: "大阪",
+  note: "",
+  image: "images/ayahotour2026.jpg",
+  attended: true,
+  setlistMain: [
+"サヨナ来世で（ayaho）",
+"理不尽サーカス（ayaho）",
+"16のうた（ayaho）",
+"愛してるの読み方",
+"18 （ayaho）",
+"ラメ降る夜（ayaho）",
+"君と同じになりたくて",
+"Monster",
+"大人にならないで",
+"10/24"
+  ],
+  setlistEncore: [
+]
+},
+{
+  id: "2026-10-28-aichi",
+  date: "2026-10-28",
+  title: "ララカンパニーpresents ayaho ONEMAN LIVE TOUR 2026 -10/24 -24ぶんの10-",
+  venue: "ell.SIZE",
+  city: "愛知",
+  note: "",
+  image: "images/ayahotour2026.jpg",
+  attended: true,
+  setlistMain: [
+"サヨナ来世で（ayaho）",
+"理不尽サーカス（ayaho）",
+"16のうた（ayaho）",
+"愛してるの読み方",
+"18 （ayaho）",
+"ラメ降る夜（ayaho）",
+"君と同じになりたくて",
+"Monster",
+"大人にならないで",
+"10/24"
+  ],
+  setlistEncore: [
+]
+},
+{
+  id: "2026-11-02-tokyo",
+  date: "2026-11-02",
+  title: "ララカンパニーpresents ayaho ONEMAN LIVE TOUR 2026 -10/24 -24ぶんの10-",
+  venue: "下北沢　近道",
+  city: "東京",
+  note: "",
+  image: "images/ayahotour2026.jpg",
+  attended: true,
+  setlistMain: [
+"サヨナ来世で（ayaho）",
+"理不尽サーカス（ayaho）",
+"16のうた（ayaho）",
+"愛してるの読み方",
+"18 （ayaho）",
+"ラメ降る夜（ayaho）",
+"君と同じになりたくて",
+"Monster",
+"大人にならないで",
+"10/24"
+  ],
+  setlistEncore: [
+]
 }
 
 
