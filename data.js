@@ -2566,7 +2566,7 @@ window.liveData = [
   attended: false,
   setlistMain: [
 "サヨナ来世で（ayaho）",
-"理不尽サーカス（ayaho）",
+"理不尽サーカス",
 "16のうた（ayaho）",
 "愛してるの読み方",
 "18 （ayaho）",
@@ -2590,7 +2590,7 @@ window.liveData = [
   attended: true,
   setlistMain: [
 "サヨナ来世で（ayaho）",
-"理不尽サーカス（ayaho）",
+"理不尽サーカス",
 "16のうた（ayaho）",
 "愛してるの読み方",
 "18 （ayaho）",
@@ -2614,7 +2614,7 @@ window.liveData = [
   attended: true,
   setlistMain: [
 "サヨナ来世で（ayaho）",
-"理不尽サーカス（ayaho）",
+"理不尽サーカス",
 "16のうた（ayaho）",
 "愛してるの読み方",
 "18 （ayaho）",
@@ -2638,7 +2638,7 @@ window.liveData = [
   attended: true,
   setlistMain: [
 "サヨナ来世で（ayaho）",
-"理不尽サーカス（ayaho）",
+"理不尽サーカス",
 "16のうた（ayaho）",
 "愛してるの読み方",
 "18 （ayaho）",
