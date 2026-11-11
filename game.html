@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#eaf5ff">
+<title>セトリ記憶ゲーム | Lala セトリまとめ</title>
+<style>
+:root{--blue:#4c91cf;--blue2:#eaf5ff;--ink:#263445;--muted:#718096;--line:#dce8f2;--bg:#f7fbff;--white:#fff;--green:#25865a;--red:#c64b58}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#eaf5ff 0,#f8fbff 260px,#f7fbff 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+a{color:inherit}
+header{max-width:760px;margin:auto;padding:22px 18px 8px}
+.back{display:inline-block;text-decoration:none;color:#397db7;font-size:14px;margin-bottom:14px}
+.brand{font-size:12px;letter-spacing:.16em;color:#6795bb;font-weight:800}
+h1{font-size:clamp(25px,6vw,36px);margin:7px 0 4px}
+.sub{margin:0;color:var(--muted);font-size:14px}
+main{max-width:760px;margin:18px auto 48px;padding:0 14px}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:clamp(18px,4vw,28px);box-shadow:0 10px 32px #4d83ad12}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:20px}
+.stat{background:#f2f8fd;border-radius:14px;padding:12px;text-align:center}
+.stat small{display:block;color:var(--muted);font-size:11px;margin-bottom:4px}
+.stat strong{font-size:22px;font-variant-numeric:tabular-nums}
+.center{text-align:center}
+.eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em}
+h2{font-size:23px;margin:8px 0 10px}
+p{line-height:1.7}
+.btn{border:0;border-radius:13px;padding:14px 18px;background:var(--blue);color:#fff;font-weight:750;font-size:15px;cursor:pointer;width:100%;margin-top:12px}
+.btn.secondary{background:#edf5fb;color:#376f9e}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.event{background:#f4f9fd;border:1px solid #e4eef6;border-radius:14px;padding:13px;margin:15px 0;text-align:left}
+.event strong{display:block;font-size:15px;line-height:1.5}
+.event small{color:var(--muted)}
+.songlist{display:grid;gap:8px;margin:16px 0}
+.song{display:flex;align-items:center;gap:12px;background:#f7fafd;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:left}
+.num{width:28px;height:28px;flex:none;border-radius:9px;background:#e5f2fc;color:#397fb9;display:grid;place-items:center;font-weight:800;font-size:13px}
+.songname{font-weight:650;overflow-wrap:anywhere}
+.pick{display:flex;align-items:center;gap:10px;width:100%;border:1px solid var(--line);background:#fff;border-radius:12px;padding:13px;text-align:left;font-size:14px;color:var(--ink);cursor:pointer;margin:7px 0}
+.pick:disabled{opacity:.45;cursor:default}
+.pick .num{background:#edf5fb}
+.notice{padding:12px;border-radius:12px;background:#f1f8fe;color:#55748f;font-size:13px}
+.good{background:#effaf4;color:var(--green)}
+.bad{background:#fff2f2;color:var(--red)}
+.timer{font-size:30px;font-weight:850;color:var(--blue);font-variant-numeric:tabular-nums}
+.hidden{display:none!important}
+footer{text-align:center;color:#91a1b0;font-size:12px;padding:0 15px 28px}
+@media(min-width:600px){.songlist.two{grid-template-columns:1fr 1fr}}
+</style>
+<script src="./data.js"></script>
+</head>
+<body>
+<header>
+  <a class="back" href="./index.html">← セトリまとめに戻る</a>
+  <div class="brand">LALA SETLIST ARCHIVE</div>
+  <h1>セトリ記憶ゲーム</h1>
+  <p class="sub">実際のライブの曲順を覚えて、正しく並べよう。</p>
+</header>
+<main>
+<section class="panel">
+  <div class="stats">
+    <div class="stat"><small>LEVEL</small><strong id="level">1</strong></div>
+    <div class="stat"><small>SCORE</small><strong id="score">0</strong></div>
+    <div class="stat"><small>BEST</small><strong id="best">0</strong></div>
+  </div>
+
+  <div id="intro" class="center">
+    <div class="eyebrow">SETLIST MEMORY CHALLENGE</div>
+    <h2>ライブのセトリを記憶せよ！</h2>
+    <p>実際に登録されているLalaのライブから出題。表示された曲順を覚えて、シャッフルされた曲を正しい順番に選んでください。</p>
+    <div class="notice">Lv.1は3曲。正解するたびに1曲ずつ増えていきます。不正解になるとゲームオーバーです。</div>
+    <button class="btn" id="start">ゲームスタート</button>
+    <p id="dataStatus" class="sub"></p>
+  </div>
+
+  <div id="memorize" class="hidden">
+    <div class="center">
+      <div class="eyebrow">MEMORIZE</div>
+      <h2>この曲順を覚えて！</h2>
+      <div class="timer" id="timer">8</div>
+      <p class="sub">時間が0になると曲名が隠れます。</p>
+    </div>
+    <div class="event" id="eventMem"></div>
+    <div class="songlist" id="memorySongs"></div>
+    <button class="btn" id="ready">覚えた！回答する</button>
+  </div>
+
+  <div id="answer" class="hidden">
+    <div class="center">
+      <div class="eyebrow">YOUR ANSWER</div>
+      <h2>正しい曲順に並べよう</h2>
+      <p class="sub">下の曲を正しい順番でタップしてください。</p>
+    </div>
+    <div class="event" id="eventAns"></div>
+    <div class="notice">選択した順番</div>
+    <div class="songlist" id="answerSlots"></div>
+    <div style="margin-top:18px;font-weight:750">曲を選択</div>
+    <div id="songChoices"></div>
+    <button class="btn" id="submit" disabled>回答する</button>
+    <button class="btn secondary" id="undo">最後の選択を取り消す</button>
+  </div>
+
+  <div id="result" class="hidden center">
+    <div class="eyebrow">RESULT</div>
+    <h2 id="resultTitle">正解！</h2>
+    <p id="resultText"></p>
+    <div id="resultEvent" class="event"></div>
+    <div id="correctSongs" class="songlist"></div>
+    <button class="btn" id="next">次のレベルへ</button>
+    <button class="btn secondary" id="retry">最初から挑戦</button>
+  </div>
+</section>
+</main>
+<footer>© Lala セトリまとめ</footer>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const screens = ["intro","memorize","answer","result"];
+  let level=1, score=0, best=Number(localStorage.getItem("lalaSetlistMemoryBest")||0);
+  let current=null, correct=[], shuffled=[], selected=[], countdown=null, seconds=0, finished=false;
+  $("best").textContent=best;
+
+  function show(name){screens.forEach(s=>$(s).classList.toggle("hidden",s!==name));}
+  function allEvents(){
+    if(!Array.isArray(window.liveData)) return [];
+    return window.liveData.map(ev=>{
+      const songs=[...(Array.isArray(ev.setlistMain)?ev.setlistMain:[]),...(Array.isArray(ev.setlistEncore)?ev.setlistEncore:[])].filter(x=>typeof x==="string"&&x.trim());
+      return {...ev,songs};
+    }).filter(ev=>ev.songs.length>0);
+  }
+  function eligibleEvents(){
+    const count=level+2;
+    return allEvents().filter(ev=>ev.songs.length>=count);
+  }
+  function shuffle(a){
+    const b=[...a];
+    for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}
+    return b;
+  }
+  function eventLabel(ev){
+    return `<strong>${escapeHtml(ev.title||"ライブ")}</strong><small>${escapeHtml(ev.date||"")}${ev.venue?" ・ "+escapeHtml(ev.venue):""}</small>`;
+  }
+  function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+  function updateStats(){
+    $("level").textContent=level;$("score").textContent=score;$("best").textContent=best;
+  }
+  function stopTimer(){if(countdown){clearInterval(countdown);countdown=null;}}
+  function startGame(){
+    stopTimer();
+    const candidates=eligibleEvents();
+    if(!candidates.length){
+      $("dataStatus").textContent=`現在の登録データではLv.${level}（${level+2}曲）の出題ができません。セトリが${level+2}曲以上ある公演が必要です。`;
+      return;
+    }
+    current=candidates[Math.floor(Math.random()*candidates.length)];
+    correct=current.songs.slice(0,level+2);
+    shuffled=shuffle(correct);selected=[];finished=false;
+    $("eventMem").innerHTML=eventLabel(current);
+    $("memorySongs").innerHTML=correct.map((s,i)=>`<div class="song"><span class="num">${i+1}</span><span class="songname">${escapeHtml(s)}</span></div>`).join("");
+    $("eventAns").innerHTML=eventLabel(current);
+    $("timer").textContent=String(Math.max(5,correct.length+3));
+    $("ready").disabled=false;
+    updateStats();show("memorize");
+    seconds=Math.max(5,correct.length+3);
+    countdown=setInterval(()=>{
+      seconds--; $("timer").textContent=String(seconds);
+      if(seconds<=0){stopTimer();beginAnswer();}
+    },1000);
+  }
+  function beginAnswer(){
+    if(finished||!current)return;
+    stopTimer();finished=true;
+    $("answerSlots").innerHTML="";
+    $("songChoices").innerHTML="";
+    renderAnswer();
+    shuffled.forEach((song,i)=>{
+      const b=document.createElement("button");b.className="pick";b.type="button";
+      b.innerHTML=`<span class="num">♪</span><span>${escapeHtml(song)}</span>`;
+      b.addEventListener("click",()=>{if(selected.includes(i))return;selected.push(i);renderAnswer();});
+      b.dataset.index=String(i);$("songChoices").appendChild(b);
+    });
+    $("submit").disabled=true;show("answer");
+  }
+  function renderAnswer(){
+    $("answerSlots").innerHTML=correct.map((_,i)=>{
+      const idx=selected[i];
+      return `<div class="song"><span class="num">${i+1}</span><span class="songname">${idx===undefined?"ここに曲が入ります":escapeHtml(shuffled[idx])}</span></div>`;
+    }).join("");
+    [...$("songChoices").children].forEach(b=>{b.disabled=selected.includes(Number(b.dataset.index));});
+    $("submit").disabled=selected.length!==correct.length;
+  }
+  function judge(){
+    const ok=selected.every((idx,i)=>shuffled[idx]===correct[i]);
+    if(ok){
+      score+=level*100;
+      if(score>best){best=score;localStorage.setItem("lalaSetlistMemoryBest",String(best));}
+      $("resultTitle").textContent="正解！";
+      $("resultTitle").style.color="var(--green)";
+      $("resultText").textContent=`全問正解！ ${correct.length}曲の曲順を覚えていました。 +${level*100}点`;
+      $("next").classList.remove("hidden");
+    }else{
+      $("resultTitle").textContent="GAME OVER";
+      $("resultTitle").style.color="var(--red)";
+      $("resultText").textContent="曲順が違っていました。正しい並びを確認してみよう。";
+      $("next").classList.add("hidden");
+    }
+    $("resultEvent").innerHTML=eventLabel(current);
+    $("correctSongs").innerHTML=correct.map((s,i)=>{
+      const user=selected[i]===undefined?"":shuffled[selected[i]];
+      const match=user===s;
+      return `<div class="song"><span class="num">${i+1}</span><span class="songname">${escapeHtml(s)}</span><strong style="margin-left:auto;color:${match?"var(--green)":"var(--red)"}">${match?"✓":"正解"}</strong></div>`;
+    }).join("");
+    updateStats();show("result");
+  }
+  $("start").addEventListener("click",()=>{level=1;score=0;updateStats();startGame();});
+  $("ready").addEventListener("click",beginAnswer);
+  $("submit").addEventListener("click",judge);
+  $("undo").addEventListener("click",()=>{selected.pop();renderAnswer();});
+  $("next").addEventListener("click",()=>{level++;updateStats();startGame();});
+  $("retry").addEventListener("click",()=>{stopTimer();level=1;score=0;updateStats();show("intro");});
+  const count=allEvents().length;
+  $("dataStatus").textContent=count?`読み込み済み：${count}公演`:"セトリデータを読み込めません。data.jsが同じフォルダにあるか確認してください。";
+})();
+</script>
+</body>
+</html>
