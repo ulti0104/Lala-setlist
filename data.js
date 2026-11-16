@@ -2650,6 +2650,25 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-11-16-tokyo",
+  date: "2026-11-16",
+  title: "404",
+  venue: "代官山 UNiT",
+  city: "東京",
+  note: "",
+  image: "images/20261116.JPG",
+  attended: true,
+  setlistMain: [
+"Mellow",
+"マフラー",
+"泣いてばっかだったな",
+"サーチライト",
+"ただの口約束"
+  ],
+  setlistEncore: [
+]
 }
 
 
