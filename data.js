@@ -2193,7 +2193,7 @@ window.liveData = [
   city: "愛知",
   note: "",
   image: "images/summertour2025.jpg",
-  attended: true,
+  attended: false,
   setlistMain: [
 "サマーラブ",
 "君を泣かせたい",
@@ -2223,7 +2223,7 @@ window.liveData = [
   city: "東京",
   note: "",
   image: "images/summertour2025.jpg",
-  attended: true,
+  attended: false,
   setlistMain: [
 "サマーラブ",
 "君を泣かせたい",
@@ -2253,7 +2253,7 @@ window.liveData = [
   city: "大阪",
   note: "",
   image: "images/summertour2025.jpg",
-  attended: true,
+  attended: false,
   setlistMain: [
 "サマーラブ",
 "君を泣かせたい",
@@ -2666,6 +2666,26 @@ window.liveData = [
 "泣いてばっかだったな",
 "サーチライト",
 "ただの口約束"
+  ],
+  setlistEncore: [
+]
+},
+{
+  id: "2026-11-17-osaka",
+  date: "2026-11-17",
+  title: "Zeela presents ムーンライトストライク 〜Zeela 13th Anniversary〜",
+  venue: "梅田Zeela",
+  city: "大阪",
+  note: "",
+  image: "images/20261117.jpg",
+  attended: false,
+  setlistMain: [
+"メンヘラブストーリー",
+"浮気相手さんへ",
+"別れのキスで",
+"噓、やっぱ好きです。",
+"サーチライト",
+"本当に無駄な恋"
   ],
   setlistEncore: [
 ]
