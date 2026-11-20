@@ -2693,10 +2693,10 @@ window.liveData = [
 {
   id: "2026-11-20-osaka",
   date: "2026-11-20",
-  title: "月追う彼方 pre. 「月面秘密基地 vol.3」",
+  title: "月追う彼方 pre. 「月面秘密基地 vol.3」大阪公演",
   venue: "LIVE SQUARE 2ndLINE",
   city: "大阪",
-  note: "",
+  note: "10/14から延期",
   image: "images/20261120.JPG",
   attended: false,
   setlistMain: [
