@@ -2689,6 +2689,31 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-11-20-osaka",
+  date: "2026-11-20",
+  title: "月追う彼方 pre. 「月面秘密基地 vol.3」",
+  venue: "LIVE SQUARE 2ndLINE",
+  city: "大阪",
+  note: "",
+  image: "images/20261120.JPG",
+  attended: false,
+  setlistMain: [
+"charm",
+"マフラー",
+"LOVER",
+"もし君の恋人になれたら",
+"余計なお世話",
+"泣いてばっかだったな",
+"生きてるだけでいい",
+"Jealousy",
+"GAMING",
+"ほろ酔い",
+"愛してるの読み方"
+  ],
+  setlistEncore: [
+]
 }
 
 
