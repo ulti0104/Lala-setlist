@@ -2714,7 +2714,31 @@ window.liveData = [
   ],
   setlistEncore: [
 ]
+},
+{
+  id: "2026-11-26-tokyo",
+  date: "2026-11-26",
+  title: "Nice to meet Lala ! -3周年ワンマン来て欲しいので60分無料ワンマンやっちゃいます-in渋谷",
+  city: "東京",
+  note: "",
+  image: "images/20261126.JPG",
+  attended: true,
+  setlistMain: [
+"本当に無駄な恋",
+"メンヘラブストーリー",
+"崖っぷちガール",
+"英雄になりたい",
+"君と同じになりたくて",
+"泣いてばっかだったな",
+"死にものぐるいで恋をしていた",
+"別れのキスで",
+"Jealousy",
+"愛してるの読み方",
+"ほろ酔い",
+"夜明けまで"
+  ],
+  setlistEncore: [
+]
 }
-
 
 ];
