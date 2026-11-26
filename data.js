@@ -2719,6 +2719,7 @@ window.liveData = [
   id: "2026-11-26-tokyo",
   date: "2026-11-26",
   title: "Nice to meet Lala ! -3周年ワンマン来て欲しいので60分無料ワンマンやっちゃいます-in渋谷",
+  venue: "渋谷 CHELSEA HOTEL",
   city: "東京",
   note: "",
   image: "images/20261126.JPG",
