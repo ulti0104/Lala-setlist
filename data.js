@@ -2740,6 +2740,28 @@ window.liveData = [
   setlistEncore: [
 "夜明けまで"
 ]
+},
+{
+  id: "2026-11-28-tokyo",
+  date: "2026-11-28",
+  title: "きみとバンド新体制ツアー 〜NEW STORY〜 東京公演",
+  venue: "新宿 ReNY",
+  city: "東京",
+  note: "",
+  image: "images/20261128.jpg",
+  attended: true,
+  setlistMain: [
+"本当に無駄な恋",
+"死にものぐるいで恋をしていた",
+"英雄になりたい",
+"もし君の恋人になれたら",
+"泣いてばっかだったな",
+"Jealousy",
+"GAMING",
+"ほろ酔い"
+  ],
+  setlistEncore: [
+]
 }
 
 ];
